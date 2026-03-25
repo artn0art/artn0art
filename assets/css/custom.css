@@ -1,0 +1,85 @@
+/* artn0art — Style inspiré de fors.fm
+   Fond gris clair, minimaliste, beaucoup d'espace */
+
+:root {
+  --bg-color: #ebebeb;
+  --text-color: #1a1a1a;
+}
+
+body {
+  background-color: var(--bg-color) !important;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Titres forts */
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Cartes projet — chaque projet aura sa couleur via classe */
+.projet-card {
+  display: block;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Couleurs univers par projet */
+.projet-card.dj       { background-color: #c4b5fd; } /* violet clair */
+.projet-card.reactable { background-color: #6ee7b7; } /* vert menthe */
+.projet-card.jukbike   { background-color: #fcd34d; } /* jaune doré */
+.projet-card.a2dd      { background-color: #93c5fd; } /* bleu clair */
+.projet-card.musique   { background-color: #fca5a5; } /* rose doux */
+
+.projet-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.projet-card p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Tags / badges style fors.fm */
+.badge {
+  display: inline-block;
+  border: 1px solid var(--text-color);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+}
+
+/* Section hero — accueil */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .subtitle {
+  font-size: 1.25rem;
+  opacity: 0.6;
+  font-weight: 400;
+}
+
+/* Espacement généreux comme fors.fm */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}

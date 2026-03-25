@@ -1,0 +1,65 @@
+baseURL = "https://artn0art.com/"
+languageCode = "fr"
+defaultContentLanguage = "fr"
+title = "artn0art"
+theme = "blowfish"
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Navigation
+[menu]
+  [[menu.main]]
+    name = "Projets"
+    pageRef = "projets"
+    weight = 10
+  [[menu.main]]
+    name = "DJ"
+    pageRef = "dj"
+    weight = 20
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "contact"
+    weight = 30
+
+# Blowfish params
+[params]
+  colorScheme = "ocean"
+  defaultAppearance = "light"
+  autoSwitchAppearance = false
+  enableSearch = false
+
+  [params.homepage]
+    layout = "custom"
+    homepageImage = ""
+    showRecent = false
+
+  [params.article]
+    showDate = false
+    showReadingTime = false
+    showAuthor = false
+    showBreadcrumbs = true
+
+  [params.header]
+    layout = "basic"
+
+  [params.footer]
+    showCopyright = true
+    showThemeAttribution = false
+
+  [params.author]
+    name = "artn0art"
+    headline = "DJ · Musicien · Créatif"
+    links = [
+      { instagram = "https://instagram.com/artn0art" },
+      { soundcloud = "https://soundcloud.com/artn0art" },
+      { github = "https://github.com/artn0art" },
+      { email = "mailto:artn0art@proton.me" },
+    ]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,65 @@
+{
+  "id": "artn0art",
+  "nom": "artn0art — Site vitrine DJ & portfolio",
+  "description": "Site internet personnel : vitrine DJ, portfolio créatif, showcase projets. Hugo + Decap CMS, hébergé sur Netlify/Cloudflare Pages.",
+  "type": "projet",
+  "icone": "🌐",
+  "couleur": "rgba(168, 85, 247, 0.15)",
+  "etat": "v0.0 — Projet créé, structure planifiée, aucun code encore.",
+  "stats": {
+    "pages": 0,
+    "html": 0,
+    "data": 0
+  },
+  "architecture": {
+    "description": "Hugo (static site generator) + Decap CMS (headless CMS) + Netlify/Cloudflare Pages (hosting)",
+    "flux": "content/ (Markdown) → Hugo build → public/ (HTML) → Netlify deploy",
+    "espaces": [
+      {
+        "nom": "content/",
+        "role": "Pages en Markdown (DJ, projets, portfolio, contact)"
+      },
+      {
+        "nom": "static/admin/",
+        "role": "Panneau Decap CMS pour édition visuelle"
+      },
+      {
+        "nom": "themes/",
+        "role": "Thème Hugo (à choisir)"
+      }
+    ]
+  },
+  "fichiers": [
+    {
+      "section": "Config",
+      "items": [
+        {"nom": "config.toml", "role": "Configuration Hugo (titre, menus, paramètres)", "tag": "config"},
+        {"nom": "static/admin/config.yml", "role": "Configuration Decap CMS (collections, champs)", "tag": "config"}
+      ]
+    },
+    {
+      "section": "Contenu",
+      "items": [
+        {"nom": "content/_index.md", "role": "Page d'accueil", "tag": "content"},
+        {"nom": "content/dj/_index.md", "role": "Page vitrine DJ", "tag": "content"},
+        {"nom": "content/projets/", "role": "Fiches projets (reactable, jukbike...)", "tag": "content"},
+        {"nom": "content/portfolio/", "role": "Galerie créative", "tag": "content"},
+        {"nom": "content/contact.md", "role": "Contact et booking", "tag": "content"}
+      ]
+    }
+  ],
+  "dependencies": {
+    "python": [],
+    "bricks": [],
+    "ml": "",
+    "models": [],
+    "tools": ["hugo", "decap-cms", "netlify"]
+  },
+  "todo_prochaine_session": [
+    "Acheter domaine artn0art.com (OVH ou Gandi)",
+    "Choisir thème Hugo (dark, créatif, portfolio)",
+    "Initialiser repo Hugo + Decap CMS",
+    "Créer page d'accueil + page DJ",
+    "Premier déploiement Netlify"
+  ]
+}
