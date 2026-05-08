@@ -1,5 +1,18 @@
 # artn0art — Site vitrine DJ & portfolio créatif
 
+
+## Chemins d'accès
+
+| Élément | Chemin |
+|---|---|
+| Dossier source | `$CLAUDE_HOME/_projets/artn0art/` |
+| Chemin absolu | `/Users/artnoart/Code/_projets/artn0art/` |
+| Alias shell | `cdart` |
+
+> Note : iCloud impose guillemets doubles sur le chemin absolu (espaces dans "Mobile Documents", `~` dans `com~apple~CloudDocs`). Toujours passer par `$CLAUDE_HOME` ou l'alias.
+
+> Site Hugo. Sortie buildée dans `public/` (à publier via le workflow de déploiement du projet).
+
 ## Description
 
 Site internet personnel de Didier : vitrine DJ, portfolio créatif, showcase projets (musique, reactable, jukbike...).
@@ -84,3 +97,14 @@ artn0art/
 5. Rédiger le vrai contenu (bio DJ, descriptions projets, photos)
 6. Connecter le domaine artn0art.com (OVH → Netlify)
 7. Peaufiner le style et l'identité visuelle de chaque univers
+
+
+## ⚠️ Accès aux fichiers — protocole impératif
+
+**Avant toute action hors sandbox, Claude demande l'accès dans cet ordre :**
+
+1. `request_cowork_directory` — Didier valide avec Entrée (méthode par défaut)
+2. Sinon, `cd <chemin> && ls -la` et attendre le résultat collé
+3. **Jamais** de supposition, jamais d'invention de structure
+
+Règle complète : `_claude/CLAUDE.md` → "Règle d'accès aux fichiers".
