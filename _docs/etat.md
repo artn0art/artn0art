@@ -1,31 +1,21 @@
 # État — artn0art
 
-## v0.0 — Scaffold + domaine
+## v0.1 — Site Hugo en construction
 
-**Statut** : Scaffold créé, domaine acheté, prêt pour GitHub
+**Statut** : contenu partiel, build local à valider avant déploiement public.
 
 ### Fait
-- Hugo + Blowfish configuré localement
-- Décap CMS config en place
-- Structure `content/` créée avec templates
-- `.git/` initialisé
-- Domaine artn0art.com acheté (OVH)
+- `hugo.toml` + thème Blowfish
+- Environ **7 pages** Markdown sous `content/` (hub, DJ, projets, contact)
+- Pages projets partiellement remplies (a2dd, reactable plus avancés ; DJ et Jukbike avec TODO)
+- Domaine artn0art.com (OVH)
 
-### Pas encore content
-- Pages Markdown vides (templates uniquement)
-- Aucune image/assets
-- CMS non connecté (pas de GitHub)
-- DNS OVH non pointé vers hôte
+### À faire
+- Valider `hugo build` en local (Hugo ≥ 0.155)
+- Compléter assets `static/` (favicon, images partage)
+- Retirer ou compléter les TODO visibles avant vitrine pro
+- Remote Git + hébergement + DNS si publication
 
-### Prochaines étapes
-1. Créer repo GitHub (public)
-2. Pousser code + config
-3. Connecter Decap CMS via GitHub OAuth
-4. Déployer Netlify ou Cloudflare Pages
-5. Pointer DNS OVH vers hébergeur
-6. Remplir contenu (bio, projets, photos)
-
-## Points clés
-- Site entièrement statique (Hugo)
-- CMS pour Didier (sans backend)
-- Pas d'auth requise v0.1 (déploiement public)
+### Points clés
+- Site statique ; pas de backend applicatif dans ce dépôt
+- Documentation interne alignée sur `hugo.toml` et dossiers `_index.md` (cf. `architecture.md`)
