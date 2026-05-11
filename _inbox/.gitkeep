@@ -1,0 +1,6 @@
+# _inbox/ — file d'attente pour fichiers à digérer
+#
+# Convention village S140 — cycle de vie d'un document :
+#   _inbox/ → digestion KB → _archives/sources-digerees/AAAA-MM/
+#
+# Référence : ~/Code/CLAUDE.md § "Convention des dossiers projets"

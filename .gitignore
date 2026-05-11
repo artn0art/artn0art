@@ -10,3 +10,7 @@ Thumbs.db
 .vscode/
 *.swp
 *~
+
+# Inbox village (S140) — dépôt local uniquement
+_inbox/*
+!_inbox/.gitkeep
