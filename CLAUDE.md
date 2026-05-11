@@ -1,5 +1,20 @@
 # artn0art — Site vitrine DJ & portfolio créatif
 
+> ## 🏠 Lecture préalable (agents Cursor/Antigravity/Claude)
+>
+> 1. **`~/Code/CLAUDE.md`** — conventions village obligatoires (safe-trash, _inbox, accès fichiers, capitalisation, convention 4 dossiers)
+> 2. **`~/Code/_hub/audits/AUDIT-VILLAGE-2026-05-11.md`** — Top 10 P0 cross-projets + plan 4 semaines
+> 3. **`_archives/audits/AUDIT-artn0art-2026-05-11.md`** — audit S140 spécifique à ce projet
+>
+> ## 🏷 Méta projet
+>
+> - **Catégorie** : actif
+> - **Score audit S140** : 2.8/5
+> - **Header standardisé** : ajouté S140 (11 mai 2026)
+>
+> ---
+
+
 
 ## Chemins d'accès
 
