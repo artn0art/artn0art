@@ -2,6 +2,8 @@
 
 > ## 🏠 Lecture préalable (agents Cursor/Antigravity/Claude)
 >
+> ⚙️ **Protocole multi-agents** (canon) → `~/Code/_projets/_agents/coordination-agents.md`
+>
 > 1. **`~/Code/CLAUDE.md`** — conventions village obligatoires (safe-trash, _inbox, accès fichiers, capitalisation, convention 4 dossiers)
 > 2. **`~/Code/_hub/audits/AUDIT-VILLAGE-2026-05-11.md`** — Top 10 P0 cross-projets + plan 4 semaines
 > 3. **`_archives/audits/AUDIT-artn0art-2026-05-11.md`** — audit S140 spécifique à ce projet
