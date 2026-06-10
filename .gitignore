@@ -14,3 +14,12 @@ Thumbs.db
 # Inbox village (S140) — dépôt local uniquement
 _inbox/*
 !_inbox/.gitkeep
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+.embold/
+.cursor/
+
+.env
+.env.local

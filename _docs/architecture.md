@@ -15,7 +15,7 @@
 - `content/` — pages en dossiers avec `_index.md` :
   - `_index.md` — accueil / hub
   - `dj/_index.md` — bio DJ
-  - `projets/_index.md` et sous-pages (`assistant2didier`, `jukbike`, `reactable`, …)
+  - `projets/_index.md` et sous-pages (`dd-a2dd`, `jukbike`, `reactable`, …)
   - `contact/_index.md`
 - `static/` — assets statiques (favicon, OG : à compléter)
 - `themes/blowfish/` — thème + `exampleSite` (ne pas confondre avec le contenu du site)
