@@ -1,85 +1,399 @@
-/* artn0art — Style inspiré de fors.fm
-   Fond gris clair, minimaliste, beaucoup d'espace */
+/* artn0art — catalogue type fors.fm/devices
+   Fond gris neutre, grille de cartes (image dominante), tags inline, sobriété
+   Tokens : _agents/conception-site/design/00-tokens.md */
 
 :root {
-  --bg-color: #ebebeb;
-  --text-color: #1a1a1a;
+  /* ——— 1. Couleurs neutres ——— */
+  --bg: #e4e4e4;
+  --surface: #ebebeb;
+  /* Hover : la carte s'éclaircit légèrement (reco P1, façon fors.fm) */
+  --row-hover: #f3f3f3;
+  --text: #141414;
+  --muted: #5a5a5a;
+  --border: rgba(0, 0, 0, 0.1);
+  --tag-border: rgba(0, 0, 0, 0.35);
+
+  /* ——— 1.2 Couleurs d'univers ——— */
+  --u-dj: #c4b5fd;
+  --u-reactable: #6ee7b7;
+  --u-jukbike: #fcd34d;
+  --u-a2dd: #93c5fd;
+  --u-musique: #fca5a5;
+
+  /* ——— 2. Typographie ——— */
+  --font-title: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+  /* Alias historique (custom.css existant) */
+  --title-font: var(--font-title);
+
+  --fs-xl: clamp(1.75rem, 4vw, 2.25rem);
+  --fs-lg: clamp(1.35rem, 3.5vw, 1.65rem);
+  --fs-md: clamp(1.15rem, 2.5vw, 1.25rem);
+  --fs-body-lead: clamp(1rem, 2vw, 1.05rem);
+  --fs-body: clamp(0.88rem, 1.5vw, 0.92rem);
+  --fs-small: clamp(0.68rem, 1.2vw, 0.72rem);
+
+  --fw-brand: 800;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  --lh-title: 1.15;
+  --lh-body: 1.5;
+  --ls-title-brand: -0.04em;
+  --ls-title: -0.02em;
+  --ls-body: 0.01em;
+
+  /* ——— 3. Espacements (grille 8px) ——— */
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem;  /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem;    /* 16px */
+  --space-5: 1.5rem;  /* 24px */
+  --space-6: 2rem;    /* 32px */
+
+  --container-max: 64rem;
+  --grid-gap-desktop: var(--space-5);
+  --grid-gap-mobile: var(--space-4);
+  --grid-breakpoint: 680px;
+
+  /* ——— 4. États (hover, focus, transitions) ——— */
+  --transition-card: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-nav: 0.15s ease;
+  --transition-image: 0.35s ease;
+
+  --shadow-card-hover: 0 10px 28px rgba(0, 0, 0, 0.09);
+  --hover-translate-y: -2px;
+  --hover-image-scale: 1.02;
+
+  --nav-opacity-hover: 0.55;
+
+  --focus-outline-width: 2px;
+  --focus-outline-color: var(--text);
+  --focus-outline-offset: 2px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: var(--bg-color) !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--bg) !important;
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Titres forts */
-h1, h2, h3 {
+/* Masquer le switch dark/light — look forcé clair type fors */
+#appearance-switcher,
+.fixed[data-url] button[title*="appearance"],
+button[aria-label*="appearance"] {
+  display: none !important;
+}
+
+/* Conteneur principal élargi pour laisser respirer la grille 2 colonnes (reco P1 ~64rem) */
+main#main-content,
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 4rem;
+}
+
+.catalog-page {
+  width: 100%;
+}
+
+/* ——— Intro (remplace le gros hero) ——— */
+.site-intro {
+  padding: 2.5rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.5rem;
+}
+
+.site-intro--compact {
+  padding-top: 1.5rem;
+}
+
+.site-title {
+  font-family: var(--title-font);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin: 0 0 0.35rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.site-lead {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+/* ——— Sections catalogue ——— */
+.catalog-section {
+  padding: 2.5rem 0 0.5rem;
+}
+
+.catalog-section + .catalog-section {
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.catalog-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.catalog-heading {
+  font-family: var(--title-font);
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
-/* Cartes projet — chaque projet aura sa couleur via classe */
-.projet-card {
-  display: block;
-  border-radius: 16px;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
+.catalog-sub {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.45;
+  max-width: 38rem;
+}
+
+/* ——— Grille de cartes “device” (fors.fm/devices, reco P1) ———
+   2 colonnes par défaut, image en haut, méta dessous ; 1 colonne sous 680px */
+.device-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 680px) {
+  .device-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.device-card {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  color: var(--text-color);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
 }
 
-.projet-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+.device-card:hover {
+  background-color: var(--row-hover);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
 }
 
-/* Couleurs univers par projet */
-.projet-card.dj       { background-color: #c4b5fd; } /* violet clair */
-.projet-card.reactable { background-color: #6ee7b7; } /* vert menthe */
-.projet-card.jukbike   { background-color: #fcd34d; } /* jaune doré */
-.projet-card.a2dd      { background-color: #93c5fd; } /* bleu clair */
-.projet-card.musique   { background-color: #fca5a5; } /* rose doux */
-
-.projet-card h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.5rem;
+.device-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--border);
 }
 
-.projet-card p {
+.device-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+/* Hover fors.fm : léger zoom de l'image (reco P1) */
+.device-card:hover .device-thumb img {
+  transform: scale(1.02);
+}
+
+.device-body {
+  padding: 1rem 1.15rem 1.25rem;
+}
+
+.device-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.device-title {
+  font-family: var(--title-font);
   margin: 0;
-  opacity: 0.8;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
 }
 
-/* Tags / badges style fors.fm */
-.badge {
+.device-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.tag {
   display: inline-block;
-  border: 1px solid var(--text-color);
-  border-radius: 20px;
-  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  padding: 0.12rem 0.55rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.35;
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.tag-status {
+  font-weight: 600;
+  border-style: dashed;
+  font-size: 0.68rem;
+  flex-shrink: 0;
+}
+
+.device-desc {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* ——— Navigation ——— */
+.main-menu {
+  background-color: var(--bg) !important;
+  border-bottom: 1px solid var(--border) !important;
+  padding: 1rem 0 !important;
+  margin-bottom: 0 !important;
+  box-shadow: none !important;
+}
+
+.main-menu a {
+  text-decoration: none !important;
+  color: var(--text) !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: opacity 0.15s ease;
+}
+
+.main-menu a:hover {
+  opacity: 0.55;
+}
+
+.main-menu a svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentColor;
+  margin-right: 0.3rem;
+}
+
+.main-menu a[href="/"],
+.main-menu a[href*="artn0art.com"] {
+  /* Titre de marque dans la nav : même grotesque serrée que les titres (P2) */
+  font-family: var(--title-font);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+
+/* ——— Pages intérieures (DJ, projets…) ——— */
+.univers-hero {
+  padding: 2rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.univers-hero h1 {
+  font-family: var(--title-font);
+  margin: 0 0 0.35rem;
+  font-size: 1.75rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.univers-hero .subtitle {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.prose {
+  max-width: none;
+}
+
+.prose img {
+  border-radius: 10px;
+  border: 1px solid var(--border);
+}
+
+/* ——— Footer discret (P4 reco-design) ———
+   Pied de page minimaliste : typo petite et grise, sobre, sur toutes les pages.
+   Structure rendue par layouts/partials/footer.html (override projet). */
+.site-footer {
+  max-width: 64rem;
+  margin: 3rem auto 0;
+  padding: 1.5rem 1.25rem 2.5rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.25rem;
   font-size: 0.8rem;
-  margin-right: 0.5rem;
+  color: var(--muted);
 }
 
-/* Section hero — accueil */
-.hero {
-  text-align: center;
-  padding: 4rem 1rem;
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
 }
 
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.site-footer__links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s ease;
 }
 
-.hero .subtitle {
-  font-size: 1.25rem;
-  opacity: 0.6;
-  font-weight: 400;
+.site-footer__links a:hover {
+  color: var(--text);
 }
 
-/* Espacement généreux comme fors.fm */
-main {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+.site-footer__copy {
+  margin: 0;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 540px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 540px) {
+  .device-body {
+    padding: 0.9rem 1rem 1.1rem;
+  }
 }
