@@ -60,7 +60,7 @@
   /* ——— 4. États (hover, focus, transitions) ——— */
   --transition-card: 0.18s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-nav: 0.15s ease;
-  --transition-image: 0.35s ease;
+  --transition-image: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 
   --shadow-card-hover: 0 10px 28px rgba(0, 0, 0, 0.09);
   --hover-translate-y: -2px;
@@ -80,7 +80,7 @@ html {
 body {
   background-color: var(--bg) !important;
   color: var(--text);
-  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -94,42 +94,243 @@ button[aria-label*="appearance"] {
 /* Conteneur principal élargi pour laisser respirer la grille 2 colonnes (reco P1 ~64rem) */
 main#main-content,
 main {
-  max-width: 64rem;
+  max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0 1.25rem 4rem;
+  padding: 0 var(--space-4) var(--space-6);
 }
 
 .catalog-page {
   width: 100%;
 }
 
-/* ——— Intro (remplace le gros hero) ——— */
+/* =============================================================================
+   Composants — spec 01-composants.md
+   ============================================================================= */
+
+/* ——— 3. Intro de page ——— */
 .site-intro {
-  padding: 2.5rem 0 2rem;
+  padding: var(--space-6) 0 var(--space-5);
   border-bottom: 1px solid var(--border);
-  margin-bottom: 0.5rem;
+  margin-bottom: var(--space-3);
 }
 
 .site-intro--compact {
-  padding-top: 1.5rem;
+  padding-top: var(--space-5);
 }
 
 .site-title {
-  font-family: var(--title-font);
-  font-size: clamp(1.75rem, 4vw, 2.25rem);
-  font-weight: 800;
-  letter-spacing: -0.04em;
-  margin: 0 0 0.35rem;
+  font-family: var(--font-title);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-brand);
+  letter-spacing: var(--ls-title-brand);
+  margin: 0 0 var(--space-1);
   line-height: 1.1;
   text-transform: uppercase;
 }
 
 .site-lead {
   margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: var(--fs-body-lead);
+  font-weight: var(--fw-regular);
   color: var(--muted);
-  letter-spacing: 0.01em;
+  letter-spacing: var(--ls-body);
+}
+
+/* ——— Grille catalogue ——— */
+.device-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--grid-gap-desktop);
+}
+
+@media (max-width: 680px) {
+  .device-list {
+    grid-template-columns: 1fr;
+    gap: var(--grid-gap-mobile);
+  }
+}
+
+/* Couleur d'univers par carte (hover bordure + badge statut) */
+#device-dj { --u-color: var(--u-dj); }
+#device-jukbike { --u-color: var(--u-jukbike); }
+#device-producteur { --u-color: var(--u-musique); }
+#device-bricodeur { --u-color: var(--u-reactable); }
+#device-sonotherapie { --u-color: var(--u-a2dd); }
+
+/* ——— 1. Carte projet (device-card) ——— */
+.device-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.875rem;
+  overflow: hidden;
+  box-shadow: none;
+  transition:
+    transform var(--transition-card),
+    box-shadow var(--transition-card),
+    background-color var(--transition-card),
+    border-color var(--transition-card);
+}
+
+.device-card:hover {
+  background-color: var(--row-hover);
+  border-color: var(--u-color, var(--border));
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(var(--hover-translate-y));
+}
+
+.device-card:focus {
+  outline: none;
+}
+
+.device-card:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 0.875rem;
+}
+
+.device-thumb {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+  border-bottom: 1px solid var(--border);
+}
+
+.device-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1);
+  transition: transform var(--transition-image);
+}
+
+.device-card:hover .device-thumb img {
+  transform: scale(var(--hover-image-scale));
+}
+
+.device-body {
+  padding: var(--space-4) var(--space-5) var(--space-5);
+}
+
+.device-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.device-title {
+  font-family: var(--font-title);
+  margin: 0;
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-title);
+  line-height: var(--lh-title);
+}
+
+.device-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  margin-bottom: var(--space-3);
+}
+
+/* ——— 2. Tags & badges ——— */
+.tag {
+  display: inline-block;
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  padding: var(--space-1) var(--space-3);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-medium);
+  line-height: 1.35;
+  white-space: nowrap;
+  color: var(--text);
+  background-color: transparent;
+}
+
+.tag-status {
+  font-weight: 600;
+  border-style: dashed;
+  border-color: var(--u-color, var(--tag-border));
+  background-color: color-mix(in srgb, var(--u-color, var(--muted)) 15%, transparent);
+  flex-shrink: 0;
+}
+
+.device-desc {
+  margin: 0;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--muted);
+}
+
+@media (max-width: 680px) {
+  .device-body {
+    padding: var(--space-4);
+  }
+}
+
+/* ——— 4. Footer discret ——— */
+.site-footer {
+  max-width: var(--container-max);
+  margin: var(--space-6) auto 0;
+  padding: var(--space-5) var(--space-4) var(--space-6);
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3) var(--space-4);
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.site-footer__links a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: opacity var(--transition-nav);
+}
+
+.site-footer__links a:hover {
+  opacity: 0.6;
+}
+
+.site-footer__links a:focus {
+  outline: none;
+}
+
+.site-footer__links a:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 2px;
+}
+
+.site-footer__copy {
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--muted);
+  letter-spacing: var(--ls-body);
+}
+
+@media (max-width: 480px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-3);
+  }
 }
 
 /* ——— Sections catalogue ——— */
@@ -161,118 +362,11 @@ main {
 }
 
 .catalog-sub {
-  margin: 0 0 1.25rem;
-  font-size: 0.95rem;
+  margin: 0 0 var(--space-4);
+  font-size: var(--fs-body-lead);
   color: var(--muted);
-  line-height: 1.45;
+  line-height: var(--lh-body);
   max-width: 38rem;
-}
-
-/* ——— Grille de cartes “device” (fors.fm/devices, reco P1) ———
-   2 colonnes par défaut, image en haut, méta dessous ; 1 colonne sous 680px */
-.device-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-@media (max-width: 680px) {
-  .device-list {
-    grid-template-columns: 1fr;
-  }
-}
-
-.device-card {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  color: inherit;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  overflow: hidden;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease;
-}
-
-.device-card:hover {
-  background-color: var(--row-hover);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.09);
-  transform: translateY(-2px);
-}
-
-.device-thumb {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid var(--border);
-}
-
-.device-thumb img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.35s ease;
-}
-
-/* Hover fors.fm : léger zoom de l'image (reco P1) */
-.device-card:hover .device-thumb img {
-  transform: scale(1.02);
-}
-
-.device-body {
-  padding: 1rem 1.15rem 1.25rem;
-}
-
-.device-meta {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 0.55rem;
-}
-
-.device-title {
-  font-family: var(--title-font);
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.25;
-}
-
-.device-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.35rem;
-  margin-bottom: 0.6rem;
-}
-
-.tag {
-  display: inline-block;
-  border: 1px solid var(--tag-border);
-  border-radius: 999px;
-  padding: 0.12rem 0.55rem;
-  font-size: 0.7rem;
-  font-weight: 500;
-  line-height: 1.35;
-  white-space: nowrap;
-  color: var(--text);
-}
-
-.tag-status {
-  font-weight: 600;
-  border-style: dashed;
-  font-size: 0.68rem;
-  flex-shrink: 0;
-}
-
-.device-desc {
-  margin: 0;
-  font-size: 0.92rem;
-  line-height: 1.5;
-  color: var(--muted);
 }
 
 /* ——— Navigation ——— */
@@ -287,13 +381,23 @@ main {
 .main-menu a {
   text-decoration: none !important;
   color: var(--text) !important;
-  font-weight: 500;
-  font-size: 0.9rem;
-  transition: opacity 0.15s ease;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-body-lead);
+  transition: opacity var(--transition-nav);
 }
 
 .main-menu a:hover {
-  opacity: 0.55;
+  opacity: var(--nav-opacity-hover);
+}
+
+.main-menu a:focus {
+  outline: none;
+}
+
+.main-menu a:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 2px;
 }
 
 .main-menu a svg {
@@ -341,59 +445,4 @@ main {
 .prose img {
   border-radius: 10px;
   border: 1px solid var(--border);
-}
-
-/* ——— Footer discret (P4 reco-design) ———
-   Pied de page minimaliste : typo petite et grise, sobre, sur toutes les pages.
-   Structure rendue par layouts/partials/footer.html (override projet). */
-.site-footer {
-  max-width: 64rem;
-  margin: 3rem auto 0;
-  padding: 1.5rem 1.25rem 2.5rem;
-  border-top: 1px solid var(--border);
-  background: var(--bg);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.75rem 1.25rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-}
-
-.site-footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.1rem;
-}
-
-.site-footer__links a {
-  color: var(--muted);
-  text-decoration: none;
-  transition: color 0.15s ease;
-}
-
-.site-footer__links a:hover {
-  color: var(--text);
-}
-
-.site-footer__copy {
-  margin: 0;
-  color: var(--muted);
-  letter-spacing: 0.01em;
-}
-
-@media (max-width: 540px) {
-  .site-footer {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.6rem;
-  }
-}
-
-/* Mobile */
-@media (max-width: 540px) {
-  .device-body {
-    padding: 0.9rem 1rem 1.1rem;
-  }
 }
