@@ -1,0 +1,39 @@
+{{ define "main" }}
+  {{ $meta := partial "projet-profil.html" . }}
+  {{ $id := $meta.id }}
+
+  <article class="projet-fiche" id="projet-{{ $id }}" data-universe="{{ $meta.universe }}">
+    {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+      <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
+        {{ partial "breadcrumbs.html" . }}
+      </nav>
+    {{ end }}
+
+    <header class="univers-hero">
+      <h1>{{ $meta.heroTitle }}</h1>
+      {{ with $meta.heroLead }}<p class="subtitle">{{ . }}</p>{{ end }}
+      {{ if or $meta.tags $meta.status }}
+        <div class="projet-meta">
+          {{ with $meta.tags }}
+            <div class="projet-tags">
+              {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+            </div>
+          {{ end }}
+          {{ with $meta.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+        </div>
+      {{ end }}
+    </header>
+
+    {{ with $meta.image }}
+      <figure class="projet-hero-image">
+        <img src="{{ . }}" alt="{{ $meta.heroTitle }}" loading="eager" width="1280" height="720" />
+      </figure>
+    {{ end }}
+
+    <div class="projet-body prose">
+      {{ .Content }}
+    </div>
+
+    {{ partial "projet-cta.html" (dict "meta" $meta "cta" .Params.cta) }}
+  </article>
+{{ end }}

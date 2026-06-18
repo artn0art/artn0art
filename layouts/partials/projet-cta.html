@@ -1,0 +1,31 @@
+{{ $meta := .meta }}
+{{ $cta := .cta }}
+{{ if $cta }}
+  <aside class="projet-cta" aria-label="Contact et réservation">
+    {{ with $cta.title }}<h2 class="projet-cta__title">{{ . }}</h2>{{ end }}
+    {{ with $cta.body }}<p class="projet-cta__body">{{ . }}</p>{{ end }}
+    {{ with $cta.pricing }}<p class="projet-cta__pricing">{{ . }}</p>{{ end }}
+    {{ with $cta.siret }}<p class="projet-cta__siret">{{ . }}</p>{{ end }}
+    {{ with $cta.emails }}
+      <p class="projet-cta__emails">
+        {{ range $i, $email := . }}
+          {{ if $i }}<span class="projet-cta__sep" aria-hidden="true"> · </span>{{ end }}
+          {{ $address := $email }}
+          {{ $label := $email }}
+          {{ if reflect.IsMap $email }}
+            {{ $address = $email.address }}
+            {{ $label = $email.label | default $email.address }}
+          {{ end }}
+          <a href="mailto:{{ $address }}">{{ $label }}</a>
+        {{ end }}
+      </p>
+    {{ end }}
+  </aside>
+{{ else }}
+  <aside class="projet-cta" aria-label="Contact">
+    <h2 class="projet-cta__title">Pour collaborer</h2>
+    <p class="projet-cta__emails">
+      <a href="mailto:artn0art@proton.me">artn0art@proton.me</a>
+    </p>
+  </aside>
+{{ end }}

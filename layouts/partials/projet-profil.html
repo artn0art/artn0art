@@ -1,0 +1,44 @@
+{{/* Résout les métadonnées catalogue (profils.yaml) pour une fiche projet. */}}
+{{ $page := . }}
+{{ $slug := $page.File.ContentBaseName }}
+{{ $slugToId := dict "massage-sonotherapie" "sonotherapie" }}
+{{ $id := $page.Params.projetId | default (index $slugToId $slug | default $slug) }}
+
+{{ $profil := dict }}
+{{ range site.Data.profils.featured }}
+  {{ if eq .id $id }}{{ $profil = . }}{{ end }}
+{{ end }}
+{{ if not (index $profil "id") }}
+  {{ range site.Data.profils.secondary }}
+    {{ if eq .id $id }}{{ $profil = . }}{{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $universeMap := dict
+  "dj" "dj"
+  "jukbike" "jukbike"
+  "producteur" "musique"
+  "bricodeur" "reactable"
+  "sonotherapie" "a2dd"
+  "reactable" "reactable"
+  "a2dd" "a2dd"
+}}
+
+{{ $heroTitle := $page.Params.heroTitle | default (index $profil "title" | default $page.Title) }}
+{{ $heroLead := $page.Params.heroLead | default $page.Description }}
+{{ $image := $page.Params.image | default (index $profil "image" | default "") }}
+{{ $tags := $page.Params.tags | default (index $profil "tags" | default slice) }}
+{{ $status := $page.Params.status | default (index $profil "status" | default "") }}
+{{ $universe := $page.Params.universe | default (index $universeMap $id | default $id) }}
+
+{{ return (dict
+  "id" $id
+  "slug" $slug
+  "universe" $universe
+  "heroTitle" $heroTitle
+  "heroLead" $heroLead
+  "image" $image
+  "tags" $tags
+  "status" $status
+  "profil" $profil
+) }}

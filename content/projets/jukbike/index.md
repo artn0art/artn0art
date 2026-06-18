@@ -1,11 +1,68 @@
 ---
-title: "Jukbike"
-description: "Le vélo sono — musique mobile en plein air"
+title: "Jukbike — Disco mobile à vélo"
+description: "Système son autonome à vélo pour animations de rue, événements extérieurs, guinguettes et déambulations musicales."
+date: 2026-04-13
+projetId: jukbike
+heroTitle: Jukbike
+heroLead: "Disco mobile & sonorisation écologique sur deux roues"
+image: /images/projet_jukbike.png
+tags: ["Plein air", "AE"]
+status: "Sur devis"
+cta:
+  title: "Pour réserver ou collaborer"
+  body: "Le Jukbike anime vos événements extérieurs, marchés, inaugurations et guinguettes."
+  pricing: "Tarif standard : ~80 € / heure · déplacement forfait Nantes Métropole 40 €, hors métropole 130 €."
+  siret: "Micro-entreprise · SIRET 849 803 325 00018 · APE 6010Z · TVA non applicable (art. 293 B du CGI)"
+  emails:
+    - address: jukbike@gmail.com
+    - address: artn0art@proton.me
 ---
 
-<!-- TODO: Contenu Jukbike à rédiger -->
-Le Jukbike, c'est un vélo équipé d'un système son autonome. Musique mobile, animations de rue, événements en plein air.
+Le **Jukbike**, c'est un sound system mobile autonome monté sur un vélo cargo. Pensé pour l'espace public, les parcs, les terrasses de guinguettes et les animations événementielles, il allie la passion de la musique à une démarche éco-responsable de proximité.
 
-## Le concept
+100% autonome sur batterie et alimenté par l'énergie humaine du cycliste, le Jukbike peut se déployer en quelques minutes sur n'importe quel site extérieur pour proposer des sets musicaux, des animations théâtrales et du chant collectif.
 
-Bientôt ici : photos du setup, specs techniques, vidéos en action.
+---
+
+## Les 4 Modules d'Animation
+
+Le Jukbike s'adapte à l'humeur et au moment de la journée à travers 4 modules combinables :
+
+### 1. Jukbox (DJ participatif)
+*   **Le concept** : Une régie DJ ouverte où le public participe à la sélection musicale. Les passants parcourent le catalogue de styles (groove, tropical, house, world) et proposent des morceaux à insérer dans le flux du set.
+*   **Ambiance** : Festive, conviviale et interactive. Idéal en journée ou en début de soirée.
+
+### 2. Crieur de Rue (Théâtre ambulant)
+*   **Le concept** : Arnaud endosse le rôle de crieur public. Muni d'un micro HF sans fil et d'une "boîte à criées", il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants.
+*   **Ambiance** : Ludique, artistique et créatrice de lien social. Parfait pour les marchés, foires ou inaugurations.
+
+### 3. Open Mic (Improvisation)
+*   **Le concept** : Mise à disposition du micro pour les musiciens, rappeurs et amateurs de poésie improvisée. Arnaud enchaîne des instrumentaux originaux (boom bap, beats tropical, ambient) produits sous Ableton Live.
+*   **Ambiance** : Créative, surprenante et valorisante. Idéal en après-midi ou à l'apéro.
+
+### 4. Karaoké de Rue (Chant collectif)
+*   **Le concept** : Une station de chant mobile en plein air avec paroles sur écran (tablette dédiée) et micros HF. Le public se rassemble pour chanter ensemble des classiques de la chanson française et internationale.
+*   **Ambiance** : Euphorique et rassembleuse. Parfait en soirée (dès 20h) pour clore un événement.
+
+---
+
+## Fiche Technique & Logistique
+
+*   **Autonomie** : Batterie Lithium haute capacité assurant 6 à 8 heures de diffusion à volume élevé.
+*   **Sonorisation** : Enceinte active pro à haut rendement, intégrée dans le châssis du vélo cargo pour un son clair et spatialisé.
+*   **Déploiement** : Pas besoin de prise électrique ni de groupe électrogène bruyant. Le setup s'installe instantanément et se déplace facilement en déambulation.
+*   **Éclairage** : Bandeaux LED intégrés pour les prestations en soirée.
+
+---
+
+## Références & Collaboration
+
+Depuis 2022, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
+*   **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
+*   **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, Véli-Vélo.
+
+### Professionnels & Collectivités
+L'activité est gérée sous statut de micro-entreprise (SIRET : `849 803 325 00018` · APE `6010Z`).
+*   **Tarif standard** : ~80 € / heure de prestation.
+*   **Déplacement** : Forfait Nantes Métropole (40 €), forfait hors métropole (130 €).
+*   *TVA non applicable (art. 293 B du CGI). Facturation et Chorus Pro disponibles.*
