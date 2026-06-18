@@ -1,0 +1,18 @@
+{{ $p := . }}
+<a href="{{ $p.href }}" class="device-card" id="device-{{ $p.id }}">
+  <div class="device-thumb">
+    <img src="{{ $p.image }}" alt="{{ $p.title }}" loading="lazy" width="800" height="600" />
+  </div>
+  <div class="device-body">
+    <div class="device-meta">
+      <h3 class="device-title">{{ $p.title }}</h3>
+      {{ with $p.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+    </div>
+    {{ with $p.tags }}
+      <div class="device-tags">
+        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    {{ end }}
+    <p class="device-desc">{{ $p.description }}</p>
+  </div>
+</a>

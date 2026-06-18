@@ -1,0 +1,15 @@
+{{ $items := .items }}
+{{ $kicker := .kicker }}
+{{ $title := .title }}
+{{ $subtitle := .subtitle }}
+
+<section class="catalog-section">
+  {{ with $kicker }}<p class="catalog-kicker">{{ . }}</p>{{ end }}
+  {{ with $title }}<h2 class="catalog-heading">{{ . }}</h2>{{ end }}
+  {{ with $subtitle }}<p class="catalog-sub">{{ . }}</p>{{ end }}
+  <div class="device-list">
+    {{ range $items }}
+      {{ partial "projet-device.html" . }}
+    {{ end }}
+  </div>
+</section>

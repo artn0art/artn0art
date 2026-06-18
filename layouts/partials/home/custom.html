@@ -1,0 +1,26 @@
+{{ $data := site.Data.profils }}
+
+<div class="catalog-page">
+  <header class="site-intro">
+    <h1 class="site-title">artn0art</h1>
+    <p class="site-lead">DJ · Musicien · Créatif · Sonothérapeute</p>
+  </header>
+
+  {{ partial "projet-catalog.html" (dict
+    "kicker" "Pour ta considération"
+    "title" "En scène"
+    "subtitle" "Les facettes que je propose en public — booking, scène et animation."
+    "items" $data.featured
+  ) }}
+
+  {{ partial "projet-catalog.html" (dict
+    "kicker" "En coulisses"
+    "title" "Autres facettes"
+    "subtitle" "Studio, code, soins — expérimentations et créations en arrière-plan."
+    "items" $data.secondary
+  ) }}
+
+  {{ with .Content }}
+    <div class="catalog-extra prose dark:prose-invert">{{ . }}</div>
+  {{ end }}
+</div>

@@ -1,0 +1,44 @@
+# Catalogues artn0art — source unique pour la home et /projets/
+# Style liste type fors.fm/devices
+
+featured:
+  - id: dj
+    href: /dj/
+    title: "DJ / Mixage"
+    image: /images/univers_dj.png
+    tags: ["Live Set"]
+    status: "Booking ouvert"
+    description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
+
+  - id: jukbike
+    href: /projets/jukbike/
+    title: Jukbike
+    image: /images/projet_jukbike.png
+    tags: ["Plein air"]
+    status: "Sur devis"
+    description: "Le vélo-sono : disco mobile et autonome qui roule là où la fête manque."
+
+secondary:
+  - id: producteur
+    href: /projets/producteur/
+    title: Producteur
+    image: /images/projet_producteur.png
+    tags: ["Studio"]
+    status: "Boom Bap & Global"
+    description: "Beats taillés à la main, du boom bap poussiéreux aux basses ensoleillées."
+
+  - id: bricodeur
+    href: /projets/bricodeur/
+    title: Bricodeur
+    image: /images/projet_bricodeur.png
+    tags: ["Atelier"]
+    status: "Audio DIY"
+    description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles sonores."
+
+  - id: sonotherapie
+    href: /projets/massage-sonotherapie/
+    title: "Massage & Sonothérapie"
+    image: /images/projet_sonotherapie.png
+    tags: ["Cabinet"]
+    status: Relaxation
+    description: "Le corps qui se relâche, le son qui dénoue : bains vibratoires et toucher."

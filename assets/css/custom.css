@@ -136,11 +136,12 @@ main {
   letter-spacing: var(--ls-body);
 }
 
-/* ——— Grille catalogue ——— */
+/* ——— Grille catalogue (home fors.fm — spec 02-home) ——— */
 .device-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--grid-gap-desktop);
+  gap: 1.5rem;
+  align-items: stretch;
 }
 
 @media (max-width: 680px) {
@@ -161,6 +162,7 @@ main {
 .device-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   text-decoration: none;
   color: inherit;
   background-color: var(--surface);
@@ -214,6 +216,9 @@ main {
 }
 
 .device-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   padding: var(--space-4) var(--space-5) var(--space-5);
 }
 
