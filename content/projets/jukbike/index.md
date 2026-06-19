@@ -46,6 +46,47 @@ Le Jukbike s'adapte à l'humeur et au moment de la journée à travers 4 modules
 
 ---
 
+## Les Ateliers d'Échange & d'Initiation
+
+En parallèle des prestations de scène, le Jukbike propose des ateliers pédagogiques et interactifs de découverte des arts sonores, du rythme et du souffle :
+
+### 1. Djing (Mixage & Sélection)
+Initiation au mix : transitions, scratch, sélection musicale. Découverte de l'histoire du DJing et bases techniques. Pratique sur platines professionnelles et contrôleurs numériques.
+*   *Public* : Adolescents & Adultes · *Durée* : 1h30 à 2h
+
+### 2. Beatbox (Percussion Vocale)
+Découverte des percussions vocales et du beatmaking oral (kick, snare, hi-hat, rythmes de base). Approche ludique et participative.
+*   *Public* : Adolescents & Adultes · *Durée* : 1h à 1h30
+
+### 3. Production Sonore (MAO)
+Initiation à la création musicale assistée par ordinateur. Appréhension du rythme, de la mélodie et du silence. Découverte des outils : séquenceur, synthétiseur, samplers.
+*   *Public* : À partir de 8 ans · *Durée* : 1h30 à 2h
+
+### 4. Circle Song (Improvisation Collective)
+Improvisation vocale collective en cercle. Création spontanée, écoute active et harmonie de groupe. Pas besoin de savoir chanter — tout le monde participe !
+*   *Public* : Tout public · *Durée* : 1h à 2h
+
+### 5. Didgeridoo & Souffle Circulaire
+Initiation au souffle circulaire et aux techniques de jeu. Rythmes de base et variations sonores sur cet instrument traditionnel emblématique d'Australie.
+*   *Public* : Tout public · *Durée* : 1h à 1h30
+
+### 6. Chant Diphonique (Harmonique)
+Exploration des techniques de chant harmonique issu des traditions mongoles et sibériennes. Travail du souffle, de la résonance et des harmoniques.
+*   *Public* : Adultes · *Durée* : 1h à 1h30
+
+---
+
+## Genèse & Chiffres Clés
+
+Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la musique au sein de l'équipe de l'atelier de réparation **Beebike** à Nantes. À force de réparer des vélos et d'écouter de la musique toute la journée, l'idée du triporteur-sono a vu le jour.
+
+*   **Mars 2023** : Émergence du concept, recherches de faisabilité et création de l'identité graphique.
+*   **Avril 2023** : Début de la construction et assemblage de la sonorisation autonome.
+*   **Mai 2023** : Lancement officiel et première prestation.
+*   **Les chiffres** : Plus de **50 prestations**, **11 clients réguliers** et **4 collectivités territoriales** partenaires.
+
+---
+
 ## Fiche Technique & Logistique
 
 *   **Autonomie** : Batterie Lithium haute capacité assurant 6 à 8 heures de diffusion à volume élevé.
