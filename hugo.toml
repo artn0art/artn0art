@@ -14,14 +14,17 @@ theme = "blowfish"
   [[menu.main]]
     name = "Projets"
     pageRef = "projets"
+    pre = "star"
     weight = 10
   [[menu.main]]
     name = "DJ"
     pageRef = "dj"
+    pre = "music"
     weight = 20
   [[menu.main]]
     name = "Contact"
     pageRef = "contact"
+    pre = "envelope"
     weight = 30
 
 # Blowfish params
@@ -44,6 +47,7 @@ theme = "blowfish"
 
   [params.header]
     layout = "basic"
+    showTitle = false
 
   [params.footer]
     showCopyright = true

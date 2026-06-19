@@ -97,23 +97,22 @@ artn0art/
 
 ## État courant
 
-- **v0.1** — Scaffold Hugo + Blowfish créé (S87, 2026-03-25)
-  - hugo.toml configuré (FR, Blowfish, navigation, author)
-  - CSS custom avec fond gris #ebebeb et cartes colorées par projet
-  - Pages : accueil hub, DJ, projets (reactable, jukbike, a2dd), contact
-  - Build Hugo OK (17 pages FR)
-  - Domaine acheté OVH ✅
-  - Comptes en cours de création (Proton, GitHub, Instagram, SoundCloud)
+- **v0.2.1** — Design de cartes fors.fm & contenu validés (S143, 2026-06-17)
+  - Hugo v0.163.2 installé, build local 100% vert (20 pages, 14 fichiers statiques).
+  - Cartes projets redessinées sur le modèle de `fors.fm/devices` (images intégrées, icônes SVG personnalisées et badges).
+  - Page d'accueil réorganisée (profils principaux DJ/Jukbike + secondaires Producteur/Bricodeur/Masseur).
+  - Fiches rédigées pour tous les profils, tous les TODOs retirés.
+  - 5 illustrations premium générées par IA et intégrées.
+  - Decap CMS configuré dans `static/admin/`.
+  - Repo local propre et à jour avec `origin/main` (GitHub : github.com/artn0art/artn0art).
 
 ## Prochaines étapes
 
-1. Créer les comptes (Proton, GitHub, Instagram, SoundCloud) avec artn0art@proton.me
-2. Push le repo sur GitHub (github.com/artn0art/artn0art)
-3. Configurer Decap CMS (admin panel)
-4. Déployer sur Netlify (premier déploiement)
-5. Rédiger le vrai contenu (bio DJ, descriptions projets, photos)
-6. Connecter le domaine artn0art.com (OVH → Netlify)
-7. Peaufiner le style et l'identité visuelle de chaque univers
+1. Configurer l'hébergement (Netlify ou Cloudflare Pages) à partir du dépôt GitHub.
+2. Associer le domaine acheté `artn0art.com` (OVH) à l'hébergement et configurer le SSL.
+3. Configurer Netlify Identity (ou équivalent) sur le tableau de bord d'hébergement pour activer l'authentification sécurisée de Decap CMS.
+4. Ajouter un favicon personnalisé et une image de partage (OG Image) dans `static/`.
+5. Continuer d'alimenter les rubriques secondaires au fil de vos chantiers.
 
 
 ## ⚠️ Accès aux fichiers — protocole impératif
