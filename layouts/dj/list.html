@@ -29,7 +29,7 @@
 
     {{ with .Params.image }}
       <figure class="projet-hero-image">
-        <img src="{{ . }}" alt="Illustration représentative de l'univers {{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
+        <img src="{{ . }}" alt="Illustration représentative de {{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
       </figure>
     {{ end }}
 

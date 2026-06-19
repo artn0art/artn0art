@@ -980,3 +980,10 @@ main {
   border-radius: 10px;
   border: 1px solid var(--border);
 }
+
+/* Espacement vertical des listes denses sur mobile (P3 responsive) */
+@media (max-width: 680px) {
+  .projet-body.prose li {
+    margin-bottom: var(--space-2);
+  }
+}
