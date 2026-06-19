@@ -139,14 +139,13 @@ main {
 /* ——— Grille catalogue (home fors.fm — spec 02-home) ——— */
 .device-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   align-items: stretch;
 }
 
 @media (max-width: 680px) {
   .device-list {
-    grid-template-columns: 1fr;
     gap: var(--grid-gap-mobile);
   }
 }
@@ -177,6 +176,12 @@ main {
     border-color var(--transition-card);
 }
 
+@media (min-width: 681px) {
+  .device-card {
+    flex-direction: row;
+  }
+}
+
 .device-card:hover {
   background-color: var(--row-hover);
   border-color: var(--u-color, var(--border));
@@ -200,6 +205,16 @@ main {
   overflow: hidden;
   background: rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+@media (min-width: 681px) {
+  .device-thumb {
+    width: 40%;
+    max-width: 25rem;
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+  }
 }
 
 .device-thumb img {
@@ -220,6 +235,12 @@ main {
   flex-direction: column;
   flex: 1;
   padding: var(--space-4) var(--space-5) var(--space-5);
+}
+
+@media (min-width: 681px) {
+  .device-body {
+    justify-content: center;
+  }
 }
 
 .device-meta {

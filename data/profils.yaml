@@ -2,14 +2,6 @@
 # Descriptions ≤ 90 caractères (spec 01-composants / 04-pages)
 
 featured:
-  - id: dj
-    href: /dj/
-    title: "DJ / Mixage"
-    image: /images/univers_dj.webp
-    tags: ["Live Set"]
-    status: "Booking ouvert"
-    description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
-
   - id: jukbike
     href: /projets/jukbike/
     title: Jukbike
@@ -17,6 +9,14 @@ featured:
     tags: ["Plein air"]
     status: "Sur devis"
     description: "Le vélo-sono : disco mobile et autonome qui roule là où la fête manque."
+
+  - id: dj
+    href: /dj/
+    title: "DJ / Mixage"
+    image: /images/univers_dj.webp
+    tags: ["Live Set"]
+    status: "Booking ouvert"
+    description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
 
 secondary:
   - id: producteur
