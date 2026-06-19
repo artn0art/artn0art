@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <article class="contact-page">
+    {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+      <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
+        <ol class="projet-breadcrumbs__list">
+          <li class="projet-breadcrumbs__item">
+            <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+            <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+          </li>
+          <li class="projet-breadcrumbs__item projet-breadcrumbs__item--current" aria-current="page">
+            <span>{{ .Title }}</span>
+          </li>
+        </ol>
+      </nav>
+    {{ end }}
+
+    <header class="contact-hero">
+      <h1>{{ .Title }}</h1>
+      <p class="contact-hero__lead">{{ .Params.heroLead | default .Description }}</p>
+    </header>
+
+    <div class="contact-grid">
+      <section class="contact-block" aria-labelledby="contact-direct-title">
+        <h2 id="contact-direct-title" class="contact-block__title">Booking & collaboration</h2>
+        <p class="contact-block__email">
+          <a href="mailto:{{ .Params.email | default "artn0art@proton.me" }}">{{ .Params.email | default "artn0art@proton.me" }}</a>
+        </p>
+        <p class="contact-block__hint">Point d'entrée pour programmations, collaborations et demandes pro.</p>
+      </section>
+
+      <section class="contact-block" aria-labelledby="contact-social-title">
+        <h2 id="contact-social-title" class="contact-block__title">Réseaux</h2>
+        <ul class="contact-social">
+          <li><a href="https://instagram.com/artn0art" rel="noopener noreferrer" target="_blank">Instagram · @artn0art</a></li>
+          <li><a href="https://soundcloud.com/artn0art" rel="noopener noreferrer" target="_blank">SoundCloud · artn0art</a></li>
+          <li><a href="https://github.com/artn0art" rel="noopener noreferrer" target="_blank">GitHub · artn0art</a></li>
+        </ul>
+      </section>
+    </div>
+
+    {{ with .Content }}
+      <div class="contact-extra prose">{{ . }}</div>
+    {{ end }}
+
+    <footer class="contact-admin">
+      <p>Statut administratif : auto-entreprise · SIRET 849 803 325 00018 · TVA non applicable (art. 293 B du CGI)</p>
+    </footer>
+  </article>
+{{ end }}

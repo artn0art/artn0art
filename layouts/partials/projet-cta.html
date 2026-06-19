@@ -6,6 +6,7 @@
     {{ with $cta.body }}<p class="projet-cta__body">{{ . }}</p>{{ end }}
     {{ with $cta.pricing }}<p class="projet-cta__pricing">{{ . }}</p>{{ end }}
     {{ with $cta.siret }}<p class="projet-cta__siret">{{ . }}</p>{{ end }}
+    {{ with $cta.extra }}<p class="projet-cta__extra">{{ . }}</p>{{ end }}
     {{ with $cta.emails }}
       <p class="projet-cta__emails">
         {{ range $i, $email := . }}

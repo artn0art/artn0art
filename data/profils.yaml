@@ -1,5 +1,5 @@
 # Catalogues artn0art — source unique pour la home et /projets/
-# Style liste type fors.fm/devices
+# Descriptions ≤ 90 caractères (spec 01-composants / 04-pages)
 
 featured:
   - id: dj
@@ -33,12 +33,12 @@ secondary:
     image: /images/projet_bricodeur.png
     tags: ["Atelier"]
     status: "Audio DIY"
-    description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles sonores."
+    description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles."
 
   - id: sonotherapie
     href: /projets/massage-sonotherapie/
     title: "Massage & Sonothérapie"
     image: /images/projet_sonotherapie.png
     tags: ["Cabinet"]
-    status: Relaxation
+    status: "Relaxation"
     description: "Le corps qui se relâche, le son qui dénoue : bains vibratoires et toucher."

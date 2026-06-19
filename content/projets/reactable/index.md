@@ -1,10 +1,23 @@
 ---
 title: "Reactable — instrument tangible"
-description: "Performance live interactive : des disques sur une table deviennent des couches sonores spatialisées."
+description: "Performance live interactive : des disques sur une table deviennent des couches sonores."
 date: 2026-04-14
+projetId: reactable
+heroTitle: "Reactable — instrument tangible"
+heroLead: "Performance live interactive : des disques sur une table deviennent des couches sonores."
+image: /images/projet_bricodeur.png
+tags: ["Recherche"]
+status: "R&D en cours"
+universe: reactable
+breadcrumbTrail:
+  - title: Bricodeur
+    href: /projets/bricodeur/
+cta:
+  title: "Discuter de l'instrumentation tangible"
+  body: "Échanges techniques sur la musique tangible, la spatialisation et les performances live."
+  emails:
+    - artn0art@proton.me
 ---
-
-# Reactable — instrument tangible
 
 Un **instrument de musique tangible** : on pose des disques sur une table rétroéclairée, le logiciel détecte leur position, leur orientation et leur présence, puis génère du son en temps réel dans un espace sonore multi-canal.
 

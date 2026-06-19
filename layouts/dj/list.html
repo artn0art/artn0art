@@ -1,0 +1,49 @@
+{{ define "main" }}
+  <article class="projet-fiche" id="projet-dj" data-universe="dj">
+    {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+      <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
+        <ol class="projet-breadcrumbs__list">
+          <li class="projet-breadcrumbs__item">
+            <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+            <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+          </li>
+          <li class="projet-breadcrumbs__item projet-breadcrumbs__item--current" aria-current="page">
+            <span>{{ .Params.heroTitle | default "DJ" }}</span>
+          </li>
+        </ol>
+      </nav>
+    {{ end }}
+
+    <header class="univers-hero">
+      <h1>{{ .Params.heroTitle | default "DJ / Mixage" }}</h1>
+      <p class="subtitle">{{ .Params.heroLead | default .Description }}</p>
+      <div class="projet-meta">
+        {{ with .Params.tags }}
+          <div class="projet-tags">
+            {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+          </div>
+        {{ end }}
+        {{ with .Params.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+
+    {{ with .Params.image }}
+      <figure class="projet-hero-image">
+        <img src="{{ . }}" alt="{{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
+      </figure>
+    {{ end }}
+
+    <div class="projet-body prose">
+      {{ .Content }}
+    </div>
+
+    {{ if .Params.soundcloud | default true }}
+      <section class="projet-listen" aria-labelledby="projet-listen-title">
+        <h2 id="projet-listen-title" class="projet-listen__title">Écouter</h2>
+        {{ partial "projet-soundcloud.html" (dict "color" "%23c4b5fd") }}
+      </section>
+    {{ end }}
+
+    {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}
+  </article>
+{{ end }}

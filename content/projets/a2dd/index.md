@@ -1,10 +1,23 @@
 ---
 title: "a2dd — Assistant 2 Didier"
-description: "Pipeline de gestion et d'enrichissement de collection musicale DJ — 5310 tracks, 32 genres."
+description: "Pipeline de gestion et d'enrichissement de collection musicale DJ."
 date: 2026-04-14
+projetId: a2dd
+heroTitle: "a2dd — Assistant 2 Didier"
+heroLead: "Pipeline de gestion et d'enrichissement de collection musicale DJ."
+image: /images/projet_a2dd.png
+tags: ["Python"]
+status: "5310 tracks"
+universe: a2dd
+breadcrumbTrail:
+  - title: Bricodeur
+    href: /projets/bricodeur/
+cta:
+  title: "Échanger sur le catalogage automatisé"
+  body: "Scripts DJ, enrichissement de bibliothèque et intégration APIs Discogs / Spotify."
+  emails:
+    - artn0art@proton.me
 ---
-
-# a2dd — Assistant 2 Didier
 
 **a2dd** est un outil sur mesure pour gérer, trier et enrichir une collection musicale de DJ. L'idée de départ : 15 ans de tracks accumulés dans un seul dossier, sans logique, sans métadonnées utiles. L'outil restaure le sens — un à un — jusqu'à faire revivre la bibliothèque.
 
@@ -45,4 +58,4 @@ Parce que mixer avec 5000 tracks sans structure, c'est un enfer. Parce que chaqu
 
 ## Liens
 
-Suivez l'avancée et les écoutes : [Soundcloud artn0art](https://soundcloud.com/artn0art)
+Suivez l'avancée et les écoutes : [SoundCloud artn0art](https://soundcloud.com/artn0art)

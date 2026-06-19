@@ -446,15 +446,26 @@ main {
   color: var(--muted);
 }
 
-.projet-breadcrumbs ol {
+.projet-breadcrumbs ol,
+.projet-breadcrumbs__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.projet-breadcrumbs li {
+.projet-breadcrumbs li,
+.projet-breadcrumbs__item {
   display: inline;
   color: var(--muted);
+}
+
+.projet-breadcrumbs__item--current span {
+  color: var(--text);
+}
+
+.projet-breadcrumbs__sep {
+  color: var(--muted);
+  padding: 0 var(--space-1);
 }
 
 .projet-breadcrumbs a {
@@ -639,6 +650,7 @@ main {
 .projet-cta__body,
 .projet-cta__pricing,
 .projet-cta__siret,
+.projet-cta__extra,
 .projet-cta__emails {
   margin: 0 0 var(--space-2);
   font-size: var(--fs-body);
@@ -692,6 +704,226 @@ main {
     margin-inline: calc(-1 * var(--space-4));
     border-radius: 0;
     border-right: none;
+  }
+}
+
+/* ——— DJ : lecteur SoundCloud (spec 04-pages) ——— */
+.projet-listen {
+  margin: var(--space-6) 0;
+  max-width: 45rem;
+}
+
+.projet-listen__title {
+  font-family: var(--font-title);
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-title);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.projet-soundcloud {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.projet-soundcloud iframe {
+  display: block;
+  width: 100%;
+  min-height: 300px;
+  border: none;
+}
+
+.projet-soundcloud__link {
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--fs-small);
+  color: var(--muted);
+  border-top: 1px solid var(--border);
+}
+
+.projet-soundcloud__link a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.projet-soundcloud__link a:hover {
+  color: var(--u-color, var(--text));
+}
+
+/* ——— Bricodeur : liens hub vers sous-fiches ——— */
+.projet-body.prose a.projet-hub-link {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  transition: color var(--transition-nav), border-color var(--transition-nav);
+}
+
+.projet-body.prose a.projet-hub-link:hover {
+  color: var(--u-color, var(--text));
+  border-bottom-color: var(--u-color, var(--text));
+}
+
+/* ——— Sonothérapie : 6 intentions (rythme zen) ——— */
+#projet-sonotherapie .projet-body ol {
+  margin: var(--space-4) 0;
+  padding-left: var(--space-5);
+}
+
+#projet-sonotherapie .projet-body ol li + li {
+  margin-top: var(--space-3);
+}
+
+/* ——— Reactable : diagramme technique monospace ——— */
+.projet-body.prose pre {
+  margin: var(--space-4) 0;
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: var(--fs-small);
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.projet-body.prose pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ——— Page Contact (spec 04-pages) ——— */
+.contact-page {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.contact-hero {
+  padding: var(--space-6) 0 var(--space-5);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--space-5);
+  background: transparent;
+}
+
+.contact-hero h1 {
+  font-family: var(--font-title);
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-brand);
+  letter-spacing: var(--ls-title-brand);
+  text-transform: uppercase;
+}
+
+.contact-hero__lead {
+  margin: 0;
+  font-size: var(--fs-body-lead);
+  color: var(--muted);
+  line-height: var(--lh-body);
+  max-width: 45rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.contact-block__title {
+  font-family: var(--font-title);
+  margin: 0 0 var(--space-3);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-title);
+}
+
+.contact-block__email {
+  margin: 0 0 var(--space-2);
+  font-size: var(--fs-body-lead);
+}
+
+.contact-block__email a {
+  color: var(--text);
+  font-weight: var(--fw-medium);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.contact-block__email a:hover {
+  opacity: var(--nav-opacity-hover);
+}
+
+.contact-block__email a:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 2px;
+}
+
+.contact-block__hint {
+  margin: 0;
+  font-size: var(--fs-body);
+  color: var(--muted);
+  line-height: var(--lh-body);
+}
+
+.contact-social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-social li + li {
+  margin-top: var(--space-2);
+}
+
+.contact-social a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--fs-body);
+  transition: opacity var(--transition-nav);
+}
+
+.contact-social a:hover {
+  opacity: var(--nav-opacity-hover);
+}
+
+.contact-social a:focus-visible {
+  outline: var(--focus-outline-width) solid var(--focus-outline-color);
+  outline-offset: var(--focus-outline-offset);
+  border-radius: 2px;
+}
+
+.contact-admin {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--border);
+}
+
+.contact-admin p {
+  margin: 0;
+  font-size: var(--fs-small);
+  color: var(--muted);
+  line-height: var(--lh-body);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .projet-soundcloud iframe {
+    min-height: 220px;
   }
 }
 

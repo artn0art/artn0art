@@ -1,0 +1,24 @@
+<ol class="projet-breadcrumbs__list">
+  <li class="projet-breadcrumbs__item">
+    <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+    <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+  </li>
+
+  {{ if eq .Section "projets" }}
+    {{ $projets := site.GetPage "section" "projets" }}
+    <li class="projet-breadcrumbs__item">
+      <a href="{{ $projets.RelPermalink }}">{{ $projets.Title }}</a>
+      <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+    </li>
+    {{ range .Params.breadcrumbTrail }}
+      <li class="projet-breadcrumbs__item">
+        <a href="{{ .href }}">{{ .title }}</a>
+        <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+      </li>
+    {{ end }}
+  {{ end }}
+
+  <li class="projet-breadcrumbs__item projet-breadcrumbs__item--current" aria-current="page">
+    <span>{{ .Title }}</span>
+  </li>
+</ol>

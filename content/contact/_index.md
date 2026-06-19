@@ -1,14 +1,6 @@
 ---
 title: "Contact"
-description: "Me contacter"
+description: "Discutons de vos projets, programmations ou collaborations."
+heroLead: "Discutons de vos projets, programmations ou collaborations."
+email: artn0art@proton.me
 ---
-
-## Booking & collaboration
-
-**Email** : [artn0art@proton.me](mailto:artn0art@proton.me)
-
-## Réseaux
-
-- [Instagram](https://instagram.com/artn0art)
-- [SoundCloud](https://soundcloud.com/artn0art)
-- [GitHub](https://github.com/artn0art)

@@ -5,7 +5,7 @@
   <article class="projet-fiche" id="projet-{{ $id }}" data-universe="{{ $meta.universe }}">
     {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
       <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
-        {{ partial "breadcrumbs.html" . }}
+        {{ partial "projet-breadcrumbs.html" . }}
       </nav>
     {{ end }}
 
