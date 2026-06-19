@@ -5,7 +5,7 @@ date: 2026-04-13
 projetId: jukbike
 heroTitle: Jukbike
 heroLead: "Disco mobile & sonorisation écologique sur deux roues"
-image: /images/projet_jukbike.png
+image: /images/projet_jukbike.webp
 tags: ["Plein air", "AE"]
 status: "Sur devis"
 cta:

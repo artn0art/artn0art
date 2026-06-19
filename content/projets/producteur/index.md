@@ -5,7 +5,7 @@ date: 2026-04-14
 projetId: producteur
 heroTitle: "Production Musicale"
 heroLead: "Compositions originales, sound design & lives électroniques."
-image: /images/projet_producteur.png
+image: /images/projet_producteur.webp
 tags: ["Studio"]
 status: "Boom Bap & Global"
 cta:

@@ -3,7 +3,7 @@ title: "DJ"
 description: "Sets éclectiques, technique & voyage sonore."
 heroTitle: "DJ / Mixage"
 heroLead: "Sets éclectiques, technique & voyage sonore."
-image: /images/univers_dj.png
+image: /images/univers_dj.webp
 tags: ["Live Set", "Sélection"]
 status: "Booking ouvert"
 soundcloud: true

@@ -5,7 +5,7 @@ date: 2026-04-14
 projetId: reactable
 heroTitle: "Reactable — instrument tangible"
 heroLead: "Performance live interactive : des disques sur une table deviennent des couches sonores."
-image: /images/projet_bricodeur.png
+image: /images/projet_bricodeur.webp
 tags: ["Recherche"]
 status: "R&D en cours"
 universe: reactable

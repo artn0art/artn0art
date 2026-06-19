@@ -5,7 +5,7 @@ date: 2026-04-15
 projetId: sonotherapie
 heroTitle: "Massage & Sonothérapie"
 heroLead: "Soins corporels, vibrations sonores & équilibre émotionnel."
-image: /images/projet_sonotherapie.png
+image: /images/projet_sonotherapie.webp
 tags: ["Cabinet"]
 status: "Relaxation"
 cta:

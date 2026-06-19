@@ -5,7 +5,7 @@ date: 2026-04-14
 projetId: a2dd
 heroTitle: "a2dd — Assistant 2 Didier"
 heroLead: "Pipeline de gestion et d'enrichissement de collection musicale DJ."
-image: /images/projet_a2dd.png
+image: /images/projet_bricodeur.webp
 tags: ["Python"]
 status: "5310 tracks"
 universe: a2dd

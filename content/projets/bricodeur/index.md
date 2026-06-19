@@ -5,7 +5,7 @@ date: 2026-04-14
 projetId: bricodeur
 heroTitle: "Bricodeur / Créatif Tech"
 heroLead: "Code, électronique DIY & détournement d'outils audio."
-image: /images/projet_bricodeur.png
+image: /images/projet_bricodeur.webp
 tags: ["Atelier"]
 status: "Audio DIY"
 cta:

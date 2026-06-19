@@ -237,6 +237,9 @@ main {
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls-title);
   line-height: var(--lh-title);
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .device-tags {
@@ -278,6 +281,10 @@ main {
 @media (max-width: 680px) {
   .device-body {
     padding: var(--space-4);
+  }
+
+  .projet-body.prose li {
+    margin-bottom: var(--space-2);
   }
 }
 
@@ -514,6 +521,9 @@ main {
   letter-spacing: -0.03em;
   line-height: var(--lh-title);
   text-transform: none;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .projet-fiche .univers-hero .subtitle {
@@ -605,7 +615,10 @@ main {
 }
 
 .projet-body.prose a:hover {
-  color: var(--u-color, var(--text));
+  color: var(--text);
+  text-decoration-color: var(--u-color, var(--text));
+  background-color: color-mix(in srgb, var(--u-color, var(--muted)) 15%, transparent);
+  border-radius: 2px;
 }
 
 .projet-body.prose a:focus {
@@ -670,7 +683,10 @@ main {
 }
 
 .projet-cta__emails a:hover {
-  color: var(--u-color, var(--text));
+  color: var(--text);
+  text-decoration-color: var(--u-color, var(--text));
+  background-color: color-mix(in srgb, var(--u-color, var(--muted)) 15%, transparent);
+  border-radius: 2px;
 }
 
 .projet-cta__emails a:focus {
@@ -752,7 +768,10 @@ main {
 }
 
 .projet-soundcloud__link a:hover {
-  color: var(--u-color, var(--text));
+  color: var(--text);
+  text-decoration-color: var(--u-color, var(--text));
+  background-color: color-mix(in srgb, var(--u-color, var(--muted)) 15%, transparent);
+  border-radius: 2px;
 }
 
 /* ——— Bricodeur : liens hub vers sous-fiches ——— */
@@ -767,8 +786,10 @@ main {
 }
 
 .projet-body.prose a.projet-hub-link:hover {
-  color: var(--u-color, var(--text));
+  color: var(--text);
+  text-decoration-color: var(--u-color, var(--text));
   border-bottom-color: var(--u-color, var(--text));
+  background-color: color-mix(in srgb, var(--u-color, var(--muted)) 15%, transparent);
 }
 
 /* ——— Sonothérapie : 6 intentions (rythme zen) ——— */
@@ -822,6 +843,9 @@ main {
   font-weight: var(--fw-brand);
   letter-spacing: var(--ls-title-brand);
   text-transform: uppercase;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
 }
 
 .contact-hero__lead {
