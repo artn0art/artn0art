@@ -1,0 +1,20 @@
+{{ define "main" }}
+  {{ $data := site.Data.profils }}
+  {{ $items := $data.featured }}
+  {{ range $data.secondary }}
+    {{ $items = $items | append . }}
+  {{ end }}
+  <div class="catalog-page">
+    <header class="site-intro site-intro--compact">
+      <h1 class="site-title">{{ .Title }}</h1>
+      {{ with .Description }}<p class="site-lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ partial "projet-catalog.html" (dict
+      "kicker" "Catalogue"
+      "title" "Toutes les facettes"
+      "subtitle" "De la scène au studio — chaque ligne mène vers une page dédiée."
+      "items" $items
+    ) }}
+  </div>
+{{ end }}
