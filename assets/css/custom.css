@@ -156,6 +156,7 @@ main {
 #device-producteur { --u-color: var(--u-musique); }
 #device-bricodeur { --u-color: var(--u-reactable); }
 #device-sonotherapie { --u-color: var(--u-a2dd); }
+#device-ateliers { --u-color: var(--u-musique); }
 
 /* ——— 1. Carte projet (device-card) ——— */
 .device-card {
@@ -455,7 +456,8 @@ main {
 /* Couleur d'univers par fiche projet */
 #projet-dj { --u-color: var(--u-dj); }
 #projet-jukbike { --u-color: var(--u-jukbike); }
-#projet-producteur { --u-color: var(--u-musique); }
+#projet-producteur,
+#projet-ateliers { --u-color: var(--u-musique); }
 #projet-bricodeur,
 #projet-reactable { --u-color: var(--u-reactable); }
 #projet-sonotherapie,

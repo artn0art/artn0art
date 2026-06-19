@@ -1,16 +1,16 @@
 ---
 title: "Jukbike — Disco mobile à vélo"
-description: "Système son autonome à vélo pour animations de rue, événements extérieurs, guinguettes et déambulations musicales."
+description: "Système son autonome à vélo pour festivals, vide-greniers, animations de rue, événements extérieurs, guinguettes."
 date: 2026-04-13
 projetId: jukbike
 heroTitle: Jukbike
 heroLead: "Disco mobile & sonorisation écologique sur deux roues"
 image: /images/projet_jukbike.webp
-tags: ["Plein air", "AE"]
+tags: ["Plein air", "AE", "Festivals", "Vide-greniers"]
 status: "Sur devis"
 cta:
   title: "Pour réserver ou collaborer"
-  body: "Le Jukbike anime vos événements extérieurs, marchés, inaugurations et guinguettes."
+  body: "Le Jukbike anime vos événements extérieurs, festivals, vide-greniers, marchés, inaugurations et guinguettes."
   pricing: "Tarif standard : ~80 € / heure · déplacement forfait Nantes Métropole 40 €, hors métropole 130 €."
   siret: "Micro-entreprise · SIRET 849 803 325 00018 · APE 6010Z · TVA non applicable (art. 293 B du CGI)"
   emails:
@@ -18,7 +18,7 @@ cta:
     - address: artn0art@proton.me
 ---
 
-Le **Jukbike**, c'est un sound system mobile autonome monté sur un vélo cargo. Pensé pour l'espace public, les parcs, les terrasses de guinguettes et les animations événementielles, il allie la passion de la musique à une démarche éco-responsable de proximité.
+Le **Jukbike**, c'est un sound system mobile autonome monté sur un vélo cargo. Pensé pour l'espace public, les parcs, les festivals, les vide-greniers, les terrasses de guinguettes et les animations événementielles, il allie la passion de la musique à une démarche éco-responsable de proximité.
 
 100% autonome sur batterie et alimenté par l'énergie humaine du cycliste, le Jukbike peut se déployer en quelques minutes sur n'importe quel site extérieur pour proposer des sets musicaux, des animations théâtrales et du chant collectif.
 
@@ -46,36 +46,6 @@ Le Jukbike s'adapte à l'humeur et au moment de la journée à travers 4 modules
 
 ---
 
-## Les Ateliers d'Échange & d'Initiation
-
-En parallèle des prestations de scène, le Jukbike propose des ateliers pédagogiques et interactifs de découverte des arts sonores, du rythme et du souffle :
-
-### 1. Djing (Mixage & Sélection)
-Initiation au mix : transitions, scratch, sélection musicale. Découverte de l'histoire du DJing et bases techniques. Pratique sur platines professionnelles et contrôleurs numériques.
-*   *Public* : Adolescents & Adultes · *Durée* : 1h30 à 2h
-
-### 2. Beatbox (Percussion Vocale)
-Découverte des percussions vocales et du beatmaking oral (kick, snare, hi-hat, rythmes de base). Approche ludique et participative.
-*   *Public* : Adolescents & Adultes · *Durée* : 1h à 1h30
-
-### 3. Production Sonore (MAO)
-Initiation à la création musicale assistée par ordinateur. Appréhension du rythme, de la mélodie et du silence. Découverte des outils : séquenceur, synthétiseur, samplers.
-*   *Public* : À partir de 8 ans · *Durée* : 1h30 à 2h
-
-### 4. Circle Song (Improvisation Collective)
-Improvisation vocale collective en cercle. Création spontanée, écoute active et harmonie de groupe. Pas besoin de savoir chanter — tout le monde participe !
-*   *Public* : Tout public · *Durée* : 1h à 2h
-
-### 5. Didgeridoo & Souffle Circulaire
-Initiation au souffle circulaire et aux techniques de jeu. Rythmes de base et variations sonores sur cet instrument traditionnel emblématique d'Australie.
-*   *Public* : Tout public · *Durée* : 1h à 1h30
-
-### 6. Chant Diphonique (Harmonique)
-Exploration des techniques de chant harmonique issu des traditions mongoles et sibériennes. Travail du souffle, de la résonance et des harmoniques.
-*   *Public* : Adultes · *Durée* : 1h à 1h30
-
----
-
 ## Genèse & Chiffres Clés
 
 Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la musique au sein de l'équipe de l'atelier de réparation **Beebike** à Nantes. À force de réparer des vélos et d'écouter de la musique toute la journée, l'idée du triporteur-sono a vu le jour.
@@ -90,9 +60,8 @@ Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la 
 ## Fiche Technique & Logistique
 
 *   **Autonomie** : Batterie Lithium haute capacité assurant 6 à 8 heures de diffusion à volume élevé.
-*   **Sonorisation** : Enceinte active pro à haut rendement, intégrée dans le châssis du vélo cargo pour un son clair et spatialisé.
+*   **Sonorisation** : Système de sonorisation bricolé sur mesure à partir d'enceintes Hi-Fi, intégré dans le châssis du vélo cargo.
 *   **Déploiement** : Pas besoin de prise électrique ni de groupe électrogène bruyant. Le setup s'installe instantanément et se déplace facilement en déambulation.
-*   **Éclairage** : Bandeaux LED intégrés pour les prestations en soirée.
 
 ---
 

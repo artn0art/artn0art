@@ -6,7 +6,7 @@ featured:
     href: /projets/jukbike/
     title: Jukbike
     image: /images/projet_jukbike.webp
-    tags: ["Plein air"]
+    tags: ["Plein air", "Festivals", "Vide-greniers"]
     status: "Sur devis"
     description: "Le vélo-sono : disco mobile et autonome qui roule là où la fête manque."
 
@@ -42,3 +42,11 @@ secondary:
     tags: ["Cabinet"]
     status: "Relaxation"
     description: "Le corps qui se relâche, le son qui dénoue : bains vibratoires et toucher."
+
+  - id: ateliers
+    href: /projets/ateliers/
+    title: Ateliers
+    image: /images/projet_producteur.webp
+    tags: ["Partage"]
+    status: "Initiation"
+    description: "Ateliers d'initiation et de partage : MAO, beatbox, mixage, circle song et didgeridoo."
