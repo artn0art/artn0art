@@ -1,4 +1,5 @@
 ---
-title: "artn0art"
-description: "DJ · Musicien · Créatif · Sonothérapeute"
+title: artn0art
+description: DJ · Producteur · Bricodeur
 ---
+entre digger , bricoleur et producteur

@@ -32,8 +32,6 @@ La **Reactable** est une table musicale interactive rétroéclairée. En posant,
     *   **Synthèse sonore** : Ableton Live 12 + Envelop for Live (pour une spatialisation sonore ambisonique sur 4 à 8 enceintes).
 *   **Objectif** : Rendre la performance électronique visuelle, physique et lisible pour le public. Utilisée pour des performances lives et des séances immersives de sonothérapie.
 
-[👉 Découvrir la fiche détaillée du projet Reactable](/projets/reactable/){.projet-hub-link}
-
 ---
 
 ## 2. a2dd (Assistant DJ & Data Pipeline)
@@ -47,8 +45,6 @@ Né du besoin de trier 15 ans d'accumulation de fichiers audio sans structure ni
     *   **Tagging ID3** : Écriture automatisée d'un tag ID3 Genre (TCON) structuré sous forme de code à 9 positions (`GENRE, MOOD, ENERGY, SG, ATTR1, ATTR2, PAYS, LANGUE, ANNÉE`).
     *   **Rangement** : Tri physique automatique dans l'arborescence du disque dur (classement par genre/pays).
 *   **Objectif** : Restaurer le sens et la navigabilité au sein d'une collection DJ massive.
-
-[👉 Découvrir la fiche détaillée du projet a2dd](/projets/a2dd/){.projet-hub-link}
 
 ---
 

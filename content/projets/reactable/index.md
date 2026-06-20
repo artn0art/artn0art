@@ -2,6 +2,7 @@
 title: "Reactable — instrument tangible"
 description: "Performance live interactive : des disques sur une table deviennent des couches sonores."
 date: 2026-04-14
+draft: true
 projetId: reactable
 heroTitle: "Reactable — instrument tangible"
 heroLead: "Performance live interactive : des disques sur une table deviennent des couches sonores."

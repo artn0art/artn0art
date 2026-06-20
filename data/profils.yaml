@@ -35,14 +35,6 @@ secondary:
     status: "Audio DIY"
     description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles."
 
-  - id: sonotherapie
-    href: /projets/massage-sonotherapie/
-    title: "Massage & Sonothérapie"
-    image: /images/projet_sonotherapie.webp
-    tags: ["Cabinet"]
-    status: "Relaxation"
-    description: "Le corps qui se relâche, le son qui dénoue : bains vibratoires et toucher."
-
   - id: ateliers
     href: /projets/ateliers/
     title: Ateliers
