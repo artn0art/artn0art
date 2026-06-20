@@ -3,6 +3,7 @@ title: "Ateliers d'Échange & d'Initiation"
 description: "Ateliers pédagogiques et interactifs de découverte des arts sonores, du rythme et du souffle."
 date: 2026-06-20
 projetId: ateliers
+projetType: project
 heroTitle: "Ateliers & Partage"
 heroLead: "Initiation collective aux arts sonores, au mixage et au souffle"
 image: /images/projet_producteur.webp

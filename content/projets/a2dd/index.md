@@ -4,6 +4,7 @@ description: "Pipeline de gestion et d'enrichissement de collection musicale DJ.
 date: 2026-04-14
 draft: true
 projetId: a2dd
+projetType: project
 heroTitle: "a2dd — Assistant 2 Didier"
 heroLead: "Pipeline de gestion et d'enrichissement de collection musicale DJ."
 image: /images/projet_bricodeur.webp

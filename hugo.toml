@@ -12,7 +12,7 @@ theme = "blowfish"
 # Navigation
 [menu]
   [[menu.main]]
-    name = "Contact"
+    name = ""
     pageRef = "contact"
     pre = "envelope"
     weight = 30

@@ -3,6 +3,7 @@ title: "Jukbike — Disco mobile à vélo"
 description: "Système son autonome à vélo pour festivals, vide-greniers, animations de rue, événements extérieurs, guinguettes."
 date: 2026-04-13
 projetId: jukbike
+projetType: project
 heroTitle: Jukbike
 heroLead: "Disco mobile & sonorisation écologique sur deux roues"
 image: /images/projet_jukbike.webp

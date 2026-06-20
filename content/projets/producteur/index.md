@@ -3,6 +3,7 @@ title: "Producteur de Musique"
 description: "Compositions originales, sound design & lives électroniques."
 date: 2026-04-14
 projetId: producteur
+projetType: project
 heroTitle: "Production Musicale"
 heroLead: "Compositions originales, sound design & lives électroniques."
 image: /images/projet_producteur.webp

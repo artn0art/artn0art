@@ -3,6 +3,7 @@ title: "Bricodeur — Code, Audio & Hardware"
 description: "Code, électronique DIY & détournement d'outils audio."
 date: 2026-04-14
 projetId: bricodeur
+projetType: project
 heroTitle: "Bricodeur / Créatif Tech"
 heroLead: "Code, électronique DIY & détournement d'outils audio."
 image: /images/projet_bricodeur.webp
