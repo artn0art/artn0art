@@ -44,9 +44,9 @@ Le Jukbike s'adapte à l'humeur et au moment de la journée à travers 4 modules
 *   **Le concept** : Une station de chant mobile en plein air avec paroles sur écran (tablette dédiée) et micros HF. Le public se rassemble pour chanter ensemble des classiques de la chanson française et internationale.
 *   **Ambiance** : Euphorique et rassembleuse. Parfait en soirée (dès 20h) pour clore un événement.
 
----
-
-## Genèse & Chiffres Clés
+<details class="projet-accordion">
+  <summary><h2>Genèse & Chiffres Clés</h2></summary>
+  <div class="projet-accordion__content">
 
 Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la musique au sein de l'équipe de l'atelier de réparation **Beebike** à Nantes. À force de réparer des vélos et d'écouter de la musique toute la journée, l'idée du triporteur-sono a vu le jour.
 
@@ -55,17 +55,23 @@ Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la 
 *   **Mai 2023** : Lancement officiel et première prestation.
 *   **Les chiffres** : Plus de **50 prestations**, **11 clients réguliers** et **4 collectivités territoriales** partenaires.
 
----
+  </div>
+</details>
 
-## Fiche Technique & Logistique
+<details class="projet-accordion">
+  <summary><h2>Fiche Technique & Logistique</h2></summary>
+  <div class="projet-accordion__content">
 
 *   **Autonomie** : Batterie Lithium haute capacité assurant 6 à 8 heures de diffusion à volume élevé.
 *   **Sonorisation** : Système de sonorisation bricolé sur mesure à partir d'enceintes Hi-Fi, intégré dans le châssis du vélo cargo.
 *   **Déploiement** : Pas besoin de prise électrique ni de groupe électrogène bruyant. Le setup s'installe instantanément et se déplace facilement en déambulation.
 
----
+  </div>
+</details>
 
-## Références & Collaboration
+<details class="projet-accordion">
+  <summary><h2>Références & Collaboration</h2></summary>
+  <div class="projet-accordion__content">
 
 Depuis 2022, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
 *   **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
@@ -76,3 +82,6 @@ L'activité est gérée sous statut de micro-entreprise (SIRET : `849 803 325 00
 *   **Tarif standard** : ~80 € / heure de prestation.
 *   **Déplacement** : Forfait Nantes Métropole (40 €), forfait hors métropole (130 €).
 *   *TVA non applicable (art. 293 B du CGI). Facturation et Chorus Pro disponibles.*
+
+  </div>
+</details>

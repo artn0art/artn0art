@@ -1,19 +1,4 @@
-{{/*
-  Footer artn0art — override projet du footer Blowfish (P4 reco-design).
-  Minimaliste, typo petite et grise, cohérent avec l'ADN sobre fors.fm.
-  Liens : SoundCloud · Contact · Instagram + mention © année artn0art.
-  Réversible : supprimer ce fichier rétablit le footer natif du thème.
-*/}}
-<footer id="site-footer" class="site-footer print:hidden">
-  <nav class="site-footer__links" aria-label="Liens artn0art">
-    <a href="https://soundcloud.com/artn0art" target="_blank" rel="noopener noreferrer" aria-label="SoundCloud (s'ouvre dans un nouvel onglet)">SoundCloud</a>
-    <a href="{{ "contact/" | relURL }}">Contact</a>
-    <a href="https://instagram.com/artn0art" target="_blank" rel="noopener noreferrer" aria-label="Instagram (s'ouvre dans un nouvel onglet)">Instagram</a>
-  </nav>
-  <p class="site-footer__copy">&copy; {{ now.Format "2006" }} artn0art</p>
-
-  {{/* Extend footer — scripts éventuels (zoom image, etc.), conservé pour compat thème */}}
-  {{ if templates.Exists "partials/extend-footer.html" }}
-    {{ partialCached "extend-footer.html" . }}
-  {{ end }}
-</footer>
+{{/* Extend footer — scripts éventuels (zoom image, etc.), conservé pour compat thème */}}
+{{ if templates.Exists "partials/extend-footer.html" }}
+  {{ partialCached "extend-footer.html" . }}
+{{ end }}
