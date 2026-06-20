@@ -18,6 +18,14 @@ featured:
     status: "Booking ouvert"
     description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
 
+  - id: ateliers
+    href: /projets/ateliers/
+    title: Ateliers
+    image: /images/projet_producteur.webp
+    tags: ["Partage"]
+    status: "Initiation"
+    description: "Ateliers d'initiation et de partage : MAO, beatbox, mixage, circle song et didgeridoo."
+
 secondary:
   - id: producteur
     href: /projets/producteur/
@@ -34,11 +42,3 @@ secondary:
     tags: ["Atelier"]
     status: "Audio DIY"
     description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles."
-
-  - id: ateliers
-    href: /projets/ateliers/
-    title: Ateliers
-    image: /images/projet_producteur.webp
-    tags: ["Partage"]
-    status: "Initiation"
-    description: "Ateliers d'initiation et de partage : MAO, beatbox, mixage, circle song et didgeridoo."
