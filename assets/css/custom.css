@@ -16,9 +16,19 @@
   /* ——— 1.2 Couleurs d'univers ——— */
   --u-dj: #275528;
   --u-reactable: #6ee7b7;
-  --u-jukbike: #fcd34d;
+  --u-jukbike: #c9a227;
   --u-a2dd: #93c5fd;
   --u-musique: #fca5a5;
+
+  /* Modules Jukbike (accents discrets sur + / bordures) */
+  --u-jukbox: var(--u-jukbike);
+  --u-crieur: #c0392b;
+  --u-openmic: #4a6fa5;
+  --u-karaoke: #8e44ad;
+
+  /* Alias Blowfish / legacy */
+  --heading: var(--text);
+  --primary: var(--u-jukbike);
 
   /* ——— 2. Typographie ——— */
   --font-title: "Space Grotesk", "Inter", system-ui, -apple-system, sans-serif;
@@ -92,12 +102,14 @@ button[aria-label*="appearance"] {
   display: none !important;
 }
 
-/* Conteneur principal élargi pour laisser respirer la grille 2 colonnes (reco P1 ~64rem) */
+/* Conteneur principal — width 100% sinon le bloc rétrécit au contenu (~350px) */
 main#main-content,
 main {
+  width: 100%;
   max-width: var(--container-max);
   margin: 0 auto;
   padding: 0 var(--space-4) var(--space-6);
+  box-sizing: border-box;
 }
 
 .catalog-page {
@@ -499,11 +511,11 @@ main {
 }
 
 .catalog-heading {
-  font-family: var(--title-font);
+  font-family: var(--font-title);
   margin: 0 0 0.35rem;
-  font-size: 1.35rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+  letter-spacing: var(--ls-title);
 }
 
 .catalog-sub {
@@ -1328,7 +1340,7 @@ main {
   border-bottom: none !important;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--heading);
+  color: var(--text);
 }
 
 .projet-accordion summary h3:not(.module-summary__title) {
@@ -1391,15 +1403,21 @@ main {
 }
 
 #projet-jukbike .projet-modules-header .projet-cta__btn {
-  border-color: #275528;
-  color: #275528;
+  border-color: var(--u-jukbike);
+  color: var(--text);
 }
 
 #projet-jukbike .projet-modules-header .projet-cta__btn:hover {
-  color: #275528;
-  background-color: rgba(39, 85, 40, 0.1);
-  border-color: #275528;
+  color: var(--text);
+  background-color: color-mix(in srgb, var(--u-jukbike) 18%, transparent);
+  border-color: var(--u-jukbike);
 }
+
+/* Accents par module (couleur du + et hover) */
+#projet-jukbike .projet-accordion--jukbox { --u-color: var(--u-jukbox); }
+#projet-jukbike .projet-accordion--crieur { --u-color: var(--u-crieur); }
+#projet-jukbike .projet-accordion--openmic { --u-color: var(--u-openmic); }
+#projet-jukbike .projet-accordion--karaoke { --u-color: var(--u-karaoke); }
 
 .projet-modules__lead {
   margin: 0 0 var(--space-3);

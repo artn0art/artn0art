@@ -2,6 +2,13 @@
 
 > MAJ 2026-06-23
 
+## v0.3.1 — Cohérence visuelle (2026-06-23)
+
+- **Layout** : `main { width: 100% }` — cartes pleine largeur (64rem) au lieu de ~350px.
+- **Couleurs** : DJ vert `#275528`, Jukbike `#c9a227`, Crieur rouge `#c0392b`, accents par module.
+- **Home** : accroche « DJ · Jukbike », réseaux dans l'intro, bouton Languages retiré (FR seul).
+- **Jukbike** : icône Jukbox corrigée, classes module pour teintes distinctes.
+
 ## v0.3 — Home DJ/Jukbike + page Jukbike modules (en cours de déploiement)
 
 **Statut** : build local **100 % vert** ; gros lot de changements **commité** ; site **pas encore en ligne** (`artn0art.com` — DNS / FTP OVH à finaliser).

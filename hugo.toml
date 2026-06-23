@@ -4,6 +4,16 @@ defaultContentLanguage = "fr"
 title = "artn0art"
 theme = "blowfish"
 
+# Langues — FR seul (EN du thème Blowfish désactivé)
+[languages.fr]
+languageCode = "fr"
+languageName = "Français"
+weight = 1
+title = "artn0art"
+
+[languages.en]
+disabled = true
+
 # Taxonomies
 [taxonomies]
   tag = "tags"

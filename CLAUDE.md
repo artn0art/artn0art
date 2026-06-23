@@ -78,13 +78,14 @@ artn0art/
 
 ## Couleurs univers par projet
 
-| Projet | Couleur CSS | Code |
-|--------|-------------|------|
-| DJ | violet clair | #c4b5fd |
-| Reactable | vert menthe | #6ee7b7 |
-| Jukbike | jaune doré | #fcd34d |
-| a2dd | bleu clair | #93c5fd |
-| Musique | rose doux | #fca5a5 |
+| Projet | Couleur CSS | Code | Note |
+|--------|-------------|------|------|
+| DJ | vert logo | #275528 | Identité visuelle logos / cartes |
+| Jukbike | jaune doré | #c9a227 | Accents carte + modules |
+| Crieur (module) | rouge | #c0392b | Accent module Jukbike |
+| Reactable | vert menthe | #6ee7b7 | Pages secondaires |
+| a2dd | bleu clair | #93c5fd | Pages secondaires |
+| Musique | rose doux | #fca5a5 | Producteur / ateliers |
 
 ## Décisions prises
 

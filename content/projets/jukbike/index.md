@@ -22,10 +22,10 @@ hideCTA: true
 
 <div class="projet-accordion-group">
 
-<details class="projet-accordion projet-accordion--module">
+<details class="projet-accordion projet-accordion--module projet-accordion--jukbox">
   <summary class="projet-summary-wrapper">
     <div class="module-summary">
-      <img class="module-summary__icon" src="/images/modules/jukbike.webp" alt="" width="72" height="72" loading="lazy" />
+      <img class="module-summary__icon" src="/images/modules/jukbox.webp" alt="" width="72" height="72" loading="lazy" />
       <h3 class="module-summary__title">Jukbike <span class="module-summary__tag">Vélo disco mobile</span></h3>
     </div>
   </summary>
@@ -37,7 +37,7 @@ hideCTA: true
   </div>
 </details>
 
-<details class="projet-accordion projet-accordion--module">
+<details class="projet-accordion projet-accordion--module projet-accordion--crieur">
   <summary class="projet-summary-wrapper">
     <div class="module-summary">
       <img class="module-summary__icon" src="/images/modules/crieur.webp" alt="" width="72" height="72" loading="lazy" />
@@ -52,7 +52,7 @@ hideCTA: true
   </div>
 </details>
 
-<details class="projet-accordion projet-accordion--module">
+<details class="projet-accordion projet-accordion--module projet-accordion--openmic">
   <summary class="projet-summary-wrapper">
     <div class="module-summary">
       <img class="module-summary__icon" src="/images/modules/openmic.webp" alt="" width="72" height="72" loading="lazy" />
@@ -67,7 +67,7 @@ hideCTA: true
   </div>
 </details>
 
-<details class="projet-accordion projet-accordion--module">
+<details class="projet-accordion projet-accordion--module projet-accordion--karaoke">
   <summary class="projet-summary-wrapper">
     <div class="module-summary">
       <img class="module-summary__icon" src="/images/modules/karaoke.webp" alt="" width="72" height="72" loading="lazy" />
