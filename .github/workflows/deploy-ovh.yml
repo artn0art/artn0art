@@ -1,0 +1,58 @@
+name: Build & Deploy to OVH
+
+# Construit le site Hugo (avec le thème Blowfish en sous-module) puis envoie
+# le dossier public/ sur l'hébergement mutualisé OVH par FTPS, à chaque push sur main.
+#
+# ── SECRETS À CRÉER (GitHub → Settings → Secrets and variables → Actions) ──
+#   OVH_FTP_SERVER    : serveur FTP OVH (ex: ftp.cluster0XX.hosting.ovh.net)
+#   OVH_FTP_USERNAME  : identifiant FTP de l'hébergement
+#   OVH_FTP_PASSWORD  : mot de passe FTP
+#   (ces infos sont dans l'espace client OVH → Hébergements → FTP-SSH)
+#
+# ── À VÉRIFIER ──
+#   server-dir : racine web OVH (souvent ./www/). Adapter si besoin.
+#   HUGO_VERSION : aligné sur la version locale (ajuster si build différent).
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-ovh
+  cancel-in-progress: true
+
+env:
+  HUGO_VERSION: "0.163.2"
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (avec sous-modules — thème Blowfish)
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Installer Hugo (extended)
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+
+      - name: Build
+        run: hugo --gc --minify --baseURL "https://artn0art.com/"
+
+      - name: Déploiement FTPS vers OVH
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.OVH_FTP_SERVER }}
+          username: ${{ secrets.OVH_FTP_USERNAME }}
+          password: ${{ secrets.OVH_FTP_PASSWORD }}
+          protocol: ftps
+          local-dir: ./public/
+          server-dir: ./www/

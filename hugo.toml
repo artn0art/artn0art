@@ -16,6 +16,15 @@ theme = "blowfish"
     pageRef = "contact"
     pre = "envelope"
     weight = 30
+  # Liens légaux (bas de page)
+  [[menu.footer]]
+    name = "Mentions légales"
+    pageRef = "mentions-legales"
+    weight = 10
+  [[menu.footer]]
+    name = "Confidentialité"
+    pageRef = "confidentialite"
+    weight = 20
 
 # Blowfish params
 [params]
