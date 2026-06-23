@@ -13,6 +13,11 @@
     {{ if eq .id $id }}{{ $profil = . }}{{ end }}
   {{ end }}
 {{ end }}
+{{ if not (index $profil "id") }}
+  {{ range site.Data.profils.pending }}
+    {{ if eq .id $id }}{{ $profil = . }}{{ end }}
+  {{ end }}
+{{ end }}
 
 {{ $universeMap := dict
   "dj" "dj"
@@ -28,8 +33,19 @@
 {{ $heroTitle := $page.Params.heroTitle | default (index $profil "title" | default $page.Title) }}
 {{ $heroLead := $page.Params.heroLead | default $page.Description }}
 {{ $image := $page.Params.image | default (index $profil "image" | default "") }}
-{{ $tags := $page.Params.tags | default (index $profil "tags" | default slice) }}
-{{ $status := $page.Params.status | default (index $profil "status" | default "") }}
+{{ $showMeta := not (eq $page.Params.showMeta false) }}
+{{ $tags := slice }}
+{{ if $showMeta }}
+  {{ $tags = $page.Params.tags | default (index $profil "tags" | default slice) }}
+{{ end }}
+{{ $status := "" }}
+{{ if $showMeta }}
+  {{ $status = $page.Params.status | default (index $profil "status" | default "") }}
+{{ end }}
+{{ $statusHref := "" }}
+{{ if $showMeta }}
+  {{ $statusHref = $page.Params.statusHref | default (index $profil "statusHref" | default "") }}
+{{ end }}
 {{ $universe := $page.Params.universe | default (index $universeMap $id | default $id) }}
 
 {{ return (dict
@@ -41,5 +57,6 @@
   "image" $image
   "tags" $tags
   "status" $status
+  "statusHref" $statusHref
   "profil" $profil
 ) }}

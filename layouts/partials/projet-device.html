@@ -1,18 +1,36 @@
 {{ $p := . }}
-<a href="{{ $p.href }}" class="device-card" id="device-{{ $p.id }}">
+<div class="device-card" id="device-{{ $p.id }}">
+  <a href="{{ $p.href }}" class="device-card-link-overlay" aria-label="Voir le projet : {{ $p.title }}"></a>
   <div class="device-thumb">
     <img src="{{ $p.image }}" alt="Aperçu visuel : {{ $p.title }} — {{ $p.description }}" loading="lazy" width="800" height="600" />
   </div>
   <div class="device-body">
-    <div class="device-meta">
-      <h3 class="device-title">{{ $p.title }}</h3>
-      {{ with $p.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+    <div class="device-header">
+      {{ if not $p.hideTitle }}
+        <h3 class="device-title">{{ $p.title }}</h3>
+      {{ end }}
+      {{ with $p.status }}
+        {{ if $p.statusHref }}
+          <a href="{{ $p.statusHref }}" class="tag tag-status tag-status--link" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+        {{ else }}
+          <span class="tag tag-status">{{ . }}</span>
+        {{ end }}
+      {{ end }}
     </div>
-    {{ with $p.tags }}
-      <div class="device-tags">
-        {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
-      </div>
+    {{ if or $p.linkTags $p.tags }}
+    <div class="device-title-tags">
+      {{ if $p.linkTags }}
+        {{ range $p.linkTags }}
+          <a href="{{ .url }}" class="tag tag-link" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+        {{ end }}
+      {{ else }}
+        {{ with $p.tags }}
+          {{ range . }}
+            <span class="tag">{{ . }}</span>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
     {{ end }}
-    <p class="device-desc">{{ $p.description }}</p>
   </div>
-</a>
+</div>

@@ -52,8 +52,8 @@ Public cible : professionnels créatifs et collaborations (prioritaire), grand p
 - **Générateur** : Hugo (v0.155+)
 - **Thème** : Blowfish (submodule git)
 - **CMS** : Decap CMS (à configurer — back-office visuel)
-- **Hébergement** : Netlify ou Cloudflare Pages (gratuit)
-- **Domaine** : artn0art.com (acheté OVH, 2026-03-25)
+- **Hébergement** : OVH mutualisé (FTPS via GitHub Actions — `.github/workflows/deploy-ovh.yml`)
+- **Domaine** : artn0art.com (acheté OVH, 2026-03-25) — DNS à brancher
 
 ## Structure du site
 
@@ -97,22 +97,22 @@ artn0art/
 
 ## État courant
 
-- **v0.2.1** — Design de cartes fors.fm & contenu validés (S143, 2026-06-17)
-  - Hugo v0.163.2 installé, build local 100% vert (20 pages, 14 fichiers statiques).
-  - Cartes projets redessinées sur le modèle de `fors.fm/devices` (images intégrées, icônes SVG personnalisées et badges).
-  - Page d'accueil réorganisée (profils principaux DJ/Jukbike + secondaires Producteur/Bricodeur/Masseur).
-  - Fiches rédigées pour tous les profils, tous les TODOs retirés.
-  - 5 illustrations premium générées par IA et intégrées.
-  - Decap CMS configuré dans `static/admin/`.
-  - Repo local propre et à jour avec `origin/main` (GitHub : github.com/artn0art/artn0art).
+- **v0.3** — Home DJ + Jukbike, page Jukbike modules (2026-06-23)
+  - Hugo v0.163.2, build local vert (**28 pages FR**, 33 fichiers statiques).
+  - Home : **2 profils** visibles (Jukbike, DJ) ; autres profils en `pending` dans `data/profils.yaml`.
+  - Jukbike : accordéons 4 modules, plaquette PDF, logos, CSS hiérarchie.
+  - Favicon + OG image dans `static/` (câblés via `layouts/partials/extend-head.html`).
+  - Workflow deploy : **GitHub Actions → OVH FTPS** (`deploy-ovh.yml`).
+  - Site **pas encore en ligne** : secrets FTP + DNS OVH à configurer.
+  - Decap CMS présent (`static/admin/`) mais **non utilisable** sur hébergement OVH statique sans auth dédiée.
 
 ## Prochaines étapes
 
-1. Configurer l'hébergement (Netlify ou Cloudflare Pages) à partir du dépôt GitHub.
-2. Associer le domaine acheté `artn0art.com` (OVH) à l'hébergement et configurer le SSL.
-3. Configurer Netlify Identity (ou équivalent) sur le tableau de bord d'hébergement pour activer l'authentification sécurisée de Decap CMS.
-4. Ajouter un favicon personnalisé et une image de partage (OG Image) dans `static/`.
-5. Continuer d'alimenter les rubriques secondaires au fil de vos chantiers.
+1. Configurer les secrets GitHub (`OVH_FTP_*`) et pousser sur `main` pour le premier deploy.
+2. Pointer le DNS `artn0art.com` (OVH) vers l'hébergement mutualisé.
+3. Vérifier HTTPS et le site en production après deploy.
+4. (Optionnel) Decap : rester en édition Markdown, ou migrer l'hébergement CMS vers Netlify.
+5. Tokens couleurs / polish design (ex. module Crieur de rue).
 
 
 ## ⚠️ Accès aux fichiers — protocole impératif

@@ -1,6 +1,22 @@
 {{ $meta := .meta }}
 {{ $cta := .cta }}
-{{ if $cta }}
+{{ if and $cta (eq $cta.variant "compact") }}
+  {{ $email := $cta.email | default "jukbike@gmail.com" }}
+  {{ $devisHref := $cta.devisHref | default (printf "mailto:%s?subject=Demande%%20de%%20devis%%20Jukbike" $email) }}
+  <aside class="projet-cta projet-cta--compact" aria-label="Contact">
+    <div class="projet-cta--compact-row">
+      <a href="{{ $devisHref }}" class="projet-cta__btn">{{ $cta.devisLabel | default "Devis" }}</a>
+      {{ if $cta.ficheTechnique }}
+        <details class="projet-cta-details">
+          <summary class="projet-cta__btn">Fiche Technique</summary>
+          <div class="projet-cta-details__content prose dark:prose-invert">
+            {{ $cta.ficheTechnique | markdownify }}
+          </div>
+        </details>
+      {{ end }}
+    </div>
+  </aside>
+{{ else if $cta }}
   <aside class="projet-cta" aria-label="Contact et réservation">
     {{ with $cta.title }}<h2 class="projet-cta__title">{{ . }}</h2>{{ end }}
     {{ with $cta.body }}<p class="projet-cta__body">{{ . }}</p>{{ end }}

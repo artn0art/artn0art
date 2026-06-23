@@ -1,49 +1,76 @@
 # Runbook de déploiement — artn0art.com
 
-> Site Hugo + Blowfish. Objectif : mettre le site en ligne sur Netlify depuis le dépôt
-> GitHub, brancher le domaine `artn0art.com` (OVH), activer HTTPS et l'authentification
-> Decap CMS.
+> Site Hugo + Blowfish. **Canal canon (2026-06)** : GitHub Actions → build Hugo → déploiement **FTPS OVH**
+> (`.github/workflows/deploy-ovh.yml`). Alternative historique : Netlify (sections b/c ci-dessous).
 >
 > **Légende** :
-> - 🧑 **Action Arnaud** : étape manuelle nécessitant un compte ou des identifiants (OVH, Netlify, GitHub). À faire toi-même, je ne peux pas la réaliser à ta place.
-> - 💻 commande à lancer dans un terminal sur ta machine.
+> - 🧑 **Action Didier** : compte OVH, secrets GitHub, DNS.
+> - 💻 commande terminal (toujours `cd "/Users/artnoart/Code/_projets/artn0art"` en premier).
 >
-> Versions de référence : Hugo **0.163.2**, thème Blowfish (submodule git), Decap CMS 3.x.
+> Versions : Hugo **0.163.2** extended, Blowfish (submodule), Decap CMS 3.x (optionnel, voir note fin).
 
 ---
 
-## a) Pré-requis
+## a) Déploiement OVH via GitHub Actions (recommandé)
 
-### a.1 — Dépôt GitHub à jour
+### a.1 — Prérequis
+
+1. Dépôt `https://github.com/artn0art/artn0art`, branche `main`, working tree clean.
+2. Submodule : `git submodule status` → `themes/blowfish` OK.
+3. Build local : `hugo --gc --minify` sans erreur (~28 pages FR).
+
+### a.2 — Secrets GitHub
+
+🧑 **Settings → Secrets and variables → Actions** :
+
+| Secret | Valeur |
+|--------|--------|
+| `OVH_FTP_SERVER` | ex. `ftp.cluster0XX.hosting.ovh.net` |
+| `OVH_FTP_USERNAME` | identifiant FTP hébergement |
+| `OVH_FTP_PASSWORD` | mot de passe FTP |
+
+### a.3 — Premier deploy
+
+1. 💻 Commit + push sur `main`.
+2. 🧑 Vérifier l'onglet **Actions** sur GitHub (workflow « Build & Deploy to OVH »).
+3. 🧑 DNS OVH : zone `artn0art.com` → IP / CNAME de l'hébergement mutualisé.
+4. 🧑 Attendre propagation DNS + certificat SSL OVH (Let's Encrypt auto sur mutualisé).
+
+### a.4 — Vérification
+
+- 💻 `curl -I https://artn0art.com/` → HTTP 200.
+- Pages clés : `/`, `/dj/`, `/projets/jukbike/`, `/contact/`.
+
+> **Decap CMS** : `static/admin/` nécessite Netlify Identity ou un backend git-gateway. Sur OVH statique seul, éditer le Markdown en local ou sur GitHub.
+
+---
+
+## b) Pré-requis (commun)
+
+### b.1 — Dépôt GitHub à jour
 
 Le dépôt distant est `https://github.com/artn0art/artn0art` (branche `main`).
 
-1. 🧑 Le working tree local est actuellement « sale » (fichiers modifiés + untracked). Avant tout déploiement, commiter et pousser. Voir le plan détaillé dans **`_docs/plan-commit-git.md`**.
-2. Vérifier que tout est poussé :
-   - 💻 `git status` doit afficher « working tree clean ».
-   - 💻 `git log origin/main..HEAD` ne doit **rien** renvoyer (local = distant).
+1. 💻 `git status` → working tree clean avant deploy.
+2. 💻 `git log origin/main..HEAD` → vide (local = distant).
 
-### a.2 — Submodule Blowfish présent
+### b.2 — Submodule Blowfish
 
-Le thème est un submodule git. Netlify clone le submodule automatiquement **si** le `.gitmodules` est correct.
+- 💻 `git submodule status`
+- Le CI checkout utilise `submodules: recursive`.
 
-- 💻 Vérifier en local : `git submodule status` (le thème `themes/blowfish` doit apparaître avec un hash commité).
-- 🧑 Si le submodule n'est pas poussé, le déploiement Netlify échouera au build (`theme "blowfish" not found`).
+### b.3 — Build Hugo
 
-### a.3 — Build Hugo vert localement
+```bash
+cd "/Users/artnoart/Code/_projets/artn0art"
+hugo --gc --minify --baseURL "https://artn0art.com/"
+```
 
-1. 💻 Nettoyer puis builder avec les options de production :
-   ```bash
-   hugo --gc --minify
-   ```
-2. Le build doit se terminer **sans erreur**. État de référence connu : **20 pages, 14 fichiers statiques**.
-3. La sortie est générée dans `public/` (ne pas la commiter, elle est régénérée par Netlify).
-
-> Si le build casse en local, il cassera aussi sur Netlify. Toujours valider en local d'abord.
+État de référence : **28 pages FR**, 33 fichiers statiques. Sortie `public/` (non commitée).
 
 ---
 
-## b) Déploiement Netlify depuis le dépôt GitHub
+## c) Déploiement Netlify (alternative — doc historique)
 
 ### b.1 — Connexion et import
 

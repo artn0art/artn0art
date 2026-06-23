@@ -1,51 +1,94 @@
 ---
-title: "Jukbike — Disco mobile à vélo"
+title: "Jukbike — Vélo disco mobile"
 description: "Système son autonome à vélo pour festivals, vide-greniers, animations de rue, événements extérieurs, guinguettes."
 date: 2026-04-13
 projetId: jukbike
 projetType: project
 heroTitle: Jukbike
-heroLead: "Disco mobile & sonorisation écologique sur deux roues"
+heroLead: "vélo disco mobile"
 image: /images/projet_jukbike.webp
-tags: ["Plein air", "AE", "Festivals", "Vide-greniers"]
-status: "Sur devis"
-cta:
-  title: "Pour réserver ou collaborer"
-  body: "Le Jukbike anime vos événements extérieurs, festivals, vide-greniers, marchés, inaugurations et guinguettes."
-  pricing: "Tarif standard : ~80 € / heure · déplacement forfait Nantes Métropole 40 €, hors métropole 130 €."
-  siret: "Micro-entreprise · SIRET 849 803 325 00018 · APE 6010Z · TVA non applicable (art. 293 B du CGI)"
-  emails:
-    - address: jukbike@gmail.com
-    - address: artn0art@proton.me
+showBreadcrumbs: false
+showMeta: false
+hideHeroImage: true
+hideCTA: true
 ---
 
-Le **Jukbike**, c'est un sound system mobile autonome monté sur un vélo cargo. Pensé pour l'espace public, les parcs, les festivals, les vide-greniers, les terrasses de guinguettes et les animations événementielles, il allie la passion de la musique à une démarche éco-responsable de proximité.
+<section class="projet-modules">
 
-100% autonome sur batterie et alimenté par l'énergie humaine du cycliste, le Jukbike peut se déployer en quelques minutes sur n'importe quel site extérieur pour proposer des sets musicaux, des animations théâtrales et du chant collectif.
+<div class="projet-modules-header">
+  <h2 class="projet-modules__title">Les 4 Modules d'Animation</h2>
+  <a href="mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike" class="projet-cta__btn">Devis</a>
+</div>
 
----
+<div class="projet-accordion-group">
 
-## Les 4 Modules d'Animation
+<details class="projet-accordion projet-accordion--module">
+  <summary class="projet-summary-wrapper">
+    <div class="module-summary">
+      <img class="module-summary__icon" src="/images/modules/jukbike.webp" alt="" width="72" height="72" loading="lazy" />
+      <h3 class="module-summary__title">Jukbike <span class="module-summary__tag">Vélo disco mobile</span></h3>
+    </div>
+  </summary>
+  <div class="projet-accordion__content">
 
-Le Jukbike s'adapte à l'humeur et au moment de la journée à travers 4 modules combinables :
-
-### 1. Jukbox (DJ participatif)
 *   **Le concept** : Une régie DJ ouverte où le public participe à la sélection musicale. Les passants parcourent le catalogue de styles (groove, tropical, house, world) et proposent des morceaux à insérer dans le flux du set.
 *   **Ambiance** : Festive, conviviale et interactive. Idéal en journée ou en début de soirée.
 
-### 2. Crieur de Rue (Théâtre ambulant)
+  </div>
+</details>
+
+<details class="projet-accordion projet-accordion--module">
+  <summary class="projet-summary-wrapper">
+    <div class="module-summary">
+      <img class="module-summary__icon" src="/images/modules/crieur.webp" alt="" width="72" height="72" loading="lazy" />
+      <h3 class="module-summary__title">Crieur de Rue <span class="module-summary__tag">Théâtre ambulant</span></h3>
+    </div>
+  </summary>
+  <div class="projet-accordion__content">
+
 *   **Le concept** : Arnaud endosse le rôle de crieur public. Muni d'un micro HF sans fil et d'une "boîte à criées", il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants.
 *   **Ambiance** : Ludique, artistique et créatrice de lien social. Parfait pour les marchés, foires ou inaugurations.
 
-### 3. Open Mic (Improvisation)
+  </div>
+</details>
+
+<details class="projet-accordion projet-accordion--module">
+  <summary class="projet-summary-wrapper">
+    <div class="module-summary">
+      <img class="module-summary__icon" src="/images/modules/openmic.webp" alt="" width="72" height="72" loading="lazy" />
+      <h3 class="module-summary__title">Open Mic <span class="module-summary__tag">Improvisation</span></h3>
+    </div>
+  </summary>
+  <div class="projet-accordion__content">
+
 *   **Le concept** : Mise à disposition du micro pour les musiciens, rappeurs et amateurs de poésie improvisée. Arnaud enchaîne des instrumentaux originaux (boom bap, beats tropical, ambient) produits sous Ableton Live.
 *   **Ambiance** : Créative, surprenante et valorisante. Idéal en après-midi ou à l'apéro.
 
-### 4. Karaoké de Rue (Chant collectif)
+  </div>
+</details>
+
+<details class="projet-accordion projet-accordion--module">
+  <summary class="projet-summary-wrapper">
+    <div class="module-summary">
+      <img class="module-summary__icon" src="/images/modules/karaoke.webp" alt="" width="72" height="72" loading="lazy" />
+      <h3 class="module-summary__title">Karaoké de Rue <span class="module-summary__tag">Chant collectif</span></h3>
+    </div>
+  </summary>
+  <div class="projet-accordion__content">
+
 *   **Le concept** : Une station de chant mobile en plein air avec paroles sur écran (tablette dédiée) et micros HF. Le public se rassemble pour chanter ensemble des classiques de la chanson française et internationale.
 *   **Ambiance** : Euphorique et rassembleuse. Parfait en soirée (dès 20h) pour clore un événement.
 
-<details class="projet-accordion">
+  </div>
+</details>
+
+</div>
+
+</section>
+
+<div class="projet-accordion-group projet-accordion-group--secondary">
+
+<details class="projet-accordion projet-accordion--secondary">
   <summary><h2>Genèse & Chiffres Clés</h2></summary>
   <div class="projet-accordion__content">
 
@@ -59,7 +102,7 @@ Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la 
   </div>
 </details>
 
-<details class="projet-accordion">
+<details class="projet-accordion projet-accordion--secondary">
   <summary><h2>Fiche Technique & Logistique</h2></summary>
   <div class="projet-accordion__content">
 
@@ -70,7 +113,7 @@ Le Jukbike est né d'une synergie naturelle : la rencontre entre le vélo et la 
   </div>
 </details>
 
-<details class="projet-accordion">
+<details class="projet-accordion projet-accordion--secondary">
   <summary><h2>Références & Collaboration</h2></summary>
   <div class="projet-accordion__content">
 
@@ -78,11 +121,7 @@ Depuis 2022, le Jukbike anime régulièrement la vie locale sur Nantes Métropol
 *   **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
 *   **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, Véli-Vélo.
 
-### Professionnels & Collectivités
-L'activité est gérée sous statut de micro-entreprise (SIRET : `849 803 325 00018` · APE `6010Z`).
-*   **Tarif standard** : ~80 € / heure de prestation.
-*   **Déplacement** : Forfait Nantes Métropole (40 €), forfait hors métropole (130 €).
-*   *TVA non applicable (art. 293 B du CGI). Facturation et Chorus Pro disponibles.*
-
   </div>
 </details>
+
+</div>

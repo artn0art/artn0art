@@ -58,7 +58,6 @@ theme = "blowfish"
     links = [
       { instagram = "https://instagram.com/artn0art" },
       { soundcloud = "https://soundcloud.com/artn0art" },
-      { github = "https://github.com/artn0art" },
       { email = "mailto:artn0art@proton.me" },
     ]
 

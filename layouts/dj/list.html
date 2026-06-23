@@ -15,8 +15,15 @@
     {{ end }}
 
     <header class="univers-hero">
-      <h1>{{ .Params.heroTitle | default "DJ / Mixage" }}</h1>
-      <p class="subtitle">{{ .Params.heroLead | default .Description }}</p>
+      <div class="univers-hero-title-row">
+        <h1 class="univers-hero-logo-wrapper">
+          <img src="/images/logo_dj.webp" alt="DJing" class="univers-hero-logo" width="120" height="120" />
+        </h1>
+        {{ with .Params.heroLead | default .Description }}<span class="subtitle">{{ . }}</span>{{ end }}
+      </div>
+      {{ with .Params.heroText }}
+        <p class="hero-text-intro">{{ . | markdownify }}</p>
+      {{ end }}
       <div class="projet-meta">
         {{ with .Params.tags }}
           <div class="projet-tags">
@@ -27,9 +34,9 @@
       </div>
     </header>
 
-    {{ with .Params.image }}
+    {{ if and .Params.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">
-        <img src="{{ . }}" alt="Illustration représentative de {{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
+        <img src="{{ .Params.image }}" alt="Illustration représentative de {{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
       </figure>
     {{ end }}
 
@@ -37,12 +44,7 @@
       {{ .Content }}
     </div>
 
-    {{ if .Params.soundcloud | default true }}
-      <section class="projet-listen" aria-labelledby="projet-listen-title">
-        <h2 id="projet-listen-title" class="projet-listen__title">Écouter</h2>
-        {{ partial "projet-soundcloud.html" (dict "color" "%23c4b5fd") }}
-      </section>
-    {{ end }}
+
 
     {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}
   </article>

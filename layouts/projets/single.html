@@ -10,8 +10,13 @@
     {{ end }}
 
     <header class="univers-hero">
-      <h1>{{ $meta.heroTitle }}</h1>
-      {{ with $meta.heroLead }}<p class="subtitle">{{ . }}</p>{{ end }}
+      <div class="univers-hero-title-row">
+        <h1>{{ $meta.heroTitle }}</h1>
+        {{ with $meta.heroLead }}<span class="subtitle">{{ . }}</span>{{ end }}
+      </div>
+      {{ with .Params.heroText }}
+        <p class="hero-text-intro">{{ . | markdownify }}</p>
+      {{ end }}
       {{ if or $meta.tags $meta.status }}
         <div class="projet-meta">
           {{ with $meta.tags }}
@@ -19,14 +24,20 @@
               {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
             </div>
           {{ end }}
-          {{ with $meta.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+          {{ with $meta.status }}
+            {{ if $meta.statusHref }}
+              <a href="{{ $meta.statusHref }}" class="tag tag-status tag-status--link" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+            {{ else }}
+              <span class="tag tag-status">{{ . }}</span>
+            {{ end }}
+          {{ end }}
         </div>
       {{ end }}
     </header>
 
-    {{ with $meta.image }}
+    {{ if and $meta.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">
-        <img src="{{ . }}" alt="Illustration représentative de l'univers {{ $meta.heroTitle }}" loading="eager" width="1280" height="720" />
+        <img src="{{ $meta.image }}" alt="Illustration représentative de l'univers {{ $meta.heroTitle }}" loading="eager" width="1280" height="720" />
       </figure>
     {{ end }}
 
@@ -34,6 +45,8 @@
       {{ .Content }}
     </div>
 
-    {{ partial "projet-cta.html" (dict "meta" $meta "cta" .Params.cta) }}
+    {{ if not .Params.hideCTA }}
+      {{ partial "projet-cta.html" (dict "meta" $meta "cta" .Params.cta) }}
+    {{ end }}
   </article>
 {{ end }}

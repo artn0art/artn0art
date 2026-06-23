@@ -5,33 +5,53 @@ featured:
   - id: jukbike
     href: /projets/jukbike/
     title: Jukbike
-    image: /images/projet_jukbike.webp
-    tags: ["Plein air", "Festivals", "Vide-greniers"]
-    status: "Sur devis"
+    hideTitle: true
+    image: /images/logo_jukbike.webp
+    status: "Plaquette"
+    statusHref: "/documents/jukbike-plaquette-2026.pdf"
     description: "Le vélo-sono : disco mobile et autonome qui roule là où la fête manque."
 
   - id: dj
     href: /dj/
-    title: "DJ / Mixage"
-    image: /images/univers_dj.webp
-    tags: ["Live Set"]
-    status: "Booking ouvert"
+    title: "DJ"
+    hideTitle: true
+    image: /images/logo_dj.webp
+    status: "Booking"
     description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
 
+secondary: []
+
+# Masqués pour l'instant — réactiver dans featured/secondary quand le gabarit est validé
+pending:
   - id: ateliers
     href: /projets/ateliers/
     title: Ateliers
     image: /images/projet_producteur.webp
-    tags: ["Partage"]
+    linkTags:
+      - name: "MAO"
+        url: "https://soundcloud.com/artn0art/sets/mao"
+      - name: "Beatbox"
+        url: "https://soundcloud.com/artn0art/sets/beatbox"
+      - name: "Djing"
+        url: "https://soundcloud.com/artn0art/sets/djing"
+      - name: "Circle Song"
+        url: "https://soundcloud.com/artn0art/sets/circle-song"
+      - name: "Didgeridoo"
+        url: "https://soundcloud.com/artn0art/sets/didgeridoo"
+      - name: "Chant Diphonique"
+        url: "https://soundcloud.com/artn0art/sets/chant-diphonique"
     status: "Initiation"
     description: "Ateliers d'initiation et de partage : MAO, beatbox, mixage, circle song et didgeridoo."
 
-secondary:
   - id: producteur
     href: /projets/producteur/
     title: Producteur
     image: /images/projet_producteur.webp
-    tags: ["Studio"]
+    linkTags:
+      - name: "Downtempo"
+        url: "https://soundcloud.com/artn0art/sets/downtempo"
+      - name: "Hip-Hop"
+        url: "https://soundcloud.com/artn0art/sets/hip-hop"
     status: "Boom Bap & Global"
     description: "Beats taillés à la main, du boom bap poussiéreux aux basses ensoleillées."
 
@@ -39,6 +59,8 @@ secondary:
     href: /projets/bricodeur/
     title: Bricodeur
     image: /images/projet_bricodeur.webp
-    tags: ["Atelier"]
+    linkTags:
+      - name: "Audio livre"
+        url: "https://soundcloud.com/artn0art/sets/audio-livre"
     status: "Audio DIY"
     description: "Là où le code rencontre le fer à souder : instruments tangibles et bidouilles."
