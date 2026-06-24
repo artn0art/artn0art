@@ -68,7 +68,6 @@ disabled = true
     links = [
       { instagram = "https://instagram.com/artn0art" },
       { soundcloud = "https://soundcloud.com/artn0art" },
-      { email = "mailto:artn0art@proton.me" },
     ]
 
 [markup]

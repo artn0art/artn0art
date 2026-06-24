@@ -4,11 +4,11 @@
   {{ $email := $cta.email | default "jukbike@gmail.com" }}
   {{ $devisHref := $cta.devisHref | default (printf "mailto:%s?subject=Demande%%20de%%20devis%%20Jukbike" $email) }}
   <aside class="projet-cta projet-cta--compact" aria-label="Contact">
-    <div class="projet-cta--compact-row">
-      <a href="{{ $devisHref }}" class="projet-cta__btn">{{ $cta.devisLabel | default "Devis" }}</a>
+    <div class="projet-cta--compact-stack">
+      <a href="{{ $devisHref }}" class="projet-cta__btn projet-cta__btn--stack">{{ $cta.devisLabel | default "Devis" }}</a>
       {{ if $cta.ficheTechnique }}
-        <details class="projet-cta-details">
-          <summary class="projet-cta__btn">Fiche Technique</summary>
+        <details class="projet-cta-details projet-cta-details--stack">
+          <summary class="projet-cta__btn projet-cta__btn--stack">Fiche Technique</summary>
           <div class="projet-cta-details__content prose dark:prose-invert">
             {{ $cta.ficheTechnique | markdownify }}
           </div>

@@ -1,14 +1,13 @@
 {{ $data := site.Data.profils }}
 
 <div class="catalog-page">
-  <header class="site-intro">
-    <div class="site-intro__row">
-      <p class="site-lead">{{ .Description }}</p>
-      <div class="site-intro__social">
-        {{ partial "author-links.html" . }}
+  {{ with .Description }}
+    <header class="site-intro">
+      <div class="site-intro__row">
+        <p class="site-lead">{{ . }}</p>
       </div>
-    </div>
-  </header>
+    </header>
+  {{ end }}
 
   {{ partial "projet-catalog.html" (dict
     "kicker" ""

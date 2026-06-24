@@ -16,7 +16,7 @@ cta:
 hideHeroImage: true
 ---
 
-<p class="dj-refuse-text">Je traverse les frontières, mes sélections s’articulent autour de plusieurs piliers 🇧🇷 🇨🇺 🇨🇴 🇯🇲 🇦🇴 🇺🇸 🇩🇪 🇬🇧 🇫🇷 :</p>
+<p class="dj-refuse-text">Je traverse les frontières, mes sélections s’articulent autour de plusieurs piliers :</p>
 
 *   **Grooves Tropicaux & Afro-Latins**
 *   **Musique Électronique**
