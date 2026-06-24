@@ -522,7 +522,7 @@ main {
 .catalog-heading {
   font-family: var(--font-title);
   margin: 0 0 0.35rem;
-  font-size: var(--fs-lg);
+  font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   letter-spacing: var(--ls-title);
 }
@@ -589,7 +589,7 @@ main {
   font-weight: 700;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  font-size: 1.05rem;
+  font-size: 1.35rem;
 }
 
 /* ——— Pages intérieures (DJ, projets…) ——— */
