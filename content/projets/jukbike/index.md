@@ -12,12 +12,13 @@ showMeta: false
 hideHeroImage: true
 hideCTA: true
 logo: /images/logo_jukbike.webp
+hideHero: true
 ---
 
 <section class="projet-modules">
 
 <div class="projet-modules-header">
-  <a href="mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike" class="projet-cta__btn">Devis</a>
+  <a href="mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike" class="tag tag-status tag-status--link">Devis</a>
 </div>
 
 <div class="projet-accordion-group">

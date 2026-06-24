@@ -21,11 +21,11 @@ hideCTA: true
   <a href="mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ" class="tag tag-status tag-status--link">Booking</a>
 </div>
 
-*   **[Grooves Tropicaux & Afro-Latins](https://soundcloud.com/artn0art/sets/grooves-tropicaux)**
-    {{< soundcloud url="https://soundcloud.com/artn0art/sets/grooves-tropicaux" color="%23275528" >}}
+### [Grooves Tropicaux & Afro-Latins](https://soundcloud.com/artn0art/sets/grooves-tropicaux)
+{{< soundcloud url="https://soundcloud.com/artn0art/sets/grooves-tropicaux" color="%23275528" >}}
 
-*   **[Musique Électronique](https://soundcloud.com/artn0art/sets/musique-electronique)**
-    {{< soundcloud url="https://soundcloud.com/artn0art/sets/musique-electronique" color="%23275528" >}}
+### [Musique Électronique](https://soundcloud.com/artn0art/sets/musique-electronique)
+{{< soundcloud url="https://soundcloud.com/artn0art/sets/musique-electronique" color="%23275528" >}}
 
-*   **[System Culture](https://soundcloud.com/artn0art/sets/system-culture)**
-    {{< soundcloud url="https://soundcloud.com/artn0art/sets/system-culture" color="%23275528" >}}
+### [System Culture](https://soundcloud.com/artn0art/sets/system-culture)
+{{< soundcloud url="https://soundcloud.com/artn0art/sets/system-culture" color="%23275528" >}}

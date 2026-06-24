@@ -399,6 +399,9 @@ main {
   background-color: rgba(0, 0, 0, 0.04) !important;
   color: var(--text) !important;
   flex-shrink: 0;
+  font-size: var(--fs-md) !important;
+  padding: var(--space-2) var(--space-5) !important;
+  line-height: 1.2 !important;
 }
 
 .tag-status--link {

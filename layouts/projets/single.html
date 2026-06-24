@@ -9,6 +9,7 @@
       </nav>
     {{ end }}
 
+    {{ if not .Params.hideHero }}
     <header class="univers-hero">
       <div class="univers-hero-title-row">
         {{ if .Params.logo }}
@@ -40,6 +41,7 @@
         </div>
       {{ end }}
     </header>
+    {{ end }}
 
     {{ if and $meta.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">
