@@ -1,0 +1,7 @@
+[build]
+  command = "hugo --gc --minify --baseURL $URL"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.163.2"
+  GIT_SUBMODULE_STRATEGY = "recursive"
