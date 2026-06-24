@@ -62,7 +62,7 @@
   --space-5: 1.5rem;  /* 24px */
   --space-6: 2rem;    /* 32px */
 
-  --container-max: 64rem;
+  --container-max: 45rem;
   --grid-gap-desktop: var(--space-5);
   --grid-gap-mobile: var(--space-4);
   --grid-breakpoint: 680px;
@@ -171,7 +171,15 @@ main {
   justify-content: center;
   color: var(--muted);
   line-height: 1;
+  width: 1.5rem;
+  height: 1.5rem;
   transition: color var(--transition-nav), opacity var(--transition-nav);
+}
+
+.author-links__item svg {
+  margin-right: 0 !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
 }
 
 .author-links__item:hover {
@@ -399,8 +407,8 @@ main {
   background-color: rgba(0, 0, 0, 0.04) !important;
   color: var(--text) !important;
   flex-shrink: 0;
-  font-size: var(--fs-md) !important;
-  padding: var(--space-2) var(--space-5) !important;
+  font-size: var(--fs-small) !important;
+  padding: 0.35rem 0.95rem !important;
   line-height: 1.2 !important;
 }
 

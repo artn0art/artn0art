@@ -17,9 +17,7 @@ hideHeroImage: true
 hideCTA: true
 ---
 
-<div class="projet-modules-header">
-  <a href="mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ" class="tag tag-status tag-status--link">Booking</a>
-</div>
+
 
 ### [Grooves Tropicaux & Afro-Latins](https://soundcloud.com/artn0art/sets/grooves-tropicaux)
 {{< soundcloud url="https://soundcloud.com/artn0art/sets/grooves-tropicaux" color="%23275528" >}}
