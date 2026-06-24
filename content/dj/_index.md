@@ -2,7 +2,6 @@
 title: "DJ"
 description: "sonore, éclectique et technique"
 heroTitle: "DJ"
-heroLead: "sonore, éclectique et technique"
 image: /images/univers_dj.webp
 showBreadcrumbs: false
 soundcloud: true
