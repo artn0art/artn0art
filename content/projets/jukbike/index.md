@@ -16,7 +16,6 @@ hideCTA: true
 <section class="projet-modules">
 
 <div class="projet-modules-header">
-  <h2 class="projet-modules__title">Les 4 Modules d'Animation</h2>
   <a href="mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike" class="projet-cta__btn">Devis</a>
 </div>
 

@@ -98,9 +98,9 @@ artn0art/
 
 ## État courant
 
-- **v0.3** — Home DJ + Jukbike, page Jukbike modules (2026-06-23)
-  - Hugo v0.163.2, build local vert (**28 pages FR**, 33 fichiers statiques).
-  - Home : **2 profils** visibles (Jukbike, DJ) ; autres profils en `pending` dans `data/profils.yaml`.
+- **v0.3** — Grille de cartes, Home DJ + Jukbike, page Jukbike modules (2026-06-23)
+  - Hugo v0.163.2, build local vert (**28 pages FR**, 29 fichiers statiques).
+  - Home : **2 profils** affichés sous forme de **grille de cartes à 2 colonnes** (façon fors.fm) avec leurs descriptions visibles ; autres profils en `pending` dans `data/profils.yaml`.
   - Jukbike : accordéons 4 modules, plaquette PDF, logos, CSS hiérarchie.
   - Favicon + OG image dans `static/` (câblés via `layouts/partials/extend-head.html`).
   - Workflow deploy : **GitHub Actions → OVH FTPS** (`deploy-ovh.yml`).

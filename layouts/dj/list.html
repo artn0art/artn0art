@@ -46,6 +46,8 @@
 
 
 
-    {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}
+    {{ if not .Params.hideCTA }}
+      {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}
+    {{ end }}
   </article>
 {{ end }}

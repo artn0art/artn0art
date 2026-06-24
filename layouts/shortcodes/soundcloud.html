@@ -1,1 +1,4 @@
-{{ partial "projet-soundcloud.html" (dict "color" "%23c4b5fd") }}
+{{ $url := .Get "url" }}
+{{ $color := .Get "color" | default "%23c4b5fd" }}
+{{ $height := .Get "height" | default "150" }}
+{{ partial "projet-soundcloud.html" (dict "url" $url "color" $color "height" $height) }}

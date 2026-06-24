@@ -12,3 +12,10 @@
 - Intégration de 5 images premium personnalisées dans `static/images/`.
 - Ajout du layout `layouts/partials/home/custom.html` pour contourner le layout par défaut du thème Blowfish et afficher notre index personnalisé.
 - Création de la configuration Decap CMS dans `static/admin/`.
+
+## S144-grille-et-deploy (2026-06-23)
+
+- Refonte CSS (`custom.css`) pour transformer le catalogue de la home en grille à 2 colonnes sur desktop et 1 colonne sur mobile.
+- Uniformisation verticale des cartes projet (`.device-card`) sur tous les écrans, avec suppression des règles spéciales de centrage pour DJ et Jukbike.
+- Intégration de l'affichage de la description courte (`device-desc`) pour chaque projet sur les cartes de la page d'accueil via `projet-device.html`.
+- Fourniture des instructions détaillées de déploiement en production via OVH et GitHub Secrets.
