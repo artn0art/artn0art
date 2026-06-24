@@ -11,6 +11,7 @@ showBreadcrumbs: false
 showMeta: false
 hideHeroImage: true
 hideCTA: true
+logo: /images/logo_jukbike.webp
 ---
 
 <section class="projet-modules">

@@ -533,9 +533,13 @@ main {
   -webkit-backdrop-filter: blur(12px);
   background-color: color-mix(in srgb, var(--bg) 85%, transparent) !important;
   border-bottom: 1px solid var(--border) !important;
-  padding: 1rem 0 !important;
+  padding: 1rem var(--space-4) !important;
+  margin: 0 auto !important;
   margin-bottom: 0 !important;
   box-shadow: none !important;
+  max-width: var(--container-max);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .main-menu a {
@@ -676,8 +680,8 @@ main {
   margin: 0 !important;
   padding-top: 0.35rem;
   color: var(--muted) !important;
-  font-size: var(--fs-body-lead) !important;
-  font-weight: var(--fw-medium) !important;
+  font-size: var(--fs-xl) !important;
+  font-weight: var(--fw-bold) !important;
   line-height: 1.25;
 }
 
@@ -693,8 +697,8 @@ main {
 .projet-fiche .univers-hero h1 {
   font-family: var(--font-title);
   margin: 0 0 var(--space-2);
-  font-size: var(--fs-xl);
-  font-weight: var(--fw-bold);
+  font-size: var(--fs-body-lead);
+  font-weight: var(--fw-medium);
   letter-spacing: -0.03em;
   line-height: var(--lh-title);
   text-transform: none;
@@ -706,7 +710,8 @@ main {
 .projet-fiche .univers-hero .subtitle {
   margin: 0 0 var(--space-3);
   color: var(--text);
-  font-size: var(--fs-body-lead);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-bold);
   line-height: var(--lh-body);
   max-width: 45rem;
 }
@@ -1404,7 +1409,7 @@ main {
 .projet-modules-header {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: var(--space-3);
   margin-bottom: var(--space-4);
 }

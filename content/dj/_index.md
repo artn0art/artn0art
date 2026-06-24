@@ -21,8 +21,6 @@ hideCTA: true
   <a href="mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ" class="tag tag-status tag-status--link">Booking</a>
 </div>
 
-<p class="dj-refuse-text">Je traverse les frontières, mes sélections s’articulent autour de plusieurs piliers :</p>
-
 *   **[Grooves Tropicaux & Afro-Latins](https://soundcloud.com/artn0art/sets/grooves-tropicaux)**
     {{< soundcloud url="https://soundcloud.com/artn0art/sets/grooves-tropicaux" color="%23275528" >}}
 

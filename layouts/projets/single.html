@@ -11,7 +11,13 @@
 
     <header class="univers-hero">
       <div class="univers-hero-title-row">
-        <h1>{{ $meta.heroTitle }}</h1>
+        {{ if .Params.logo }}
+          <h1 class="univers-hero-logo-wrapper">
+            <img src="{{ .Params.logo }}" alt="{{ .Title }}" class="univers-hero-logo" width="120" height="120" />
+          </h1>
+        {{ else }}
+          <h1>{{ $meta.heroTitle }}</h1>
+        {{ end }}
         {{ with $meta.heroLead }}<span class="subtitle">{{ . }}</span>{{ end }}
       </div>
       {{ with .Params.heroText }}
