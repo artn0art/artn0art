@@ -1,0 +1,29 @@
+# Configuration CloudCannon pour le site artn0art
+# Ce fichier aide CloudCannon à comprendre la structure Hugo (collections, images, etc.)
+
+# Dossiers d'entrée et de sortie
+source: ""
+output: "public"
+
+# Gestion des médias
+paths:
+  uploads: "static/images"
+  static: "static"
+
+# Définition des collections pour l'interface d'édition
+collections_config:
+  pages:
+    name: Pages Fixes
+    path: "content"
+    # Liste explicite des pages fixes pour éviter de polluer avec les dossiers
+    files:
+      - "content/_index.md"
+      - "content/dj/_index.md"
+      - "content/contact/_index.md"
+    output: true
+
+  projets:
+    name: Projets & Facettes
+    path: "content/projets"
+    output: true
+    icon: "work"

@@ -24,3 +24,7 @@ __pycache__/
 .env
 .env.local
 .hugo_build.lock
+
+# Presentation
+*.pptx
+

@@ -87,6 +87,7 @@ hideHero: true
 
 <div class="projet-modules-header" style="margin-top: var(--space-5); margin-bottom: var(--space-5);">
   <a href="mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike" class="tag tag-status tag-status--link" style="font-size: var(--fs-body-lead) !important; padding: var(--space-2) var(--space-4) !important;">Devis</a>
+  <a href="/documents/jukbike-plaquette-2026.pdf" download class="tag tag-status tag-status--link" style="font-size: var(--fs-body-lead) !important; padding: var(--space-2) var(--space-4) !important;">Plaquette PDF</a>
 </div>
 
 <div class="projet-accordion-group projet-accordion-group--secondary">
