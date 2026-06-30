@@ -22,6 +22,14 @@ disabled = true
 # Navigation
 [menu]
   [[menu.main]]
+    name = "Devis Jukbike"
+    url = "mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike"
+    weight = 10
+  [[menu.main]]
+    name = "Booking DJ"
+    url = "mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ"
+    weight = 20
+  [[menu.main]]
     name = ""
     pageRef = "contact"
     pre = "envelope"

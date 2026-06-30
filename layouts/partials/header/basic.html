@@ -38,13 +38,15 @@
             {{ if or (strings.HasPrefix .URL "http:" ) (strings.HasPrefix .URL "https:" ) }}
               target="_blank"
             {{ end }}
-            class="flex items-center bf-icon-color-hover"
+            class="flex items-center bf-icon-color-hover text-sm font-medium"
             {{ with or .Name .Pre }}aria-label="{{ . }}"{{ end }}
             title="{{ .Title }}">
             {{ if .Pre }}
               <span class="relative block icon">
                 {{ partial "icon.html" .Pre }}
               </span>
+            {{ else }}
+              {{ .Name | markdownify }}
             {{ end }}
           </a>
         {{ end }}
