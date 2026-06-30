@@ -19,10 +19,6 @@
         <h1 class="univers-hero-logo-wrapper">
           <img src="/images/logo_dj.webp" alt="DJing" class="univers-hero-logo" width="120" height="120" />
         </h1>
-        {{ with .Description }}<span class="subtitle">{{ . }}</span>{{ end }}
-        <div class="univers-hero-lead-group">
-          <a href="mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ" class="tag tag-status tag-status--link">Booking</a>
-        </div>
       </div>
       {{ with .Params.heroText }}
         <p class="hero-text-intro">{{ . | markdownify }}</p>
