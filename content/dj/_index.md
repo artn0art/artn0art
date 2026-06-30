@@ -28,15 +28,13 @@ hideHeroImage: true
 
 {{< soundcloud url="https://soundcloud.com/artn0art/sets/system-culture" color="%23275528" >}}
 
-De l'énergie brute du hip-hop boom bap aux pulsations électroniques, tropicales, je façonne des sets hybrides où le scratch rencontre la global bass. J'aime croiser les rythmes de cumbia ou d'afrobeat avec l'efficacité des beats urbains pour créer un voyage sonore surprenant. Une exploration dansante et métissée, au service de la fête et du rythme
-
 <div class="projet-accordion-group projet-accordion-group--secondary" style="margin-top: var(--space-6);">
 
 <details class="projet-accordion projet-accordion--secondary">
   <summary><h2>Bio</h2></summary>
   <div class="projet-accordion__content">
 
-Passionné de digging et bercé par le hip-hop depuis plus de 15 ans, j'ai développé une identité hybride qui allie la technique du scratch aux vibrations de la global bass. 
+De l'énergie brute du hip-hop boom bap aux pulsations électroniques, tropicales, je façonne des sets hybrides où le scratch rencontre la global bass. J'aime croiser les rythmes de cumbia ou d'afrobeat avec l'efficacité des beats urbains pour créer un voyage sonore surprenant. Une exploration dansante et métissée, au service de la fête et du rythme.
 
 *   **Expérience** : 15 ans de pratique et d'exploration de styles.
 *   **Sélection** : Une collection de plus de 5 000 morceaux minutieusement triés et indexés.
