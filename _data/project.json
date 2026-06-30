@@ -16,14 +16,14 @@
     "type": "projet",
     "icone": "🌐",
     "couleur": "rgba(168, 85, 247, 0.15)",
-    "etat": "v0.1 — site Hugo + thème Blowfish (submodule) buildé ; ~7 pages Markdown ; static/ encore vide, contenu DJ/Jukbike en TODO. (resync 2026-06-04)",
+    "etat": "v0.3.2 — site Hugo + thème Blowfish déployé en production sur Netlify (artn0art.com). (resync 2026-06-30)",
     "stats": {
-      "pages": 7,
+      "pages": 28,
       "html": 0,
       "data": 0
     },
     "architecture": {
-      "description": "Hugo (static site generator) + Decap CMS (headless CMS) + Netlify/Cloudflare Pages (hosting)",
+      "description": "Hugo (static site generator) + Decap CMS (headless CMS) + Netlify (hosting)",
       "flux": "content/ (Markdown) → Hugo build → public/ (HTML) → Netlify deploy",
       "espaces": [
         {
@@ -99,10 +99,9 @@
       ]
     },
     "todo_prochaine_session": [
-      "Prouver `hugo build` vert et le documenter dans le README",
-      "Remplir le contenu DJ / Jukbike (sections encore en <!-- TODO -->)",
-      "Peupler static/ (assets, images)",
-      "Premier déploiement (Netlify / Cloudflare Pages)"
+      "Configurer Decap CMS (Netlify Identity / GitHub OAuth)",
+      "Réactiver / peupler les profils pending sur la page d'accueil (ateliers, producteur, bricodeur)",
+      "Restaurer ou réécrire la page Massage & Sonothérapie"
     ]
   }
 }

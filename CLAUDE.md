@@ -98,22 +98,20 @@ artn0art/
 
 ## État courant
 
-- **v0.3** — Grille de cartes, Home DJ + Jukbike, page Jukbike modules (2026-06-23)
-  - Hugo v0.163.2, build local vert (**28 pages FR**, 29 fichiers statiques).
-  - Home : **2 profils** affichés sous forme de **grille de cartes à 2 colonnes** (façon fors.fm) avec leurs descriptions visibles ; autres profils en `pending` dans `data/profils.yaml`.
+- **v0.3.1** — Site en ligne sur Netlify (2026-06-30)
+  - Hugo v0.163.2, build local vert (**28 pages FR**, 30 fichiers statiques).
+  - Déploiement : Hébergé sur **Netlify** à l'adresse **https://artn0art.com/**, DNS branchés.
+  - Home : **2 profils** affichés sous forme de **grille de cartes à 2 colonnes** (façon fors.fm) ; autres profils en `pending` dans `data/profils.yaml`.
   - Jukbike : accordéons 4 modules, plaquette PDF, logos, CSS hiérarchie.
   - Favicon + OG image dans `static/` (câblés via `layouts/partials/extend-head.html`).
-  - Workflow deploy : **GitHub Actions → OVH FTPS** (`deploy-ovh.yml`).
-  - Site **pas encore en ligne** : secrets FTP + DNS OVH à configurer.
-  - Decap CMS présent (`static/admin/`) mais **non utilisable** sur hébergement OVH statique sans auth dédiée.
+  - Decap CMS présent (`static/admin/`) mais nécessite la configuration de Netlify Identity ou GitHub OAuth pour être utilisé.
 
 ## Prochaines étapes
 
-1. Configurer les secrets GitHub (`OVH_FTP_*`) et pousser sur `main` pour le premier deploy.
-2. Pointer le DNS `artn0art.com` (OVH) vers l'hébergement mutualisé.
-3. Vérifier HTTPS et le site en production après deploy.
-4. (Optionnel) Decap : rester en édition Markdown, ou migrer l'hébergement CMS vers Netlify.
-5. Tokens couleurs / polish design (ex. module Crieur de rue).
+1. (Optionnel) Decap CMS : Activer Netlify Identity + Git Gateway sur le panel Netlify et tester l'accès à `/admin/`.
+2. Prochaine passe contenu / Réactivation des profils `pending` (`ateliers`, `producteur`, `bricodeur`) sur la page d'accueil.
+3. Tokens couleurs / polish design (ex. module Crieur de rue).
+4. Restaurer / finaliser la page `Massage & Sonothérapie` ou d'autres pages secondaires si besoin.
 
 
 ## ⚠️ Accès aux fichiers — protocole impératif
