@@ -31,6 +31,71 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "string" }
           - { label: "Body", name: "body", widget: "markdown" }
+ 
+  - name: "data"
+    label: "Données du Site"
+    files:
+      - file: "data/profils.yaml"
+        label: "Cartes & Profils (Home)"
+        name: "profils"
+        fields:
+          - label: "Cartes en scène (Featured)"
+            name: "featured"
+            widget: "list"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Lien de la page (href)", name: "href", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Masquer le titre", name: "hideTitle", widget: "boolean", default: true }
+              - { label: "Image de couverture", name: "image", widget: "image" }
+              - { label: "Statut (badge)", name: "status", widget: "string" }
+              - { label: "Lien du statut", name: "statusHref", widget: "string", required: false }
+              - { label: "Description courte (max 90 car.)", name: "description", widget: "string" }
+              - label: "Tags de liens (facultatif)"
+                name: "linkTags"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Nom du tag", name: "name", widget: "string" }
+                  - { label: "Lien URL", name: "url", widget: "string" }
+          - label: "Cartes en coulisses (Secondary)"
+            name: "secondary"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Lien de la page (href)", name: "href", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Masquer le titre", name: "hideTitle", widget: "boolean", default: true }
+              - { label: "Image de couverture", name: "image", widget: "image" }
+              - { label: "Statut (badge)", name: "status", widget: "string" }
+              - { label: "Lien du statut", name: "statusHref", widget: "string", required: false }
+              - { label: "Description courte (max 90 car.)", name: "description", widget: "string" }
+              - label: "Tags de liens (facultatif)"
+                name: "linkTags"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Nom du tag", name: "name", widget: "string" }
+                  - { label: "Lien URL", name: "url", widget: "string" }
+          - label: "Profils masqués (Pending)"
+            name: "pending"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Lien de la page (href)", name: "href", widget: "string" }
+              - { label: "Titre", name: "title", widget: "string" }
+              - { label: "Image de couverture", name: "image", widget: "image" }
+              - { label: "Statut (badge)", name: "status", widget: "string" }
+              - { label: "Description courte (max 90 car.)", name: "description", widget: "string" }
+              - label: "Tags de liens (facultatif)"
+                name: "linkTags"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Nom du tag", name: "name", widget: "string" }
+                  - { label: "Lien URL", name: "url", widget: "string" }
 
   - name: "projets"
     label: "Projets & Facettes"
