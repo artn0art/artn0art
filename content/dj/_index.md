@@ -33,7 +33,7 @@ De l'énergie brute du hip-hop boom bap aux pulsations électroniques, tropicale
 <div class="projet-accordion-group projet-accordion-group--secondary" style="margin-top: var(--space-6);">
 
 <details class="projet-accordion projet-accordion--secondary">
-  <summary><h2>Parcours & Chiffres Clés</h2></summary>
+  <summary><h2>Bio</h2></summary>
   <div class="projet-accordion__content">
 
 Passionné de digging et bercé par le hip-hop depuis plus de 15 ans, j'ai développé une identité hybride qui allie la technique du scratch aux vibrations de la global bass. 
@@ -49,9 +49,8 @@ Passionné de digging et bercé par le hip-hop depuis plus de 15 ans, j'ai déve
   <summary><h2>Fiche Technique & Logistique</h2></summary>
   <div class="projet-accordion__content">
 
-*   **Régie fournie** : Contrôleur professionnel Rane One (plateaux vinyles motorisés 7 pouces) offrant des sensations authentiques de scratch.
 *   **Besoins du lieu** : Une table stable (min. 120x60 cm) et une prise électrique standard 230V à proximité.
-*   **Connexion** : Sortie de régie en XLR ou RCA pour un raccordement direct sur le système de sonorisation du lieu.
+*   **Connexion** : Sortie de régie en RCA pour un raccordement direct sur le système de sonorisation du lieu.
 
   </div>
 </details>
@@ -60,9 +59,10 @@ Passionné de digging et bercé par le hip-hop depuis plus de 15 ans, j'ai déve
   <summary><h2>Références & Lieux</h2></summary>
   <div class="projet-accordion__content">
 
-*   **Collectivités** : Animations culturelles de quartiers et événements associatifs pour Nantes Métropole, la Ville de Rezé et Couëron.
-*   **Établissements** : Bars locaux, guinguettes éphémères et soirées privées sur mesure.
-*   **Collaborations** : Lives hip-hop interactifs (Open Mic) et sets d'ambiance sur d'autres projets (Jukbike).
+*   **Le Grand Bain**
+*   **Bar Sauce Blanche Disco Club**
+*   **Bowling de La Plagne**
+*   **Le Barouf (Le Mans)**
 
   </div>
 </details>
