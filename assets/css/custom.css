@@ -43,7 +43,7 @@
   --fs-body: clamp(0.88rem, 1.5vw, 0.92rem);
   --fs-small: clamp(0.68rem, 1.2vw, 0.72rem);
 
-  --fw-brand: 800;
+  --fw-brand: 700;
   --fw-bold: 700;
   --fw-medium: 500;
   --fw-regular: 400;
@@ -51,7 +51,7 @@
   --lh-title: 1.15;
   --lh-body: 1.5;
   --ls-title-brand: -0.04em;
-  --ls-title: -0.02em;
+  --ls-title: -0.03em;
   --ls-body: 0.01em;
 
   /* ——— 3. Espacements (grille 8px) ——— */
