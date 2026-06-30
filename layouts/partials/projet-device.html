@@ -32,5 +32,8 @@
       {{ end }}
     </div>
     {{ end }}
+    {{ with $p.description }}
+      <p class="device-desc">{{ . }}</p>
+    {{ end }}
   </div>
 </div>
