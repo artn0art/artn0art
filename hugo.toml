@@ -22,8 +22,8 @@ disabled = true
 # Navigation
 [menu]
   [[menu.main]]
-    name = "Devis"
-    url = "mailto:jukbike@gmail.com?subject=Demande%20de%20devis%20Jukbike"
+    name = "Booking"
+    url = "mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ"
     weight = 10
   [[menu.main]]
     name = ""
