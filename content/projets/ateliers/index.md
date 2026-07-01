@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Ateliers d'Échange & d'Initiation"
 description: "Ateliers pédagogiques et interactifs de découverte des arts sonores, du rythme et du souffle."
 date: 2026-06-20

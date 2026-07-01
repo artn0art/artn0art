@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Bricodeur — Code, Audio & Hardware"
 description: "Code, électronique DIY & détournement d'outils audio."
 date: 2026-04-14

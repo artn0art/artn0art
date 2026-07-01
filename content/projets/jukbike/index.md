@@ -43,8 +43,8 @@ hideHeroImage: true
   </summary>
   <div class="projet-accordion__content">
 
-* **Le concept** : Arnaud d'un micro endosse le rôle de monsieur loyal, annonce le programme a venir, ou celui de crieur public, a l'aide d'une "boîte à criées" il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants.
-* **Ambiance** : Ludique, artistique et créatrice de lien social. Parfait pour les marchés, vide grenier, inaugurations...
+* **Le concept** : Arnaud, muni d'un micro, endosse le rôle de monsieur loyal et annonce le programme à venir, ou celui de crieur public : à l'aide d'une « boîte à criées », il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants.
+* **Ambiance** : Ludique, artistique et créatrice de lien social. Parfait pour les marchés, vide-greniers, inaugurations...
 
   </div>
 </details>
@@ -73,8 +73,8 @@ hideHeroImage: true
   </summary>
   <div class="projet-accordion__content">
 
-* **Le concept** : Une station de chant mobile en plein air avec paroles sur écran et un micros. Le public se rassemble pour chanter ensemble des classiques de la chanson internationale  et  française.
-* **Ambiance** : Euphorique et rassembleuse. Parfait en soirée (dès le couche du soleil) pour clore un événement.
+* **Le concept** : Une station de chant mobile en plein air, avec les paroles sur écran et un micro. Le public se rassemble pour chanter ensemble des classiques de la chanson internationale et française.
+* **Ambiance** : Euphorique et rassembleuse. Parfait en soirée (dès le coucher du soleil) pour clore un événement.
 
   </div>
 </details>

@@ -1,13 +1,14 @@
 baseURL = "https://artn0art.com/"
-languageCode = "fr"
+locale = "fr"
 defaultContentLanguage = "fr"
 title = "artn0art"
 theme = "blowfish"
+enableRobotsTXT = true
 
 # Langues — FR seul (EN du thème Blowfish désactivé)
 [languages.fr]
-languageCode = "fr"
-languageName = "Français"
+locale = "fr"
+label = "Français"
 weight = 1
 title = "artn0art"
 

@@ -3,6 +3,9 @@
   {{ $id := $meta.id }}
 
   <article class="projet-fiche" id="projet-{{ $id }}" data-universe="{{ $meta.universe }}">
+    {{ if .Params.hideHero }}
+      <h1 class="sr-only">{{ $meta.heroTitle | default .Title }}</h1>
+    {{ end }}
     {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
       <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
         {{ partial "projet-breadcrumbs.html" . }}
