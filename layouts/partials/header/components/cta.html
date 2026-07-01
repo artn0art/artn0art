@@ -8,8 +8,9 @@
   {{ $isProjet := eq .Section "projets" }}
   {{ $label := cond $isProjet "Devis" "Booking" }}
   {{ $subject := cond $isProjet "Demande%20de%20devis%20Jukbike" "Demande%20de%20booking%20DJ" }}
+  {{ $href := printf "mailto:artn0art@proton.me?subject=%s" $subject }}
   <a
-    href="mailto:artn0art@proton.me?subject={{ $subject }}"
+    href="{{ $href | safeURL }}"
     class="flex items-center bf-icon-color-hover"
     aria-label="{{ $label }}"
     title="{{ $label }}">

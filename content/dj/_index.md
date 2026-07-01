@@ -16,6 +16,10 @@ description: sonore, éclectique et technique
 heroTitle: DJ
 hideHeroImage: true
 ---
+### [Hip-Hop](https://soundcloud.com/artn0art/sets/hip-hop)
+
+{{< soundcloud url="https://soundcloud.com/artn0art/sets/hip-hop" color="%23275528" >}}
+
 ### [Grooves Tropicaux & Afro-Latins](https://soundcloud.com/artn0art/sets/grooves-tropicaux)
 
 {{< soundcloud url="https://soundcloud.com/artn0art/sets/grooves-tropicaux" color="%23275528" >}}
