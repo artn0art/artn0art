@@ -109,5 +109,23 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Date", name: "date", widget: "date" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Modules (accordéons principaux)"
+        name: "modules"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "ID (classe couleur : jukbox, crieur…)", name: "id", widget: "string" }
+          - { label: "Icône", name: "icon", widget: "image" }
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Sous-titre (tag)", name: "tag", widget: "string" }
+          - { label: "Le concept", name: "concept", widget: "text" }
+          - { label: "Ambiance", name: "ambiance", widget: "text" }
+      - label: "Sections détaillées (accordéons secondaires)"
+        name: "sections"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "markdown" }
+      - { label: "Body (texte libre sous les accordéons)", name: "body", widget: "markdown", required: false }
       - { label: "Projet Type", name: "projetType", widget: "hidden", default: "project" }

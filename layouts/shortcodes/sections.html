@@ -1,0 +1,12 @@
+{{/* Rendu des sections détaillées d'un projet depuis le front matter (.Params.sections).
+     Chaque section = { title, body (markdown) }. */}}
+<div class="projet-accordion-group projet-accordion-group--secondary">
+{{ range .Page.Params.sections }}
+  <details class="projet-accordion projet-accordion--secondary">
+    <summary><h2>{{ .title }}</h2></summary>
+    <div class="projet-accordion__content">
+      {{ $.Page.RenderString (dict "display" "block") .body }}
+    </div>
+  </details>
+{{ end }}
+</div>

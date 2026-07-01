@@ -1,0 +1,22 @@
+{{/* Rendu des modules d'un projet depuis le front matter (.Params.modules).
+     Chaque module = { id, icon, title, tag, concept, ambiance }. */}}
+<section class="projet-modules">
+<div class="projet-accordion-group">
+{{ range .Page.Params.modules }}
+  <details class="projet-accordion projet-accordion--module projet-accordion--{{ .id }}">
+    <summary class="projet-summary-wrapper">
+      <div class="module-summary">
+        <img class="module-summary__icon" src="{{ .icon }}" alt="" width="72" height="72" loading="lazy" />
+        <h3 class="module-summary__title">{{ .title }} <span class="module-summary__tag">{{ .tag }}</span></h3>
+      </div>
+    </summary>
+    <div class="projet-accordion__content">
+      <ul>
+        <li><strong>Le concept</strong> : {{ .concept }}</li>
+        <li><strong>Ambiance</strong> : {{ .ambiance }}</li>
+      </ul>
+    </div>
+  </details>
+{{ end }}
+</div>
+</section>
