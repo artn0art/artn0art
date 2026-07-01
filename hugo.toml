@@ -21,15 +21,11 @@ disabled = true
   category = "categories"
 
 # Navigation
-# Le lien Booking/Devis est contextuel : géré par
-# layouts/partials/header/components/cta.html
-# (accueil = aucun, section projets = Devis, autres pages = Booking).
+# Le bouton contact (enveloppe) est contextuel : géré par
+# layouts/partials/header/components/cta.html — l'objet de l'email dépend de la
+# page active (DJ = booking, projets = devis, autres = prise de contact).
+# Plus d'item "contact" ici : le partial rend l'enveloppe lui-même.
 [menu]
-  [[menu.main]]
-    name = ""
-    pageRef = "contact"
-    pre = "envelope"
-    weight = 30
   # Liens légaux (bas de page)
   [[menu.footer]]
     name = "Mentions légales"

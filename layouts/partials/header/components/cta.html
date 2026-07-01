@@ -1,19 +1,22 @@
 {{/*
-  CTA contextuel du header :
-  - page d'accueil  → aucun lien
-  - section projets → « Devis »   (mailto devis Jukbike)
-  - autres pages    → « Booking » (mailto booking DJ)
+  Bouton CONTACT contextuel du header.
+  Ouvre un email dont l'OBJET dépend de la page active :
+    - page DJ         → « Demande de booking DJ »
+    - section projets → « Demande de devis Jukbike »
+    - autres pages    → « Prise de contact »
+  (Remplace l'ancien lien texte Booking/Devis, désormais fondu dans ce bouton.)
 */}}
-{{ if not .IsHome }}
-  {{ $isProjet := eq .Section "projets" }}
-  {{ $label := cond $isProjet "Devis" "Booking" }}
-  {{ $subject := cond $isProjet "Demande%20de%20devis%20Jukbike" "Demande%20de%20booking%20DJ" }}
-  {{ $href := printf "mailto:artn0art@proton.me?subject=%s" $subject }}
-  <a
-    href="{{ $href | safeURL }}"
-    class="flex items-center bf-icon-color-hover"
-    aria-label="{{ $label }}"
-    title="{{ $label }}">
-    <span class="text-base font-medium break-normal">{{ $label }}</span>
-  </a>
+{{ $subject := "Prise%20de%20contact" }}
+{{ if eq .Section "projets" }}
+  {{ $subject = "Demande%20de%20devis%20Jukbike" }}
+{{ else if eq .Section "dj" }}
+  {{ $subject = "Demande%20de%20booking%20DJ" }}
 {{ end }}
+{{ $href := printf "mailto:artn0art@proton.me?subject=%s" $subject }}
+<a
+  href="{{ $href | safeURL }}"
+  class="flex items-center bf-icon-color-hover"
+  aria-label="Contact"
+  title="Contact">
+  <span class="relative block icon">{{ partial "icon.html" "envelope" }}</span>
+</a>

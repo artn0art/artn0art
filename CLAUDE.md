@@ -98,22 +98,21 @@ artn0art/
 
 ## État courant
 
-- **v1.0.0** — Migration GitHub Pages finalisée (2026-07-01)
-  - Hugo v0.163.2, build local vert (**28 pages FR**, 30 fichiers statiques).
-  - Déploiement : **GitHub Pages** via `.github/workflows/deploy-pages.yml`, déclenché à chaque push sur `main`.
-  - Domaine custom **artn0art.com** câblé via `static/CNAME`. ⏳ Reste à faire côté DNS : pointer les enregistrements OVH vers GitHub Pages + activer le domaine custom dans Settings → Pages du repo.
-  - Ancien déploiement OVH (`deploy-ovh.yml`) conservé mais désactivé (trigger manuel `workflow_dispatch` uniquement). `netlify.toml` conservé (inerte, plus connecté).
-  - Home : **2 profils** affichés sous forme de **grille de cartes à 2 colonnes** (façon fors.fm) ; autres profils en `pending` dans `data/profils.yaml`.
-  - Jukbike : accordéons 4 modules, plaquette PDF, logos, CSS hiérarchie.
-  - Favicon + OG image dans `static/` (câblés via `layouts/partials/extend-head.html`).
-  - Sveltia CMS présent (`static/admin/`, backend GitHub) — nécessite l'OAuth GitHub configuré pour l'accès à `/admin/`.
+- **v1.1** — En ligne + audit + retouches (2026-07-02)
+  - DNS OVH pointé vers GitHub Pages (4 A records + CNAME www), email OVH préservé. Domaine custom **artn0art.com** actif.
+  - **Périmètre live** : pages **Jukbike** et **DJ** uniquement. Reste (ateliers, producteur, bricodeur, reactable, a2dd) en `draft` → hors sitemap, publié progressivement.
+  - **Header** : bouton contact **contextuel** (`layouts/partials/header/components/cta.html`) — l'objet de l'email dépend de la page (DJ = booking, projets = devis, autres = prise de contact). Plus de lien texte Booking/Devis.
+  - Logo DJ « MIX » (ex-« ING »), emblème Open Mic corrigé (arche), bloc SoundCloud Hip-Hop ajouté sur la page DJ.
+  - **Audit complet** : `_archives/audits/AUDIT-artn0art-2026-07-02.md`. P0 traités (draft WIP, fautes FR Jukbike, H1 accueil+Jukbike, description accueil), robots.txt activé, déprécations `hugo.toml` corrigées.
+  - Sveltia CMS présent — **guide de branchement OAuth** : `_docs/cms-setup.md` (ou éditer direct via GitHub.com).
 
 ## Prochaines étapes
 
-1. **DNS** : pointer artn0art.com (enregistrements OVH) vers GitHub Pages, puis renseigner le domaine custom dans Settings → Pages et cocher « Enforce HTTPS ».
-2. Sveltia CMS : configurer l'OAuth GitHub et tester l'accès à `/admin/`.
-3. Prochaine passe contenu / Réactivation des profils `pending` (`ateliers`, `producteur`, `bricodeur`) sur la page d'accueil.
-4. Tokens couleurs / polish design (ex. module Crieur de rue).
+1. **CMS** : brancher l'OAuth GitHub pour `/admin/` (voir `_docs/cms-setup.md`), ou éditer les `.md` directement sur GitHub.com.
+2. Vérifier « Enforce HTTPS » coché dans Settings → Pages une fois le certificat émis.
+3. Déprécations restantes `.Site.Data`/`.Site.LanguageCode` : côté thème Blowfish → se règlent en mettant à jour le submodule.
+4. Réactivation progressive des pages `draft` (ateliers, producteur, bricodeur, reactable, a2dd) quand prêtes.
+5. Optionnel : badge « Booking » de la carte DJ (accueil), compression plaquette PDF, harmonisation sous-titre emblème Jukbike.
 5. Restaurer / finaliser la page `Massage & Sonothérapie` ou d'autres pages secondaires si besoin.
 
 

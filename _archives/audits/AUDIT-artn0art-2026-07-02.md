@@ -4,6 +4,10 @@
 >
 > **Périmètre live confirmé par Didier** : seules **Jukbike** et **DJ** sont des pages actives. Le reste (ateliers, producteur, bricodeur, reactable, a2dd) est **WIP**, publié progressivement. La priorisation ci-dessous en tient compte.
 
+> ### ✅ Statut au 02/07 (fin de session)
+> **Traités** : tous les **P0** (draft WIP hors sitemap, fautes FR Jukbike, H1 accueil+Jukbike, description accueil) + **P1.2** (robots.txt) + **P1.3 partiel** (déprécations `languageCode`/`languageName` du projet) + **P1.4** (alt : vérifié, rien à faire). Commit `6946440`.
+> **Restant** : **P1.1** brancher l'OAuth du CMS (action Didier — guide `_docs/cms-setup.md`) ; **P1.3 restant** 2 déprécations `.Site.Data`/`.Site.LanguageCode` **côté thème Blowfish** (se règlent en mettant à jour le submodule) ; **P2** compression PDF et harmonisation emblème (optionnels, nécessitent une décision/source).
+
 ## Score global
 
 | Domaine | Note | Commentaire |
@@ -41,8 +45,9 @@ La home et la page Jukbike n'émettent **aucun `<h1>`** (elles utilisent des `h2
 
 ## P1 — Important (à traiter après les P0)
 
-### P1.1 — CMS non fonctionnel + Jukbike absent de la config
-Voir la section **« Volet CMS »** ci-dessous. En l'état, `/admin/` ne s'authentifie pas (OAuth GitHub à configurer) et la page **Jukbike n'est pas dans `static/admin/config.yml`** (seules Accueil, DJ, Contact + les cartes profils sont éditables).
+### P1.1 — CMS non fonctionnel (authentification à brancher)
+Voir la section **« Volet CMS »** ci-dessous. Seul blocage réel : `/admin/` ne s'authentifie pas tant que l'**OAuth GitHub** n'est pas configuré.
+> **Correction du 02/07** : contrairement à ce qui était noté initialement, la page **Jukbike EST éditable** — elle est couverte par la collection dossier « Projets & Facettes » (`folder: content/projets`, `filter projetType: project`). La config couvre donc Accueil, DJ, Contact, les cartes profils **et** tous les projets. Guide de branchement OAuth : `_docs/cms-setup.md`.
 
 ### P1.2 — robots.txt absent
 Aucun `robots.txt` généré. Recommandé d'en avoir un qui pointe vers le sitemap.
@@ -54,8 +59,8 @@ Aucun `robots.txt` généré. Recommandé d'en avoir un qui pointe vers le sitem
 - Warning « Module blowfish is not compatible with this Hugo version » : le thème déclare 0.141/0.157, on build en 0.163. Sans impact aujourd'hui, mais à surveiller lors des mises à jour du thème.
 **Correctif** : mettre à jour les clés de config + le partial concerné.
 
-### P1.4 — Attributs `alt` à vérifier
-12 images, dont 4 avec `alt` vide. Les **icônes de modules** (`alt=""`) sont décoratives → correct. Mais vérifier que les **logos des cartes d'accueil** (Jukbike, DJ) ont un `alt` descriptif (ex. « Logo Jukbike ») plutôt que vide, pour le SEO image et les lecteurs d'écran.
+### P1.4 — Attributs `alt` — ✅ vérifié, rien à faire
+12 images, dont 4 avec `alt` vide = les **icônes de modules décoratives** (`alt=""` correct en accessibilité). Les **logos des cartes d'accueil** ont bien un `alt` descriptif via `projet-device.html` (`alt="Aperçu visuel : {titre} — {description}"`). Point clos.
 
 ---
 
