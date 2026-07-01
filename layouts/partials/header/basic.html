@@ -31,6 +31,7 @@
       {{ partial "header/components/desktop-menu.html" . }}
     </div>
     <div class="flex md:hidden items-center gap-x-4">
+      {{ partial "header/components/cta.html" . }}
       {{ if .Site.Menus.main }}
         {{ range .Site.Menus.main }}
           <a

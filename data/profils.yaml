@@ -9,7 +9,7 @@ featured:
     image: /images/logo_jukbike.webp
     status: "Plaquette"
     statusHref: "/documents/jukbike-plaquette-2026.pdf"
-    description: "Le vélo-sono : disco mobile et autonome qui roule là où la fête manque."
+    description: "Le vélo disco mobile."
 
   - id: dj
     href: /dj/
@@ -17,7 +17,7 @@ featured:
     hideTitle: true
     image: /images/logo_dj.webp
     status: "Booking"
-    description: "Lecture de salle affûtée, des rythmes tropicaux jusqu'au sound system."
+    description: "Hip-hop electropical, mais pas que…"
 
 secondary: []
 

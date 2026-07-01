@@ -1,4 +1,6 @@
 <nav class="flex items-center gap-x-5 h-12">
+  {{ partial "header/components/cta.html" . }}
+
   {{ if .Site.Menus.main }}
     {{ range .Site.Menus.main }}
       {{ template "DesktopMenu" . }}

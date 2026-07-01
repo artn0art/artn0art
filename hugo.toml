@@ -20,11 +20,10 @@ disabled = true
   category = "categories"
 
 # Navigation
+# Le lien Booking/Devis est contextuel : géré par
+# layouts/partials/header/components/cta.html
+# (accueil = aucun, section projets = Devis, autres pages = Booking).
 [menu]
-  [[menu.main]]
-    name = "Booking"
-    url = "mailto:artn0art@proton.me?subject=Demande%20de%20booking%20DJ"
-    weight = 10
   [[menu.main]]
     name = ""
     pageRef = "contact"
