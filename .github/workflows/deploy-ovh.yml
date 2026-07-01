@@ -12,10 +12,13 @@ name: Build & Deploy to OVH
 # ── À VÉRIFIER ──
 #   server-dir : racine web OVH (souvent ./www/). Adapter si besoin.
 #   HUGO_VERSION : aligné sur la version locale (ajuster si build différent).
+#
+# ── ⚠️ DÉSACTIVÉ (v1, migration GitHub Pages) ──
+#   Le déploiement de production passe désormais par deploy-pages.yml (GitHub Pages).
+#   Ce workflow OVH est conservé mais ne se déclenche plus automatiquement :
+#   trigger manuel uniquement (workflow_dispatch) au cas où un retour OVH serait nécessaire.
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:

@@ -51,9 +51,9 @@ Public cible : professionnels créatifs et collaborations (prioritaire), grand p
 
 - **Générateur** : Hugo (v0.155+)
 - **Thème** : Blowfish (submodule git)
-- **CMS** : Decap CMS (à configurer — back-office visuel)
-- **Hébergement** : OVH mutualisé (FTPS via GitHub Actions — `.github/workflows/deploy-ovh.yml`)
-- **Domaine** : artn0art.com (acheté OVH, 2026-03-25) — DNS à brancher
+- **CMS** : Sveltia CMS (back-office visuel — `static/admin/`, backend GitHub)
+- **Hébergement** : GitHub Pages (build + deploy via `.github/workflows/deploy-pages.yml`). OVH conservé mais désactivé (trigger manuel).
+- **Domaine** : artn0art.com (acheté OVH, 2026-03-25) — CNAME câblé (`static/CNAME`), DNS à pointer vers GitHub Pages
 
 ## Structure du site
 
@@ -98,20 +98,23 @@ artn0art/
 
 ## État courant
 
-- **v0.3.1** — Site en ligne sur Netlify (2026-06-30)
+- **v1.0.0** — Migration GitHub Pages finalisée (2026-07-01)
   - Hugo v0.163.2, build local vert (**28 pages FR**, 30 fichiers statiques).
-  - Déploiement : Hébergé sur **Netlify** à l'adresse **https://artn0art.com/**, DNS branchés.
+  - Déploiement : **GitHub Pages** via `.github/workflows/deploy-pages.yml`, déclenché à chaque push sur `main`.
+  - Domaine custom **artn0art.com** câblé via `static/CNAME`. ⏳ Reste à faire côté DNS : pointer les enregistrements OVH vers GitHub Pages + activer le domaine custom dans Settings → Pages du repo.
+  - Ancien déploiement OVH (`deploy-ovh.yml`) conservé mais désactivé (trigger manuel `workflow_dispatch` uniquement). `netlify.toml` conservé (inerte, plus connecté).
   - Home : **2 profils** affichés sous forme de **grille de cartes à 2 colonnes** (façon fors.fm) ; autres profils en `pending` dans `data/profils.yaml`.
   - Jukbike : accordéons 4 modules, plaquette PDF, logos, CSS hiérarchie.
   - Favicon + OG image dans `static/` (câblés via `layouts/partials/extend-head.html`).
-  - Decap CMS présent (`static/admin/`) mais nécessite la configuration de Netlify Identity ou GitHub OAuth pour être utilisé.
+  - Sveltia CMS présent (`static/admin/`, backend GitHub) — nécessite l'OAuth GitHub configuré pour l'accès à `/admin/`.
 
 ## Prochaines étapes
 
-1. (Optionnel) Decap CMS : Activer Netlify Identity + Git Gateway sur le panel Netlify et tester l'accès à `/admin/`.
-2. Prochaine passe contenu / Réactivation des profils `pending` (`ateliers`, `producteur`, `bricodeur`) sur la page d'accueil.
-3. Tokens couleurs / polish design (ex. module Crieur de rue).
-4. Restaurer / finaliser la page `Massage & Sonothérapie` ou d'autres pages secondaires si besoin.
+1. **DNS** : pointer artn0art.com (enregistrements OVH) vers GitHub Pages, puis renseigner le domaine custom dans Settings → Pages et cocher « Enforce HTTPS ».
+2. Sveltia CMS : configurer l'OAuth GitHub et tester l'accès à `/admin/`.
+3. Prochaine passe contenu / Réactivation des profils `pending` (`ateliers`, `producteur`, `bricodeur`) sur la page d'accueil.
+4. Tokens couleurs / polish design (ex. module Crieur de rue).
+5. Restaurer / finaliser la page `Massage & Sonothérapie` ou d'autres pages secondaires si besoin.
 
 
 ## ⚠️ Accès aux fichiers — protocole impératif
