@@ -17,7 +17,7 @@ cta:
     - artn0art@proton.me
 ---
 
-Pour Arnaud (artnoart), la technique n'est jamais un simple outil de production : c'est un terrain de jeu. La casquette de **Bricodeur** réunit le développement logiciel (Python), l'électronique DIY (Arduino, capteurs) et le détournement d'outils musicaux, pour façonner des expériences tangibles ou fluidifier son workflow d'artiste.
+Pour Arnaud (artn0art), la technique n'est jamais un simple outil de production : c'est un terrain de jeu. La casquette de **Bricodeur** réunit le développement logiciel (Python), l'électronique DIY (Arduino, capteurs) et le détournement d'outils musicaux, pour façonner des expériences tangibles ou fluidifier son workflow d'artiste.
 
 Trois chantiers techniques occupent l'atelier :
 

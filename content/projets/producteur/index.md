@@ -25,7 +25,7 @@ Un même fil tend toute la composition : la recherche du groove, de l'énergie e
 
 ## Axes de Production
 
-L'univers de production d'artnoart s'articule autour de trois esthétiques majeures :
+L'univers de production d'artn0art s'articule autour de trois esthétiques majeures :
 
 ### 1. Boom Bap & Lo-Fi Hip-Hop
 *   **Le style** : Des beats lourds hérités de l'âge d'or du hip-hop — samples de jazz ou de soul finement découpés, batteries poussiéreuses et chaleur analogique.

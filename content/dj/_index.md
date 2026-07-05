@@ -38,7 +38,7 @@ hideHeroImage: true
   <summary><h2>Bio</h2></summary>
   <div class="projet-accordion__content">
 
-De l'énergie brute du hip-hop boom bap aux pulsations électroniques, tropicales, je façonne des sets hybrides où le scratch rencontre la global bass. J'aime croiser les rythmes de cumbia ou d'afrobeat avec l'efficacité des beats urbains pour créer un voyage sonore surprenant. Une exploration dansante et métissée, au service de la fête et du rythme.
+De l'énergie brute du hip-hop boom bap aux pulsations électroniques et tropicales, je façonne des sets hybrides où le scratch rencontre la global bass. J'aime croiser les rythmes de cumbia ou d'afrobeat avec l'efficacité des beats urbains pour créer un voyage sonore surprenant. Une exploration dansante et métissée, au service de la fête et du rythme.
 
 *   **Expérience** : 15 ans de pratique et d'exploration de styles.
 *   **Sélection** : Une collection de plus de 5 000 morceaux minutieusement triés et indexés.

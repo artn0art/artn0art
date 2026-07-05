@@ -21,9 +21,9 @@ Le présent site **artn0art.com** est édité par :
 
 Le site est hébergé par :
 
-**OVH SAS** — 2 rue Kellermann, 59100 Roubaix, France — [www.ovhcloud.com](https://www.ovhcloud.com) — Tél : 1007.
+**GitHub, Inc.** — 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis — [www.github.com](https://www.github.com).
 
-> *(Si le site est finalement hébergé ailleurs — Cloudflare Pages, Netlify… — remplacer ce bloc par les coordonnées de l'hébergeur réel.)*
+> *(Le nom de domaine artn0art.com est enregistré chez OVH SAS ; l'hébergement des pages est assuré par GitHub Pages.)*
 
 ## Propriété intellectuelle
 

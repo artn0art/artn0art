@@ -26,7 +26,7 @@ modules:
     icon: /images/modules/crieur.webp
     title: Crieur de Rue
     tag: Théâtre ambulant
-    concept: "Arnaud, muni d'un micro, endosse le rôle de monsieur loyal et annonce le programme à venir, ou celui de crieur public : à l'aide d'une « boîte à criées », il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants."
+    concept: "Arnaud, muni d'un micro, endosse le rôle de Monsieur Loyal et annonce le programme à venir, ou celui de crieur public : à l'aide d'une « boîte à criées », il déclame de façon théâtrale, humoristique ou poétique les mots, messages et petites annonces laissés par les passants."
     ambiance: "Ludique, artistique et créatrice de lien social. Parfait pour les marchés, vide-greniers, inaugurations..."
   - id: openmic
     icon: /images/modules/openmic.webp
@@ -57,7 +57,7 @@ sections:
       * **Déploiement** : Pas besoin de prise électrique ni de groupe électrogène bruyant. Le setup s'installe instantanément et se déplace facilement en déambulation.
   - title: "Références & Collaboration"
     body: |
-      Depuis 2022, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
+      Depuis 2023, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
 
       * **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
       * **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, Véli-Vélo.
