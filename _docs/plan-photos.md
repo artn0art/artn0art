@@ -40,13 +40,16 @@ des gens, la déambulation, chaque module en situation.
 
 **Convention de nommage : `theme-qualite.webp`** (qualité **A** = excellent retenu · **B** = bon · **C** = moyen). Images ~1600 px côté long, webp, < 300 Ko.
 
-Livré (photos affichées sous « concept / ambiance » de chaque onglet) :
+**Règle affichage : max 2 photos par onglet** (grille 2 colonnes, mobile-first — priorité téléphone).
+
+En ligne (module `jukbox`) :
 
 | Fichier | Contenu | Format | → Onglet |
 |---|---|---|---|
 | `velo-festival-A.webp` | Le Jukbike entier de profil sur un stand de festival | paysage | Jukbike (`jukbox`) |
 | `public-guinguette-A.webp` | Public attablé autour du Jukbike, ambiance guinguette | paysage | Jukbike (`jukbox`) |
-| `bord-erdre-B.webp` | Setup complet + public au bord de l'Erdre (enceintes visibles) | portrait | Jukbike (`jukbox`) |
+
+Réserve disque (non affichée — portrait peu adapté à la grille 2×) : `bord-erdre-B.webp`.
 
 **Correspondance `id` → onglet** (colonne « → Onglet ») :
 
@@ -98,6 +101,7 @@ Livré (photos affichées sous « concept / ambiance » de chaque onglet) :
 > | `alt` sous un item | 8 espaces | `        alt: "…"` |
 >
 > - `photos:` **aligné sur** `concept:` et `ambiance:` (4 espaces après le `-` du module).
+> - **Maximum 2 entrées** `photos:` par module (grille 2 colonnes, lisible sur téléphone).
 > - `src` : chemin `/images/…` (sans préfixe `static/`).
 > - `alt` : obligatoire, phrase courte descriptive (accessibilité + SEO).
 > - Ne pas toucher au corps markdown sous `---` (le `{{< modules >}}` lit uniquement le front matter).

@@ -27,8 +27,6 @@ modules:
         alt: "Le Jukbike de profil sur un stand de festival"
       - src: /images/galerie/jukbike/public-guinguette-A.webp
         alt: "Public attablé autour du Jukbike, ambiance guinguette"
-      - src: /images/galerie/jukbike/bord-erdre-B.webp
-        alt: "Setup complet et public au bord de l'Erdre"
   - id: crieur
     icon: /images/modules/crieur.webp
     title: Crieur de Rue

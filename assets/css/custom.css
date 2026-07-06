@@ -1735,24 +1735,28 @@ main {
 }
 
 
-/* Galerie photos dans un module projet (sous concept/ambiance) — ajout 2026-07-05 */
+/* Galerie module — max 2 photos, mobile-first (2 colonnes égales) */
 .module-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.5rem;
   margin-top: 1rem;
+  width: 100%;
 }
 .module-gallery__img {
   width: 100%;
-  height: 180px;
+  aspect-ratio: 4 / 3;
+  height: auto;
   object-fit: cover;
   object-position: center center;
   border-radius: 8px;
   display: block;
 }
-/* Portrait : cadrage légèrement sous le haut (ex. bord de l'Erdre) */
-.module-gallery__img[src*="bord-erdre"] {
-  object-position: center 28%;
+@media (min-width: 680px) {
+  .module-gallery {
+    gap: 0.625rem;
+    max-width: 28rem;
+  }
 }
 
 /* --- Typo Jukbike (Shrikhand + Nunito) — MAJ 2026-07-05, 100% libre (OFL) --- */
