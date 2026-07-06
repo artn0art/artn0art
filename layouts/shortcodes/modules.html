@@ -15,6 +15,13 @@
         <li><strong>Le concept</strong> : {{ .concept }}</li>
         <li><strong>Ambiance</strong> : {{ .ambiance }}</li>
       </ul>
+      {{ with .photos }}
+      <div class="module-gallery">
+        {{ range . }}
+        <img class="module-gallery__img" src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+        {{ end }}
+      </div>
+      {{ end }}
     </div>
   </details>
 {{ end }}
