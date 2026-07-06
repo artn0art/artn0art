@@ -1750,9 +1750,9 @@ main {
   border-radius: 8px;
   display: block;
 }
-/* Portrait : ancrer le cadrage vers le haut (ex. bord de l'Erdre) */
+/* Portrait : cadrage légèrement sous le haut (ex. bord de l'Erdre) */
 .module-gallery__img[src*="bord-erdre"] {
-  object-position: center top;
+  object-position: center 28%;
 }
 
 /* --- Typo Jukbike (Shrikhand + Nunito) — MAJ 2026-07-05, 100% libre (OFL) --- */
