@@ -28,3 +28,7 @@ __pycache__/
 # Presentation
 *.pptx
 
+# Clutter local (corbeille + dossier data mal rangé)
+_trash/
+_data/
+
