@@ -2,7 +2,7 @@
 <div class="device-card" id="device-{{ $p.id }}">
   <a href="{{ $p.href }}" class="device-card-link-overlay" aria-label="Voir le projet : {{ $p.title }}"></a>
   <div class="device-thumb">
-    <img src="{{ $p.image }}" alt="Aperçu visuel : {{ $p.title }} — {{ $p.description }}" loading="lazy" width="800" height="600" />
+    <img src="{{ $p.image }}" alt="Aperçu visuel : {{ $p.title }} — {{ $p.description }}" loading="lazy" decoding="async" width="800" height="600" />
   </div>
   <div class="device-body">
     <div class="device-header">

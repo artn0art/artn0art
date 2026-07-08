@@ -69,8 +69,8 @@ sections:
 ---
 {{< modules >}}
 
-<div class="projet-modules-header" style="margin-top: var(--space-5); margin-bottom: var(--space-5);">
-  <a href="/documents/jukbike-plaquette-2026.pdf" download class="tag tag-status tag-status--link" style="font-size: var(--fs-body-lead) !important; padding: var(--space-2) var(--space-4) !important;">Plaquette PDF</a>
+<div class="projet-plaquette-bar">
+  <a href="/documents/jukbike-plaquette-2026.pdf" download class="tag tag-status tag-status--link">Plaquette PDF</a>
 </div>
 
 {{< sections >}}

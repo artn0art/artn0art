@@ -6,7 +6,7 @@
   <details class="projet-accordion projet-accordion--module projet-accordion--{{ .id }}">
     <summary class="projet-summary-wrapper">
       <div class="module-summary">
-        <img class="module-summary__icon" src="{{ .icon }}" alt="" width="72" height="72" loading="lazy" />
+        <img class="module-summary__icon" src="{{ .icon }}" alt="" width="72" height="72" loading="lazy" decoding="async" />
         <h3 class="module-summary__title">{{ .title }} <span class="module-summary__tag">{{ .tag }}</span></h3>
       </div>
     </summary>
@@ -17,8 +17,8 @@
       </ul>
       {{ with .photos }}
       <div class="module-gallery">
-        {{ range . }}
-        <img class="module-gallery__img" src="{{ .src }}" alt="{{ .alt }}" loading="lazy" />
+        {{ range $i, $photo := . }}
+        <img class="module-gallery__img" src="{{ $photo.src }}" alt="{{ $photo.alt }}" loading="lazy" decoding="async" width="640" height="480"{{ if eq $i 0 }} fetchpriority="low"{{ end }} />
         {{ end }}
       </div>
       {{ end }}

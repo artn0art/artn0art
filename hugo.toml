@@ -42,6 +42,7 @@ disabled = true
   defaultAppearance = "light"
   autoSwitchAppearance = false
   enableSearch = false
+  disableImageZoom = true
 
   [params.homepage]
     layout = "custom"
@@ -60,6 +61,8 @@ disabled = true
 
   [params.footer]
     showCopyright = true
+    showAppearanceSwitcher = false
+    showScrollToTop = true
     showThemeAttribution = false
 
   [params.author]

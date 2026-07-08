@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 /* artn0art — catalogue type fors.fm/devices
    Fond gris neutre, grille de cartes (image dominante), tags inline, sobriété
    Tokens : _agents/conception-site/design/00-tokens.md */
@@ -1759,7 +1758,22 @@ main {
   }
 }
 
-/* --- Typo Jukbike (Shrikhand + Nunito) — MAJ 2026-07-05, 100% libre (OFL) --- */
+/* --- Typo Jukbike (Shrikhand + Nunito) — chargée via extend-head-uncached sur la page Jukbike */
 @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
 @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
-h1, h2, h3, .module-summary__title{ font-family:'Shrikhand','Nunito',system-ui,sans-serif; }
+#projet-jukbike h1,
+#projet-jukbike h2,
+#projet-jukbike h3,
+#projet-jukbike .module-summary__title {
+  font-family: 'Shrikhand', 'Nunito', system-ui, sans-serif;
+}
+
+/* Lien plaquette PDF — remplace les styles inline */
+.projet-plaquette-bar {
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+.projet-plaquette-bar .tag-status--link {
+  font-size: var(--fs-body-lead) !important;
+  padding: var(--space-2) var(--space-4) !important;
+}

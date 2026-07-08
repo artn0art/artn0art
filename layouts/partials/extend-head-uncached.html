@@ -1,0 +1,5 @@
+{{/* Polices page-spécifiques (évite Shrikhand sur tout le site) */}}
+{{ if eq .Params.projetId "jukbike" }}
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
+{{ end }}
