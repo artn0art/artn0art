@@ -16,8 +16,9 @@
         <li><strong>Ambiance</strong> : {{ .ambiance }}</li>
       </ul>
       {{ with .photos }}
+      {{/* Max 2 photos par catégorie — compat mobile (grille 2 colonnes) */}}
       <div class="module-gallery">
-        {{ range $i, $photo := . }}
+        {{ range $i, $photo := first 2 . }}
         <img class="module-gallery__img" src="{{ $photo.src }}" alt="{{ $photo.alt }}" loading="lazy" decoding="async" width="640" height="480"{{ if eq $i 0 }} fetchpriority="low"{{ end }} />
         {{ end }}
       </div>
