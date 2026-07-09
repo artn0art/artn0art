@@ -32,7 +32,7 @@
 | art-09-09 | P1 | BLOCKED | Retirer `draft:` pages — valider liste | @Didier |
 | art-09-10 | P1 | ✅ DONE | Favicons via `layouts/partials/favicons.html` | 🟩 Cursor |
 | art-09-11 | P2 | READY | Compresser `static/cv.pdf` | 🟧 Antigravity |
-| art-09-12 | P2 | READY | Self-host fonts restantes | 🟩 Cursor |
+| art-09-12 | P2 | ✅ DONE | Inter + Space Grotesk self-host (`static/fonts/*.woff2`, `fonts-local.css`) | 🟩 Cursor |
 | art-09-13 | P2 | ✅ DONE | JPEG brut → `jukbike-v1-grue-jaune-1.jpg` (193 Ko) | 🟩 Cursor |
 | art-09-14 | P2 | ✅ DONE | Audit liens live — 6/6 URLs 200 (home, dj, jukbike, légal, contact) | 🟩 Cursor |
 | art-09-15 | P2 | READY | Lighthouse mobile post-deploy | 🟩 Cursor |
