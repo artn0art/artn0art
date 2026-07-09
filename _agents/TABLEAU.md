@@ -21,7 +21,7 @@
 
 | ID | Prio | Statut | Action | Agent |
 |----|------|--------|--------|-------|
-| art-09-01 | P0 | IN_PROGRESS | `git push origin main` — déployer commits | 🟩 Cursor |
+| art-09-01 | P0 | ✅ DONE | Push `main` — deploy GitHub Pages (b29bd9b) | 🟩 Cursor |
 | art-09-02 | P0 | BLOCKED | Compléter mentions légales (nom, adresse) | @Didier + 🟦 Claude |
 | art-09-03 | P0 | BLOCKED | Compléter politique confidentialité | @Didier + 🟦 Claude |
 | art-09-04 | P0 | BLOCKED | OAuth GitHub Sveltia CMS | @Didier |
