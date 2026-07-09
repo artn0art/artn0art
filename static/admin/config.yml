@@ -120,6 +120,14 @@ collections:
           - { label: "Sous-titre (tag)", name: "tag", widget: "string" }
           - { label: "Le concept", name: "concept", widget: "text" }
           - { label: "Ambiance", name: "ambiance", widget: "text" }
+          - label: "Photos galerie (max 2)"
+            name: "photos"
+            widget: "list"
+            required: false
+            max: 2
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Texte alternatif", name: "alt", widget: "string" }
       - label: "Sections détaillées (accordéons secondaires)"
         name: "sections"
         widget: "list"

@@ -28,7 +28,7 @@ __pycache__/
 # Presentation
 *.pptx
 
-# Clutter local (corbeille + dossier data mal rangé)
-_trash/
-_data/
+# Raw photo dumps (keep optimized .jpg / .webp only)
+static/images/galerie/**/*.JPEG
+static/images/galerie/**/*.jpeg
 

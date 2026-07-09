@@ -1,22 +1,15 @@
 # État — artn0art
 
-> MAJ 2026-06-30
+> MAJ **2026-07-09** (audit Cursor + push GitHub Pages)
 
-## v0.3.2 — Déploiement de artn0art.com (2026-06-30)
+## v0.3.3 — Perf + audit (2026-07-09)
 
-- **Déploiement** : Le site est hébergé avec succès sur **Netlify** et le nom de domaine `artn0art.com` pointe correctement vers la production en HTTPS.
-- **Ressources** : Le build est généré par Netlify à partir de la branche `main` (build vert).
-
-## v0.3.1 — Cohérence visuelle (2026-06-23)
-
-- **Layout** : `main { width: 100% }` — cartes pleine largeur (64rem) au lieu de ~350px.
-- **Couleurs** : DJ vert `#275528`, Jukbike `#c9a227`, Crieur rouge `#c0392b`, accents par module.
-- **Home** : accroche « DJ · Jukbike », réseaux dans l'intro, bouton Languages retiré (FR seul).
-- **Jukbike** : icône Jukbox corrigée, classes module pour teintes distinctes.
-
-## v0.3 — Home DJ/Jukbike + page Jukbike modules
-
-**Statut** : En ligne sur Netlify (`https://artn0art.com`).
+- **Déploiement** : GitHub Pages via workflow `.github/workflows/deploy.yml` (branche `main`).
+- **Domaine** : `artn0art.com` → GitHub Pages (OVH DNS).
+- **Build** : Hugo extended, thème Blowfish — **20 pages FR** (`hugo --minify`).
+- **Perf** : head override, fonts allégées, zoom désactivé, Shrikhand scope Jukbike, max 2 photos/module.
+- **CMS** : Sveltia (`/admin/`) — champ `photos` modules ajouté ; OAuth GitHub **à finaliser** (@Didier).
+- **Live** : DJ + Jukbike en vitrine ; autres profils en `pending` ou `draft`.
 
 ### Build (référence)
 
@@ -25,35 +18,34 @@ cd "/Users/artnoart/Code/_projets/artn0art"
 hugo --gc --minify
 ```
 
-- Hugo **v0.163.2** (extended)
-- **28 pages FR**, **30 fichiers statiques**
-- Sortie : `public/` (gitignored)
-
-### Fait (v0.3)
-
-- **Home** : seuls **Jukbike** et **DJ** en `featured` (`data/profils.yaml`) ; ateliers / producteur / bricodeur en `pending`.
-- **Jukbike** : 4 modules en accordéons, plaquette PDF (`/documents/jukbike-plaquette-2026.pdf`), badge « Plaquette », CTA Devis compact.
-- **DJ** : contenu et layout affinés ; logos header (`logo_dj.webp`, `logo_jukbike.webp`).
-- **CSS** : hiérarchie modules / accordéons secondaires, liens réseaux alignés à droite.
-- **Layouts** : overrides header (basic, menu desktop/mobile), `author-links`, `statusHref` sur badges.
-- **Assets** : favicon, apple-touch-icon, `images/og-image.png` (déjà câblés dans `extend-head.html`).
-- **CI/CD** : Déploiement automatique sur Netlify connecté au repo GitHub `artn0art/artn0art`.
-
-### Pages existantes mais hors vitrine active
+### Pages live
 
 | Page | Statut |
 |------|--------|
-| ateliers, producteur, bricodeur | contenu OK, masqués home (`pending`) |
-| reactable, a2dd | `draft: true` — non publiées |
-| mentions-legales, confidentialite | publiées |
+| Home, DJ, Jukbike | ✅ publiées |
+| ateliers, producteur, bricodeur | contenu OK, masqués home |
+| mentions-legales, confidentialite | publiées — champs `[À COMPLÉTER]` restants |
+| reactable, a2dd | `draft: true` |
 
-### À faire (Decap CMS)
+### À faire
 
-1. **Decap CMS** : Activer Netlify Identity + Git Gateway sur Netlify pour rendre accessible le back-office `/admin/`.
+1. Compléter mentions légales / RGPD (nom, adresse — @Didier)
+2. OAuth Sveltia CMS
+3. Photos galerie DJ + modules Jukbike restants
+4. Vérifier Lighthouse mobile post-deploy
 
-### Prochaine passe contenu
+### Backlog agents
 
-- Tokens couleurs (ex. rouge Crieur) — chantier design prévu.
-- Réactiver profils `pending` quand gabarit validé.
-- Mettre à jour page a2dd (TCON v5) si publication un jour.
-- Restaurer / finaliser la page `Massage & Sonothérapie` si souhaité.
+→ `_agents/TABLEAU.md` · Audit : `_archives/audits/AUDIT-artn0art-2026-07-09.md`
+
+---
+
+## Historique
+
+### v0.3.2 — Déploiement (2026-06-30)
+
+Site en ligne, domaine HTTPS OK.
+
+### v0.3.1 — Cohérence visuelle (2026-06-23)
+
+Layout pleine largeur, couleurs par module, home DJ/Jukbike.
