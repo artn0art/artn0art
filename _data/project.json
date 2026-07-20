@@ -4,104 +4,63 @@
   "_migration": {
     "tool": "migrate-project-json.sh",
     "date": "2026-06-02",
-    "sources": [
-      "artn0art-resume.json"
-    ],
-    "note": "Fusion convention village 2026-05-13. Sections status/resume/memoire conservees telles quelles (lossless)."
+    "sources": ["artn0art-resume.json"],
+    "note": "Resync 2026-07-16 — GitHub Pages, Sveltia CMS, hugo.toml."
   },
   "resume": {
     "id": "artn0art",
     "nom": "artn0art — Site vitrine DJ & portfolio",
-    "description": "Site internet personnel : vitrine DJ, portfolio créatif, showcase projets. Hugo + Decap CMS, hébergé sur Netlify/Cloudflare Pages.",
+    "description": "Site vitrine DJ et portfolio créatif (hub + univers). Hugo + Blowfish + Sveltia CMS. Hébergé sur GitHub Pages (artn0art.com).",
     "type": "projet",
     "icone": "🌐",
     "couleur": "rgba(168, 85, 247, 0.15)",
-    "etat": "v0.3.2 — site Hugo + thème Blowfish déployé en production sur Netlify (artn0art.com). (resync 2026-06-30)",
+    "etat": "v1.1 — GitHub Pages live (DJ + Jukbike). Score audit 3,5/5. (resync 2026-07-16)",
     "stats": {
-      "pages": 28,
-      "html": 0,
-      "data": 0
+      "pages": 20,
+      "urls_sitemap": 7,
+      "langues": 1
     },
     "architecture": {
-      "description": "Hugo (static site generator) + Decap CMS (headless CMS) + Netlify (hosting)",
-      "flux": "content/ (Markdown) → Hugo build → public/ (HTML) → Netlify deploy",
+      "description": "Hugo (SSG) + Blowfish + Sveltia CMS + GitHub Pages",
+      "flux": "content/ (Markdown) → hugo build → public/ → GitHub Actions → artn0art.com",
       "espaces": [
-        {
-          "nom": "content/",
-          "role": "Pages en Markdown (DJ, projets, portfolio, contact)"
-        },
-        {
-          "nom": "static/admin/",
-          "role": "Panneau Decap CMS pour édition visuelle"
-        },
-        {
-          "nom": "themes/",
-          "role": "Thème Hugo (à choisir)"
-        }
+        { "nom": "content/", "role": "Pages Markdown (hub, dj, projets, contact, légal)" },
+        { "nom": "data/profils.yaml", "role": "Cartes home (featured / pending)" },
+        { "nom": "static/admin/", "role": "Sveltia CMS (config Decap config.yml)" },
+        { "nom": "layouts/", "role": "Overrides thème (head, home, projets)" },
+        { "nom": "themes/blowfish/", "role": "Thème Hugo (submodule)" }
       ]
     },
     "fichiers": [
       {
         "section": "Config",
         "items": [
-          {
-            "nom": "config.toml",
-            "role": "Configuration Hugo (titre, menus, paramètres)",
-            "tag": "config"
-          },
-          {
-            "nom": "static/admin/config.yml",
-            "role": "Configuration Decap CMS (collections, champs)",
-            "tag": "config"
-          }
+          { "nom": "hugo.toml", "role": "Configuration Hugo + Blowfish", "tag": "config" },
+          { "nom": "static/admin/config.yml", "role": "Collections Sveltia/Decap CMS", "tag": "config" },
+          { "nom": ".github/workflows/deploy-pages.yml", "role": "CI deploy GitHub Pages", "tag": "ci" }
         ]
       },
       {
-        "section": "Contenu",
+        "section": "Contenu live",
         "items": [
-          {
-            "nom": "content/_index.md",
-            "role": "Page d'accueil",
-            "tag": "content"
-          },
-          {
-            "nom": "content/dj/_index.md",
-            "role": "Page vitrine DJ",
-            "tag": "content"
-          },
-          {
-            "nom": "content/projets/",
-            "role": "Fiches projets (reactable, jukbike...)",
-            "tag": "content"
-          },
-          {
-            "nom": "content/portfolio/",
-            "role": "Galerie créative",
-            "tag": "content"
-          },
-          {
-            "nom": "content/contact.md",
-            "role": "Contact et booking",
-            "tag": "content"
-          }
+          { "nom": "content/_index.md", "role": "Hub — cartes projet", "tag": "content" },
+          { "nom": "content/dj/_index.md", "role": "Univers DJ + SoundCloud", "tag": "content" },
+          { "nom": "content/projets/jukbike/index.md", "role": "Univers Jukbike", "tag": "content" },
+          { "nom": "content/contact/_index.md", "role": "Contact", "tag": "content" }
         ]
       }
     ],
     "dependencies": {
       "python": [],
       "bricks": [],
-      "ml": "",
-      "models": [],
-      "tools": [
-        "hugo",
-        "decap-cms",
-        "netlify"
-      ]
+      "tools": ["hugo-extended-0.163.2", "sveltia-cms", "github-pages"]
     },
     "todo_prochaine_session": [
-      "Configurer Decap CMS (Netlify Identity / GitHub OAuth)",
-      "Réactiver / peupler les profils pending sur la page d'accueil (ateliers, producteur, bricodeur)",
-      "Restaurer ou réécrire la page Massage & Sonothérapie"
+      "Compléter mentions légales + confidentialité (@Didier)",
+      "OAuth Sveltia CMS (/admin/)",
+      "Mettre à jour Blowfish ou pinner Hugo 0.157 en CI",
+      "Photos galerie DJ + modules Jukbike restants",
+      "Publier pages draft (ateliers, producteur, bricodeur, reactable, a2dd)"
     ]
   }
 }
