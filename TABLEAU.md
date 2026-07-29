@@ -1,54 +1,42 @@
 # TABLEAU — backlog opérationnel · artn0art
 
-> Rédigé par Claude. **Source unique du backlog** des missions du projet.
-> Couplé à `CLAUDE.md` (statut) et `MEMORY.md` (décisions/pièges).
+> **Resync 2026-07-16** — Score **3,5/5** · Live : DJ + Jukbike · Deploy : GitHub Pages  
+> Détail audit : `_archives/audits/AUDIT-artn0art-2026-07-16.md`
 
 ## Légende statut
 
 | Icône | Sens |
 |---|---|
-| 🟢 | En cours (claim actif d'un agent) |
-| 🟡 | À activer (prochaine candidate, prête) |
-| 🔵 | Cadrée (fiche écrite, en attente de feu vert) |
-| ⚪ | Idée / backlog vague (pas encore cadrée) |
-| ✅ | Livrée (passe à l'Historique en fin de campagne) |
+| 🟢 | En cours |
+| 🟡 | Prêt à activer |
+| 🔵 | Cadrée |
+| ⚪ | Idée |
+| ✅ | Livrée |
+| ⛔ | Bloqué @Didier |
 
-## Convention IDs
+## Backlog actif
 
-- `F-X.Y` — Mission standard (X = lot, Y = numéro)
-- `DEC-XXX` — Décision à cadrer (sortie : note de décision dans MEMORY.md)
-- `Lot A/B/C…` — Sous-groupe d'un chantier
+| ID | Prio | Statut | Action | Agent |
+|----|------|--------|--------|-------|
+| art-09-02 | P0 | ⛔ | Mentions légales (nom, adresse, statut) | @Didier |
+| art-09-03 | P0 | ⛔ | Politique confidentialité | @Didier |
+| art-09-04 | P0 | ⛔ | OAuth GitHub Sveltia CMS | @Didier |
+| art-16-01 | P0 | ✅ | Hugo/Blowfish — submodule v2.104.0 (max Hugo 0.163.3) | 🟩 Cursor |
+| art-09-05 | P1 | ⛔ | Photos galerie DJ | @Didier |
+| art-09-06 | P1 | ⛔ | 3 modules Jukbike sans photos | @Didier |
+| art-09-09 | P1 | ⛔ | Publier pages draft — valider liste | @Didier |
+| art-09-15 | P2 | ✅ | Lighthouse mobile — 97/100/100/100 | 🟩 Cursor |
+| art-16-02 | P2 | ⛔ | Compresser PDF plaquette (1,2 Mo) — besoin gs/qpdf | 🟧 Antigravity |
 
-## Missions actives
+## Historique récent
 
-| ID | Titre | Statut | Agent | Coût | Note |
-|---|---|---|---|---|---|
-| _(vide)_ | | | | | |
+| Date | ID | Action |
+|------|-----|--------|
+| 2026-07-16 | art-16-01 | Blowfish v2.104.0 + build OK |
+| 2026-07-16 | art-09-15 | Lighthouse mobile 97/100/100/100 |
+| 2026-07-16 | — | Audit complet + resync docs + archive 2026-07-16 |
+| 2026-07-16 | art-09-12 | Fonts self-host Inter + Space Grotesk |
+| 2026-07-09 | art-09-01 | Push main → GitHub Pages |
+| 2026-07-09 | art-09-10 | Favicons custom |
 
-## Backlog cadré (prêt à activer)
-
-_(Missions avec fiche complète dans `_docs/missions/`, en attente de
-Didier pour le go.)_
-
-| ID | Titre | Statut | Agent prévu | Coût estimé | Fiche |
-|---|---|---|---|---|---|
-| _(vide)_ | | | | | |
-
-## Backlog vague (idées à creuser)
-
-_(Idées notées, pas encore cadrées. À mûrir avant de devenir une mission.)_
-
-- _(rien pour l'instant)_
-
-## Chantier à venir (groupe de missions liées)
-
-_(Chantiers cadrés mais non lancés. Référence vers un doc de réflexion
-+ inventaire des Lots.)_
-
-- _(rien pour l'instant)_
-
-## Historique (missions livrées)
-
-_(Ordre antéchronologique. Format : `[AAAA-MM-JJ] F-X.Y — Titre · @Agent`)_
-
-- _(rien pour l'instant)_
+> Miroir détaillé agents : `_agents/TABLEAU.md` · Handoff : `_agents/JOURNAL.md`

@@ -43,6 +43,8 @@ disabled = true
   autoSwitchAppearance = false
   enableSearch = false
   disableImageZoom = true
+  enableA11y = true
+  defaultSocialImage = "images/og-image.png"
 
   [params.homepage]
     layout = "custom"
