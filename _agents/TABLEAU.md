@@ -66,5 +66,5 @@
 | P | Tâche | Pourquoi |
 |---|-------|----------|
 | **P1** | Committer les 17 modifs en attente | hygiène git (rien de committé récemment) |
-| **P2** | Migrer `data/` → `_data/` | forme interdite (convention village) |
+| **P2** | ~~Migrer `data/`~~ → **exception actée** : `data/` est un dossier standard Hugo (le renommer casserait le build) — noter l'exception dans convention-village | forme imposée par la stack |
 | **P3** | Page/extraits mashup pour le portfolio | alimente la Phase 5 signature Jukbike |
