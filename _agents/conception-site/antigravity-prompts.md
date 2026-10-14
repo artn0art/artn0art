@@ -3,7 +3,7 @@
 > Rôle pour cette mission : **direction artistique & design**. Tu produis des **specs
 > Markdown + maquettes/références visuelles**, jamais du code de prod. Dépose tes livrables
 > dans `_agents/conception-site/design/` et tes handoffs dans `_agents/conception-site/handoffs/`.
-> Langue : **français**. Respecte le canon `~/Code/_projets/_agents/coordination-agents.md`.
+> Langue : **français**. Respecte le canon `~/Code/_agents/coordination-agents.md`.
 > Ne touche pas à `assets/css/`, `layouts/`, `hugo.toml`, `static/` (zone Cursor).
 
 Colle chaque bloc tel quel dans Antigravity, une phase à la fois.

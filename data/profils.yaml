@@ -19,6 +19,25 @@ featured:
     status: ""
     description: "Hip-hop electropical, mais pas que…"
 
+  - id: mao
+    href: /mao/
+    title: "MAO"
+    hideTitle: true
+    image: /images/logo_mao.webp
+    status: "Bio formateur"
+    statusHref: "/mao/#bio"
+    description: "Formation Ableton Live : Push, Move, Note, différents styles musicaux, spatialisation sonore."
+
+  # 🧵4 — Didier 10/10 01h32 : carré bricodage (logo + bouton bio). Brouillon 🟦 Claude, à relire.
+  - id: bricodage
+    href: /bricodage/
+    title: "Bricodage"
+    hideTitle: true
+    image: /images/logo_bricodage.webp
+    status: "Bio"
+    statusHref: "/bricodage/"
+    description: "Code, électronique et objets sonores : livre musical, vélo disco, interfaces DIY."
+
 secondary: []
 
 # Masqués pour l'instant — réactiver dans featured/secondary quand le gabarit est validé

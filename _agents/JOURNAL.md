@@ -84,3 +84,10 @@
 - Photos DJ + modules Jukbike + validation pages draft
 
 ---
+- 14/10 08:49 · 🟦 CLA — `content/mao/_index.md` : bio « Formateur certifié SawUp » → « Formation de formateur — Saw Up (2025) » (go Didier 14/10). Local, non poussé.
+- 14/10 10:20 · 🟦 CLA — `content/dj/_index.md` : accordéon « Cours DJ — Initiation & Perfectionnement » (#cours-dj), sans tarifs (en attente Didier). Local, non poussé.
+- 14/10 10:35 · 🟦 CLA — icône `static/images/modules/max_for_live.webp` (dessinée, style des autres modules) + branchée dans l’univers Max for Live. Local, non poussé.
+- 14/10 10:49 · 🟦 CLA — DJ : encart module « Cours DJ » en haut (initiation/perfectionnement + tarifs = MAO, go Didier 12h40) · MAO : encart « Note · Move · Push » · CSS accents max-for-live / note-move-push / cours-dj · icônes cours_dj.webp, note_move_push.webp. Local, non poussé.
+- 14/10 10:54 · 🟦 CLA — MAO : « Note · Move · Push » éclaté en 3 encarts (#note #move #push), icônes note/move/push.webp, lieu chez l’élève ou chez Didier. Local.
+- 14/10 16:32 · 🟨 ANT — Bricodage : retrait de « Bionic Orchestra » des modules, intégré dans la section Bio (`content/bricodage/_index.md` + `data/profils.yaml`). MAO : remplacement du logo par un Minitel vintage affichant « MAO » à l'écran, style monoline vert sombre sur fond crème (`static/images/logo_mao.webp`, backup MPC dans `logo_mao_mpc_backup.webp`). Local.
+- 14/10 16:46 · 🟨 ANT — MAO : mise à jour de l'accroche carte accueil dans `data/profils.yaml` (« Formation Ableton Live : Push, Move, Note, différents styles musicaux, spatialisation sonore. »). Local.

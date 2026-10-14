@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <article class="projet-fiche" id="projet-mao" data-universe="mao">
+    {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+      <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
+        <ol class="projet-breadcrumbs__list">
+          <li class="projet-breadcrumbs__item">
+            <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+            <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+          </li>
+          <li class="projet-breadcrumbs__item projet-breadcrumbs__item--current" aria-current="page">
+            <span>{{ .Params.heroTitle | default "MAO" }}</span>
+          </li>
+        </ol>
+      </nav>
+    {{ end }}
+
+    <div class="projet-body prose">
+      {{ .Content }}
+    </div>
+
+    {{ if not .Params.hideCTA }}
+      {{ partial "projet-cta.html" (dict "meta" (dict "id" "mao") "cta" .Params.cta) }}
+    {{ end }}
+  </article>
+{{ end }}

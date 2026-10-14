@@ -35,3 +35,10 @@
 - **Lighthouse mobile** (artn0art.com) : Perf 97 · A11y 100 · BP 100 · SEO 100.
 - **PDF plaquette** : `pypdf` seul ne compresse pas les images (~0,07 %) — **Ghostscript/qpdf absents** sur la machine.
 - **Configs legacy** : `netlify.toml`, `cloudcannon.config.yml` archivés dans `_archives/legacy-configs/`.
+
+## Serveur local Hugo (2026-10-13)
+
+Hugo lancé depuis Cursor mourait à chaque fin de session agent.
+Stable via LaunchAgent `com.artn0art.hugo-dev` (KeepAlive) → http://127.0.0.1:1313/
+Stop : `launchctl bootout gui/$(id -u)/com.artn0art.hugo-dev`
+Relance : `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/com.artn0art.hugo-dev.plist`

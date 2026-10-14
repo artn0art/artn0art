@@ -5,7 +5,7 @@
 > `layouts/`, `hugo.toml`, `static/`, `content/`. Langue : **français**.
 > Avant chaque commit : **build Hugo vert** (`hugo` sans erreur) + rendu vérifié sur
 > `localhost:1313`. Un **commit par phase** (message français), **safe-trash** (jamais `rm` direct).
-> Respecte le canon `~/Code/_projets/_agents/coordination-agents.md` et `.cursor/rules/00-agents.mdc`.
+> Respecte le canon `~/Code/_agents/coordination-agents.md` et `.cursor/rules/00-agents.mdc`.
 
 Colle chaque bloc tel quel dans Cursor, une phase à la fois, après validation de la spec correspondante.
 

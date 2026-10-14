@@ -18,7 +18,7 @@ hideHeroImage: true
 modules:
   - id: jukbox
     icon: /images/modules/jukbox.webp
-    title: Jukbike
+    title: Djing à vélo
     tag: Vélo disco mobile
     concept: "Une régie DJ ouverte où le public participe à la sélection musicale, en proposant des morceaux à insérer dans le flux du set."
     ambiance: "Festive, conviviale et interactive. Idéal en journée ou en début de soirée."

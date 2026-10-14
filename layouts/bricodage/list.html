@@ -1,0 +1,52 @@
+{{ define "main" }}
+  <article class="projet-fiche" id="projet-bricodage" data-universe="bricodage">
+    {{ if .Params.showBreadcrumbs | default (site.Params.article.showBreadcrumbs | default false) }}
+      <nav class="projet-breadcrumbs" aria-label="Fil d'Ariane">
+        <ol class="projet-breadcrumbs__list">
+          <li class="projet-breadcrumbs__item">
+            <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a>
+            <span class="projet-breadcrumbs__sep" aria-hidden="true">/</span>
+          </li>
+          <li class="projet-breadcrumbs__item projet-breadcrumbs__item--current" aria-current="page">
+            <span>{{ .Params.heroTitle | default "Bricodage" }}</span>
+          </li>
+        </ol>
+      </nav>
+    {{ end }}
+
+    {{ if not .Params.hideHero }}
+    <header class="univers-hero">
+      <div class="univers-hero-title-row">
+        <h1 class="univers-hero-logo-wrapper">
+          <img src="/images/logo_bricodage.webp" alt="Bricodage — code, électronique et objets sonores" class="univers-hero-logo" width="120" height="120" />
+        </h1>
+      </div>
+      {{ with .Params.heroText }}
+        <p class="hero-text-intro">{{ . | markdownify }}</p>
+      {{ end }}
+      <div class="projet-meta">
+        {{ with .Params.tags }}
+          <div class="projet-tags">
+            {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+          </div>
+        {{ end }}
+        {{ with .Params.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+      </div>
+    </header>
+    {{ end }}
+
+    {{ if and .Params.image (not .Params.hideHeroImage) }}
+      <figure class="projet-hero-image">
+        <img src="{{ .Params.image }}" alt="Illustration représentative de {{ $.Params.heroTitle | default "Bricodage" }}" loading="eager" width="1280" height="720" />
+      </figure>
+    {{ end }}
+
+    <div class="projet-body prose">
+      {{ .Content }}
+    </div>
+
+    {{ if not .Params.hideCTA }}
+      {{ partial "projet-cta.html" (dict "meta" (dict "id" "bricodage") "cta" .Params.cta) }}
+    {{ end }}
+  </article>
+{{ end }}

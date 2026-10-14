@@ -16,9 +16,8 @@
 
     <header class="univers-hero">
       <div class="univers-hero-title-row">
-        <h1 class="univers-hero-logo-wrapper">
-          <img src="/images/logo_dj.webp" alt="DJing" class="univers-hero-logo" width="120" height="120" />
-        </h1>
+        {{/* Didier 10/10 02h00 : logo « DJ mix » retiré de la page DJ (il reste sur le carré d'accueil). */}}
+        <h1 class="sr-only">{{ .Params.heroTitle | default "DJ" }}</h1>
       </div>
       {{ with .Params.heroText }}
         <p class="hero-text-intro">{{ . | markdownify }}</p>

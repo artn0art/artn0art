@@ -7,7 +7,7 @@
 
 ## Rappel du canon multi-agents
 
-Ce projet suit le protocole `~/Code/_projets/_agents/coordination-agents.md`
+Ce projet suit le protocole `~/Code/_agents/coordination-agents.md`
 (rôles : Claude cadreur / Cursor artisan / Antigravity usine). Pour cette mission, la
 répartition demandée par Didier est :
 
