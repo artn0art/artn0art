@@ -91,3 +91,9 @@
 - 14/10 10:54 · 🟦 CLA — MAO : « Note · Move · Push » éclaté en 3 encarts (#note #move #push), icônes note/move/push.webp, lieu chez l’élève ou chez Didier. Local.
 - 14/10 16:32 · 🟨 ANT — Bricodage : retrait de « Bionic Orchestra » des modules, intégré dans la section Bio (`content/bricodage/_index.md` + `data/profils.yaml`). MAO : remplacement du logo par un Minitel vintage affichant « MAO » à l'écran, style monoline vert sombre sur fond crème (`static/images/logo_mao.webp`, backup MPC dans `logo_mao_mpc_backup.webp`). Local.
 - 14/10 16:46 · 🟨 ANT — MAO : mise à jour de l'accroche carte accueil dans `data/profils.yaml` (« Formation Ableton Live : Push, Move, Note, différents styles musicaux, spatialisation sonore. »). Local.
+- 15/10 00:24 · 🟩 CUR — D580 (lot CU) : commit local de sécurité (`648fdae`), optimisation photo Jukbike 3,4 Mo ➔ WebP 47 Ko (`0b29b1f`), audit Lighthouse et contrôle visuel. Local.
+- 15/10 00:35 · 🟨 ANT — D580 (lot AN + arbitrages Didier) : MAO renommé en « Production » ; 4 univers passés en brouillon réservé (`content/mao/_brouillons_univers.md`) ; 3 modules actifs réordonnés (Push ➔ Move ➔ Max for Live) ; barre de navigation visuelle par icônes en tête de page (Production & Bricodage) ; migration des styles inline vers classes CSS propres (`custom.css`) ; centralisation du script d'ancres accordéons dans `extend-footer.html` ; tutoiement appliqué ; mentions légales complétées (Arnaud Bannais, Nantes, SIRET 849 803 325 00018). Build Hugo 200 OK. Local.
+- 15/10 00:57 · 🟨 ANT — Retrait des 3 boutons icônes supérieurs sur MAO/Production et Bricodage (retour visuel Didier).
+- 15/10 01:20 · 🟨 ANT — Logo Minitel : écran mis à jour avec « PRODUCTION » au lieu de « MAO » (typographie géométrique rétro Futura Bold en vert `#275528` sur fond crème `#f8f7f3`), installé dans `logo_production.webp` et `logo_mao.webp`.
+
+

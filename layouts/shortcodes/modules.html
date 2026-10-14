@@ -3,7 +3,7 @@
 <section class="projet-modules">
 <div class="projet-accordion-group">
 {{ range .Page.Params.modules }}
-  <details class="projet-accordion projet-accordion--module projet-accordion--{{ .id }}">
+  <details class="projet-accordion projet-accordion--module projet-accordion--{{ .id }}" id="{{ .id }}">
     <summary class="projet-summary-wrapper">
       <div class="module-summary">
         <img class="module-summary__icon" src="{{ .icon }}" alt="" width="72" height="72" loading="lazy" decoding="async" />

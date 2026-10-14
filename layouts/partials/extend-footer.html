@@ -1,3 +1,37 @@
+<script>
+  (function () {
+    function ouvrirAncre(hash) {
+      if (!hash) hash = window.location.hash;
+      if (!hash) return;
+      try {
+        var el = document.querySelector(hash);
+        if (el) {
+          if (el.tagName === 'DETAILS') {
+            el.open = true;
+          } else {
+            var parentDetails = el.closest('details');
+            if (parentDetails) parentDetails.open = true;
+          }
+          setTimeout(function () {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 100);
+        }
+      } catch (e) {}
+    }
+    window.addEventListener('DOMContentLoaded', function () { ouvrirAncre(); });
+    window.addEventListener('hashchange', function () { ouvrirAncre(); });
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest('a[href^="#"]');
+      if (a) {
+        var hash = a.getAttribute('href');
+        if (hash && hash.length > 1) {
+          ouvrirAncre(hash);
+        }
+      }
+    });
+  })();
+</script>
+
 {{ if hugo.IsServer }}
 {{/* Mode Dev local : Cible (🎯) et Canal (💬) actifs uniquement sur serveur local hugo :1313 */}}
 <script src="http://127.0.0.1:8888/_shared/mode-dev/mode-dev.js?v=cn9"></script>
@@ -18,3 +52,4 @@
   })();
 </script>
 {{ end }}
+

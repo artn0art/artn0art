@@ -36,3 +36,5 @@ static/images/galerie/**/*.jpeg
 # Serveur Hugo local (LaunchAgent)
 _logs/
 _tmp-hugo-server.log
+_tmp/
+

@@ -10,12 +10,12 @@ showAuthor: false
 
 Le présent site **artn0art.com** est édité par :
 
-- **Nom / Raison sociale** : [À COMPLÉTER : Nom Prénom de l'éditeur]
-- **Statut** : [À COMPLÉTER : particulier / micro-entrepreneur — n° SIRET le cas échéant]
-- **Adresse** : [À COMPLÉTER : adresse postale, ou « communiquée sur demande »]
+- **Nom / Raison sociale** : Arnaud Bannais (artn0art)
+- **Statut** : Entrepreneur individuel (Auto-entreprise) · SIRET : 849 803 325 00018 · TVA non applicable (art. 293 B du CGI)
+- **Adresse** : Nantes (Loire-Atlantique), France — communiquée sur demande
 - **Email** : artn0art@proton.me
 
-**Directeur de la publication** : [À COMPLÉTER : Nom Prénom]
+**Directeur de la publication** : Arnaud Bannais
 
 ## Hébergement
 

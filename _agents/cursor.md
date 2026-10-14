@@ -1,7 +1,7 @@
 # Statut — Cursor · artn0art
 
-[CLAIM: cursor 2026-10-15 00h22 — content/ · layouts/ · assets/ · static/images/ · _agents/]
-D580 — commit local + contrôle visuel site.
+[CLAIM: cursor 2026-10-15 00h22 → RELÂCHÉ 00h30 — site D580]
+Commit local + LH + webp + liens. Pas de push.
 
 
 [CLAIM: cursor 2026-10-13 13h50 → RELÂCHÉ 13h55 — ~/Code/_shared/village-nav/* + canal.css]

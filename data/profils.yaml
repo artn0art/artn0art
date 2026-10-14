@@ -21,12 +21,12 @@ featured:
 
   - id: mao
     href: /mao/
-    title: "MAO"
+    title: "Production"
     hideTitle: true
-    image: /images/logo_mao.webp
+    image: /images/logo_production.webp
     status: "Bio formateur"
     statusHref: "/mao/#bio"
-    description: "Formation Ableton Live : Push, Move, Note, différents styles musicaux, spatialisation sonore."
+    description: "Formation Ableton Live : Push, Move, Max for Live."
 
   # 🧵4 — Didier 10/10 01h32 : carré bricodage (logo + bouton bio). Brouillon 🟦 Claude, à relire.
   - id: bricodage
