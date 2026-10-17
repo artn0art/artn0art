@@ -32,24 +32,37 @@
   })();
 </script>
 
-{{ if hugo.IsServer }}
-{{/* Mode Dev local : Cible (🎯) et Canal (💬) actifs uniquement sur serveur local hugo :1313 */}}
-<script src="http://127.0.0.1:8888/_shared/mode-dev/mode-dev.js?v=e22c9f1d6"></script>
 <script>
   (function () {
-    function monter() {
-      if (!window.ModeDev) return;
-      ModeDev.init({
-        app: 'canal',
-        api: 'http://127.0.0.1:8888'
-      });
+    // Mode Dev local : Cible (🎯) et Canal (💬) actifs sur serveur local (localhost / 127.0.0.1)
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') return;
+    function chargerModeDev() {
+      if (window.ModeDev) {
+        window.ModeDev.init({
+          app: 'canal',
+          api: 'http://127.0.0.1:8888',
+          accent: '#275528'
+        });
+        return;
+      }
+      var s = document.createElement('script');
+      s.src = 'http://127.0.0.1:8888/_shared/mode-dev/mode-dev.js?v=e22c9f1d6';
+      s.onload = function () {
+        if (window.ModeDev) {
+          window.ModeDev.init({
+            app: 'canal',
+            api: 'http://127.0.0.1:8888',
+            accent: '#275528'
+          });
+        }
+      };
+      document.head.appendChild(s);
     }
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', monter);
+      document.addEventListener('DOMContentLoaded', chargerModeDev);
     } else {
-      monter();
+      chargerModeDev();
     }
   })();
 </script>
-{{ end }}
 
