@@ -1815,20 +1815,7 @@ main {
     max-width: 28rem;
   }
 }
-
-/* --- Typo Jukbike (Shrikhand + Nunito) — chargée via extend-head-uncached sur la page Jukbike */
-@font-face{font-family:'Nunito';src:url('/fonts/Nunito-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
-@font-face{font-family:'Nunito';src:url('/fonts/Nunito-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
-#projet-jukbike h1,
-#projet-jukbike h2 {
-  font-family: 'Shrikhand', 'Nunito', system-ui, sans-serif;
-}
-/* Modules et h3 affinés en Nunito régulier (D2125/D2127 Didier : 'pas en gras') */
-#projet-jukbike h3,
-#projet-jukbike .module-summary__title {
-  font-family: 'Nunito', var(--font-title), system-ui, sans-serif;
-  font-weight: 400;
-}
+/* --- Typo Jukbike : harmonisée avec le gabarit artn0art (Space Grotesk / Inter) --- */
 
 /* Lien plaquette PDF — remplace les styles inline */
 .projet-plaquette-bar {
