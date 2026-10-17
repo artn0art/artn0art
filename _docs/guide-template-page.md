@@ -16,6 +16,10 @@ La page **Jukbike** (`/projets/jukbike/`) constitue l'étalon de référence.
    - **Bas** : Encarts secondaires d'informations (`sections`, `transmission`, `ressources`, `bio`), **toujours repliés par défaut**.
 3. **Pied de page** :
    - CTA sobre de contact / booking / réservation par email.
+4. **Règle d'or — Complémentarité Plaquette / Site (D1815, D1816, D1817 Didier)** :
+   - **La plaquette porte le contenu détaillé**, le site est une vitrine épurée qui n'affiche que ce que la plaquette ne fait pas.
+   - Si un volet (ex: transmission, ateliers) est déjà intégralement couvert par la plaquette officielle téléchargeable, pas d'encart redondant sur le site.
+   - Les titres et écritures restent affinés et élégants (D2125), sans graisse excessive sur les modules.
 
 ---
 

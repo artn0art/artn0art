@@ -48,14 +48,6 @@ modules:
     concept: "Une station de chant mobile en plein air, avec les paroles sur écran et un micro. Le public se rassemble pour chanter ensemble des classiques de la chanson internationale et française."
     ambiance: "Euphorique et rassembleuse. Parfait en soirée (dès le coucher du soleil) pour clore un événement."
 
-# --- Fiche Transmission par thématique (D1507) ---
-transmission:
-  title: "Transmission : Ateliers vélo-son & participation citoyenne"
-  body: |
-    Le Jukbike est pensé comme un outil de médiation et d'animation populaire dans l'espace public :
-    * **Ateliers jeunes & centres sociaux** : découverte de la chaîne sonore autonome, sensibilisation aux mobilités douces et au son mobile.
-    * **Participation active** : prise en main du micro, propositions de morceaux par les passants, décloisonnement entre scène et public.
-
 # --- Sections détaillées (accordéons secondaires) ---
 sections:
   - title: "Genèse & Chiffres Clés"
@@ -94,14 +86,11 @@ ressources:
       href: "https://drive.google.com/drive/folders/artn0art-jukbike"
       description: "Dossier Drive avec visuels haute résolution, logos vectoriels pour affiches de festivals et programmations culturelles."
 
-# --- Bio dédiée thématique Jukbike en bas de page (D1507) ---
+# --- Bio dédiée thématique Jukbike en bas de page (D1507 / D1814) ---
 bio:
-  title: "Bio — Arnaud Bannais"
+  title: "Bio"
   body: |
     Passionné par la culture sound system, la musique urbaine et le vélo, Arnaud conçoit le Jukbike en 2023 à Nantes en croisant la mécanique vélo (au sein de l'atelier Beebike) et 15 ans de pratique DJ. Le triporteur-sono s'est imposé comme un catalyseur de fête mobile, convivial et accessible, sans contrainte logistique ni pollution sonore ou environnementale.
-  points:
-    - "Plus de 50 prestations dans l'espace public, marchés, festivals et guinguettes."
-    - "Partenaire régulier de la Ville de Nantes, Rezé, Couëron, Saint-Herblain et Vertou."
 ---
 {{< modules >}}
 

@@ -1540,10 +1540,10 @@ main {
   padding: 0;
   border-bottom: none !important;
   font-family: var(--font-title);
-  font-size: clamp(1.45rem, 3.2vw, 1.9rem);
-  font-weight: var(--fw-bold);
-  letter-spacing: var(--ls-title);
-  line-height: 1.1;
+  font-size: clamp(1.2rem, 2.5vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
   color: var(--text);
 }
 
@@ -1820,10 +1820,14 @@ main {
 @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Regular.ttf') format('truetype');font-weight:400;font-style:normal;font-display:swap;}
 @font-face{font-family:'Nunito';src:url('/fonts/Nunito-Bold.ttf') format('truetype');font-weight:700;font-style:normal;font-display:swap;}
 #projet-jukbike h1,
-#projet-jukbike h2,
+#projet-jukbike h2 {
+  font-family: 'Shrikhand', 'Nunito', system-ui, sans-serif;
+}
+/* Modules et h3 affinés en Nunito (D2125 Didier : 'écritures trop grasses à affiner') */
 #projet-jukbike h3,
 #projet-jukbike .module-summary__title {
-  font-family: 'Shrikhand', 'Nunito', system-ui, sans-serif;
+  font-family: 'Nunito', var(--font-title), system-ui, sans-serif;
+  font-weight: 700;
 }
 
 /* Lien plaquette PDF — remplace les styles inline */
