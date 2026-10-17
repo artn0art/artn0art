@@ -17,13 +17,6 @@ modules:
     tag: Livre musical
     concept: "Un livre que l'on feuillette, et dont la musique change avec la page ouverte. Chaque page porte une puce ; le lecteur caché dans le livre reconnaît la page et lance sa musique."
     ambiance: "Douce et intuitive : un interrupteur MARCHE / ARRÊT, rien d'autre à apprendre. Environ 10 minutes de musique par page ; fermer le livre ne coupe pas le son, il reprend sur la dernière page vue. Batterie rechargeable (4 à 5 h). Pour l'accueil du public, les médiathèques, les expositions."
-  - id: debrouillards
-    icon: /images/modules/debrouillards.webp
-    title: Animateur numérique
-    tag: En construction
-    # 👤 Didier : publics, thèmes d'ateliers, années.
-    concept: "Animations de vulgarisation scientifique et numérique avec les Petits Débrouillards. 🚧 En construction."
-    ambiance: "🚧 En construction."
   - id: jukbike
     icon: /images/modules/jukbox.webp
     title: Jukbike
