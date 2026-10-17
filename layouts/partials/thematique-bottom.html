@@ -1,0 +1,69 @@
+{{/* Bas de page unifié : Fiches & Ressources (B+A) et Bio dédiée (D1507 Didier) */}}
+
+{{/* 1. Fiche Transmission si définie dans le frontmatter */}}
+{{ with .Params.transmission }}
+<section class="projet-accordion-group projet-accordion-group--secondary" id="transmission" style="margin-top: var(--space-5);">
+  <details class="projet-accordion projet-accordion--secondary" id="details-transmission">
+    <summary><h2>🤝 {{ .title | default "Transmission & Ateliers" }}</h2></summary>
+    <div class="projet-accordion__content">
+      {{ $.Page.RenderString (dict "display" "block") .body }}
+    </div>
+  </details>
+</section>
+{{ end }}
+
+{{/* 2. Fiches Techniques & Ressources B+A (documents légers + lien Drive) */}}
+{{ with .Params.ressources }}
+<section class="ressources-section" id="ressources">
+  <details class="projet-accordion projet-accordion--secondary" id="details-ressources" open>
+    <summary><h2>📋 {{ .title | default "Fiches Techniques & Ressources" }}</h2></summary>
+    <div class="projet-accordion__content">
+      {{ with .intro }}
+        <p>{{ . | markdownify }}</p>
+      {{ end }}
+
+      <div class="ressources-grid">
+        {{ range .items }}
+          <a href="{{ .href }}" class="ressource-card{{ if eq .type "drive" }} ressource-card--drive{{ end }}" {{ if or (eq .type "drive") (eq .type "pdf") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+            <div>
+              <div class="ressource-card-header">
+                <h3 class="ressource-card-title">{{ .title }}</h3>
+                <span class="ressource-badge ressource-badge--{{ .type }}">{{ .badge | default .type }}</span>
+              </div>
+              <p class="ressource-card-desc">{{ .description }}</p>
+            </div>
+            <div class="ressource-card-cta">
+              {{ if eq .type "drive" }}
+                <span>Ouvrir le dossier Drive &rarr;</span>
+              {{ else if eq .type "pdf" }}
+                <span>Télécharger le PDF &darr;</span>
+              {{ else }}
+                <span>Consulter la fiche &rarr;</span>
+              {{ end }}
+            </div>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </details>
+</section>
+{{ end }}
+
+{{/* 3. Bio dédiée par thématique — tout en bas de page */}}
+{{ with .Params.bio }}
+<section class="bio-thematique-box" id="bio">
+  <details class="projet-accordion projet-accordion--secondary" id="details-bio" open>
+    <summary><h2>👤 {{ .title | default "Bio & Parcours" }}</h2></summary>
+    <div class="projet-accordion__content">
+      {{ $.Page.RenderString (dict "display" "block") .body }}
+      {{ with .points }}
+        <ul style="margin-top: 0.75rem;">
+          {{ range . }}
+            <li>{{ . | markdownify }}</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </details>
+</section>
+{{ end }}

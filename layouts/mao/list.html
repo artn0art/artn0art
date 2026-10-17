@@ -14,9 +14,13 @@
       </nav>
     {{ end }}
 
+    {{ partial "thematique-nav.html" . }}
+
     <div class="projet-body prose">
       {{ .Content }}
     </div>
+
+    {{ partial "thematique-bottom.html" . }}
 
     {{ if not .Params.hideCTA }}
       {{ partial "projet-cta.html" (dict "meta" (dict "id" "mao") "cta" .Params.cta) }}

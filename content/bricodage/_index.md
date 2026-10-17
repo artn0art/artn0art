@@ -30,14 +30,39 @@ modules:
     tag: Vélo disco mobile
     concept: "Un système son autonome monté sur un vélo cargo, bricolé sur mesure : batterie lithium, enceintes Hi-Fi intégrées au châssis."
     ambiance: "Festive et itinérante : festivals, guinguettes, marchés. Toute l'histoire est sur sa page."
-# --- Sections détaillées (accordéons secondaires) ---
-sections:
-  - title: "Bio"
-    body: |
-      Pour artn0art, la technique n'est jamais un simple outil : c'est un terrain de jeu. Code, électronique DIY et détournement d'outils musicaux, pour fabriquer des objets sonores que l'on touche, que l'on tourne, que l'on partage.
+# --- Fiche Transmission par thématique (D1507) ---
+transmission:
+  title: "Transmission : Vulgarisation Scientifique & Ateliers Numériques"
+  body: |
+    Animations et ateliers de vulgarisation scientifique et numérique (en partenariat notamment avec les Petits Débrouillards) :
+    * **Éveil au code et à l'électronique** : découverte des capteurs, de la programmation accessible et du détournement d'objets.
+    * **Médiation par le faire** : ateliers pratiques en médiathèques, centres de loisirs et tiers-lieux.
 
-      Des expérimentations de Bionic Orchestra (lutherie numérique augmentée, capteurs et contrôleurs sur mesure) aux livres musicaux interactifs et au sound system mobile à vélo, l'humain et le geste restent au cœur de la démarche.
+# --- Fiches Techniques & Ressources B+A (D1507) ---
+ressources:
+  title: "Fiches Techniques & Ressources Bricodage"
+  intro: "Documentation technique, plans et ressources partagées pour makers, médiathèques et curieux."
+  items:
+    - title: "Fiche Technique Audio-Livre"
+      type: "doc"
+      badge: "Technique"
+      href: "#ressources"
+      description: "Livre interactif autonome : puces RFID invisibles par page, batterie lithium rechargeable (autonomie 4 à 5h), interrupteur marche/arrêt simplifié."
+    - title: "Espace Partagé Bricodage (Plans & Schémas)"
+      type: "drive"
+      badge: "Drive"
+      href: "https://drive.google.com/drive/folders/artn0art-bricodage"
+      description: "Dossier Drive avec schémas de montage électronique, fiches pédagogiques d'ateliers et codes sources ouverts."
+
+# --- Bio dédiée thématique Bricodage en bas de page (D1507) ---
+bio:
+  title: "Bio — Arnaud Bannais"
+  body: |
+    Pour artn0art, la technique n'est jamais un simple outil : c'est un terrain de jeu. Code, électronique DIY et détournement d'outils musicaux, pour fabriquer des objets sonores que l'on touche, que l'on tourne, que l'on partage.
+  points:
+    - "Bionic Orchestra : lutherie numérique augmentée, capteurs et contrôleurs gestuels sur mesure."
+    - "Livres musicaux interactifs : immersion sonore douce pour médiathèques, écoles et expositions."
+    - "Fabrication du Jukbike : sonorisation mobile autonome et intégration mécanique sur mesure."
 ---
 {{< modules >}}
 
-{{< sections >}}

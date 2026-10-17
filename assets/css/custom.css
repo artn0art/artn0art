@@ -2061,3 +2061,204 @@ main {
   margin-top: var(--space-6);
 }
 
+/* ——— D1507 : Charte & Gabarit Template ——— */
+
+/* 1. Bouton d'action sur les plaquettes d'accueil */
+.device-footer-action {
+  margin-top: auto;
+  padding-top: var(--space-3);
+  display: flex;
+  align-items: center;
+}
+
+.btn-voir-propositions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--font-title);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text);
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.device-card:hover .btn-voir-propositions {
+  border-bottom-color: var(--u-color, var(--text));
+  color: var(--u-color, var(--text));
+  transform: translateX(3px);
+}
+
+/* 2. Barre d'accès direct aux activités en haut de page secondaire */
+.page-activities-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: var(--space-3) 0 var(--space-5) 0;
+  padding: 0.5rem 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+}
+
+.activities-nav-label {
+  font-family: var(--font-title);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+  margin-right: 0.25rem;
+}
+
+.page-activity-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.18s ease;
+  cursor: pointer;
+}
+
+.page-activity-btn:hover {
+  border-color: var(--text);
+  background: var(--row-hover);
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.page-activity-btn--secondary {
+  border-style: dashed;
+  color: var(--muted);
+}
+.page-activity-btn--secondary:hover {
+  color: var(--text);
+  border-style: solid;
+}
+
+.activity-btn-ico {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+/* 3. Section Fiches & Ressources B+A (Option B site + Option A Drive) */
+.ressources-section {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-5);
+}
+
+.ressources-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .ressources-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.ressource-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.ressource-card:hover {
+  border-color: var(--text);
+  background: var(--row-hover);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: var(--text);
+}
+
+.ressource-card--drive {
+  border-color: rgba(33, 150, 243, 0.4);
+  background: rgba(33, 150, 243, 0.04);
+}
+
+.ressource-card--drive:hover {
+  border-color: #2196f3;
+  background: rgba(33, 150, 243, 0.08);
+}
+
+.ressource-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.ressource-card-title {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.ressource-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.ressource-badge--pdf {
+  background: rgba(239, 83, 80, 0.15);
+  color: #c62828;
+}
+
+.ressource-badge--drive {
+  background: rgba(33, 150, 243, 0.15);
+  color: #1565c0;
+}
+
+.ressource-badge--doc {
+  background: rgba(76, 175, 80, 0.15);
+  color: #2e7d32;
+}
+
+.ressource-card-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.ressource-card-cta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* 4. Section Bio dédiée en bas de page */
+.bio-thematique-box {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+

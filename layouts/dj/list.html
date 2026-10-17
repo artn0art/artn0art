@@ -32,6 +32,8 @@
       </div>
     </header>
 
+    {{ partial "thematique-nav.html" . }}
+
     {{ if and .Params.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">
         <img src="{{ .Params.image }}" alt="Illustration représentative de {{ $.Params.heroTitle | default "DJ / Mixage" }}" loading="eager" width="1280" height="720" />
@@ -42,7 +44,7 @@
       {{ .Content }}
     </div>
 
-
+    {{ partial "thematique-bottom.html" . }}
 
     {{ if not .Params.hideCTA }}
       {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}

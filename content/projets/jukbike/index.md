@@ -14,6 +14,8 @@ image: /images/projet_jukbike.webp
 hideHero: true
 heroTitle: Jukbike
 hideHeroImage: true
+aliases:
+  - /jukbike/
 # --- Modules (accordéons principaux) — éditables champ par champ ---
 modules:
   - id: jukbox
@@ -45,7 +47,16 @@ modules:
     tag: Chant collectif
     concept: "Une station de chant mobile en plein air, avec les paroles sur écran et un micro. Le public se rassemble pour chanter ensemble des classiques de la chanson internationale et française."
     ambiance: "Euphorique et rassembleuse. Parfait en soirée (dès le coucher du soleil) pour clore un événement."
-# --- Sections détaillées (accordéons secondaires) — titre + texte markdown ---
+
+# --- Fiche Transmission par thématique (D1507) ---
+transmission:
+  title: "Transmission : Ateliers vélo-son & participation citoyenne"
+  body: |
+    Le Jukbike est pensé comme un outil de médiation et d'animation populaire dans l'espace public :
+    * **Ateliers jeunes & centres sociaux** : découverte de la chaîne sonore autonome, sensibilisation aux mobilités douces et au son mobile.
+    * **Participation active** : prise en main du micro, propositions de morceaux par les passants, décloisonnement entre scène et public.
+
+# --- Sections détaillées (accordéons secondaires) ---
 sections:
   - title: "Genèse & Chiffres Clés"
     body: |
@@ -55,22 +66,43 @@ sections:
       * **Avril 2023** : Début de la construction et assemblage de la sonorisation autonome.
       * **Mai 2023** : Lancement officiel et première prestation.
       * **Les chiffres** : Plus de **50 prestations**, **11 clients réguliers** et **4 collectivités territoriales** partenaires.
-  - title: "Fiche Technique & Logistique"
-    body: |
-      * **Autonomie** : Batterie Lithium haute capacité assurant 6 à 8 heures de diffusion à volume élevé.
-      * **Sonorisation** : Système de sonorisation bricolé sur mesure à partir d'enceintes Hi-Fi, intégré dans le châssis du vélo cargo.
-      * **Déploiement** : Pas besoin de prise électrique ni de groupe électrogène bruyant. Le setup s'installe instantanément et se déplace facilement en déambulation.
   - title: "Références & Collaboration"
     body: |
       Depuis 2023, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
 
       * **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
       * **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, Véli-Vélo.
+
+# --- Fiches Techniques & Ressources B+A (D1507) ---
+ressources:
+  title: "Fiches Techniques & Ressources"
+  intro: "Documents pour programmateurs, régisseurs, collectivités et partenaires techniques."
+  items:
+    - title: "Plaquette officielle Jukbike 2026"
+      type: "pdf"
+      badge: "PDF officiel"
+      href: "/documents/jukbike-plaquette-2026.pdf"
+      description: "Dossier de présentation complet : formules (Djing, Crieur, Open Mic, Karaoké), photos et références."
+    - title: "Fiche Technique & Logistique"
+      type: "doc"
+      badge: "Technique"
+      href: "#ressources"
+      description: "Batterie Lithium haute capacité (6 à 8h d'autonomie à fort volume). Système de sonorisation Hi-Fi intégré au châssis. Déploiement instantané sans prise 230V."
+    - title: "Espace Partagé Jukbike (Photos HD & Visuels)"
+      type: "drive"
+      badge: "Drive"
+      href: "https://drive.google.com/drive/folders/artn0art-jukbike"
+      description: "Dossier Drive avec visuels haute résolution, logos vectoriels pour affiches de festivals et programmations culturelles."
+
+# --- Bio dédiée thématique Jukbike en bas de page (D1507) ---
+bio:
+  title: "Bio — Arnaud Bannais"
+  body: |
+    Passionné par la culture sound system, la musique urbaine et le vélo, Arnaud conçoit le Jukbike en 2023 à Nantes en croisant la mécanique vélo (au sein de l'atelier Beebike) et 15 ans de pratique DJ. Le triporteur-sono s'est imposé comme un catalyseur de fête mobile, convivial et accessible, sans contrainte logistique ni pollution sonore ou environnementale.
+  points:
+    - "Plus de 50 prestations dans l'espace public, marchés, festivals et guinguettes."
+    - "Partenaire régulier de la Ville de Nantes, Rezé, Couëron, Saint-Herblain et Vertou."
 ---
 {{< modules >}}
-
-<div class="projet-plaquette-bar">
-  <a href="/documents/jukbike-plaquette-2026.pdf" download class="tag tag-status tag-status--link">Plaquette PDF</a>
-</div>
 
 {{< sections >}}

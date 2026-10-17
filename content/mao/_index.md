@@ -10,23 +10,57 @@ description: "Formations Ableton Live, coaching et prise en main de machines : P
 heroTitle: Production
 hideHero: true
 hideHeroImage: true
----
+aliases:
+  - /production/
+activites:
+  - id: push
+    title: "Push 3"
+    icon: /images/modules/push.webp
+  - id: move
+    title: "Move"
+    icon: /images/modules/move.webp
+  - id: max-for-live
+    title: "Max for Live"
+    icon: /images/modules/max_for_live.webp
+  - id: tarifs
+    title: "Tarifs & Formules"
 
-<!-- En-tête : La boussole pédagogique à 3 questions (plié par défaut) -->
-<div class="projet-accordion-group projet-accordion-group--secondary boussole-group">
-<details class="projet-accordion projet-accordion--secondary" id="boussole">
-<summary><h3>La boussole pédagogique à 3 questions</h3></summary>
-<div class="projet-accordion__content">
-<p>Chaque séance d'accompagnement s'articule autour de trois repères concrets pour garantir des progrès tangibles sans surcharge théorique :</p>
-<ol>
-  <li><strong>Connaissance :</strong> Qu'est-ce que je comprends de nouveau dans mon outil ou ma chaîne de création ?</li>
-  <li><strong>Émotion :</strong> Quelle sensation, quelle texture ou quelle couleur est-ce que je souhaite transmettre à l'auditeur ?</li>
-  <li><strong>Motivation :</strong> Quel pas décisif et concret franchit mon morceau aujourd'hui ?</li>
-</ol>
-<p><strong>Autonomie durable :</strong> L'objectif prioritaire est de te transmettre des réflexes d'écoute, une méthode de travail rigoureuse et des automatismes que tu pourras reproduire en totale indépendance dans ton studio personnel.</p>
-</div>
-</details>
-</div>
+transmission:
+  title: "Transmission : Pédagogie & Autonomie Créative"
+  body: |
+    Chaque séance d'accompagnement s'articule autour de la **boussole pédagogique à 3 questions** :
+    1. **Connaissance** : Qu'est-ce que je comprends de nouveau dans mon outil ou ma chaîne de création ?
+    2. **Émotion** : Quelle sensation, quelle texture ou quelle couleur est-ce que je souhaite transmettre à l'auditeur ?
+    3. **Motivation** : Quel pas décisif et concret franchit mon morceau aujourd'hui ?
+
+    **Autonomie durable** : L'objectif prioritaire est de te transmettre des réflexes d'écoute, une méthode de travail rigoureuse et des automatismes reproductibles en totale indépendance dans ton studio personnel.
+
+ressources:
+  title: "Fiches Techniques & Ressources Apprenants"
+  intro: "Supports de cours, mémos techniques et dossier partagé pour les élèves et producteurs."
+  items:
+    - title: "Environnement Technique Studio"
+      type: "doc"
+      badge: "Technique"
+      href: "#ressources"
+      description: "Live 12 Suite, Push 3 autonome/relié, Move nomade. Synthèse analogique/wavetable/FM, séparation de stems native, gestion du headroom et calibration d'écoute."
+    - title: "Espace Partagé Apprenants (Projets Live & Stems)"
+      type: "drive"
+      badge: "Drive"
+      href: "https://drive.google.com/drive/folders/artn0art-production"
+      description: "Dossier Drive avec projets Ableton Live témoins, banques de sons triées, racks d'effets personnalisés et patchs Max for Live partagés."
+
+bio:
+  title: "Bio Formateur — Arnaud Bannais"
+  body: |
+    Formateur et musicien passionné par la transmission et la lutherie numérique, Arnaud accompagne les producteurs débutants et confirmés vers l'expression d'une voix musicale singulière, avec une pédagogie centrée sur le geste et l'écoute plutôt que sur la théorie abstraite.
+  points:
+    - "Formation de formateur — Saw Up (2025) : Ingénierie pédagogique appliquée à la création musicale."
+    - "Animateur Ableton User Group — Stereolux Nantes (2022, 2023, 2024) : Partage d'expertise et ateliers communautaires."
+    - "Max/MSP, Jitter & Max for Live — Le Jardin Moderne Rennes (2011) : Programmation MIDI et dispositifs interactifs."
+    - "Certificat Professionnel Technicien Son & Lumière — IRPA Lyon (2013) : Chaîne électroacoustique et calibration."
+    - "Réalisation Radio — Sud Formadia Toulouse (2010) : Prise de son et montage chirurgical."
+---
 
 <!-- Modules de Formation : Push, Move, Max (ordre Didier 15/10 D580) -->
 <section class="projet-modules modules-group">
@@ -220,33 +254,6 @@ hideHeroImage: true
 </table>
 </div>
 <p><em>Masterclass 4&nbsp;h et stage 25&nbsp;h</em> : sur demande seulement (la structure fournit les postes). Formations non certifiantes — pas de CPF ni de mention « financé ».</p>
-</div>
-</details>
-
-<details class="projet-accordion projet-accordion--secondary">
-<summary><h2>Compétences & Environnement Technique</h2></summary>
-<div class="projet-accordion__content">
-<ul>
-<li><strong>Environnement Ableton Live :</strong> Live 12 Suite, Push 3, flux nomade avec Move & Note. Séparation de stems native (Live 12.3+) pour l'analyse et la recomposition.</li>
-<li><strong>Sound Design & Synthèse :</strong> Synthèse analogique virtuelle (<code>Analog</code>, <code>Drift</code>), synthèse wavetable évolutive (<code>Wavetable</code>), synthèse FM (<code>Operator</code>), échantillonnage avancé (<code>Simpler</code>, <code>Sampler</code>).</li>
-<li><strong>Rythme & Groove :</strong> Drum Racks hybrides (percussions acoustiques + boîtes à rythmes), swing subtil, humanisation des vélocités, micro-timing et esthétiques lentes (<em>half-time feel</em>).</li>
-<li><strong>Espace, Textures & Alchimie Sonore :</strong> Réverbes cathédrales, delays dub avec modulation, textures vinyle, bruits de bande et field recordings immersifs.</li>
-<li><strong>Max for Live (M4L) :</strong> Contrôleurs MIDI sur mesure, générateurs de notes, LFOs et traitements maison — enseigné en cours particulier (voir l’univers <a href="#max-for-live">Max for Live</a>).</li>
-<li><strong>Arrangement & Mixage :</strong> Progression par couches narratives (additif/soustractif sans drops EDM artificiels), gestion chirurgicale sous 30 Hz (mono-bass, kick/bass sidechain) et respect du headroom.</li>
-</ul>
-</div>
-</details>
-
-<details id="bio" class="projet-accordion projet-accordion--secondary">
-<summary><h2>Bio, Certifications & Parcours</h2></summary>
-<div class="projet-accordion__content">
-<ul>
-  <li><strong>Formation de formateur — Saw Up (2025)</strong> : Ingénierie pédagogique appliquée à la création musicale et accompagnement individualisé.</li>
-  <li><strong>Animateur Ableton User Group — Stereolux Nantes (2022, 2023, 2024)</strong> : Organisation, partage d'expertise technique et animation d'ateliers pour la communauté des producteurs de la région nantaise.</li>
-  <li><strong>Max/MSP, Jitter & Max for Live — Le Jardin Moderne Rennes (2011)</strong> : Formation professionnelle aux architectures de synthèse modulaire, programmation MIDI créative et dispositifs interactifs.</li>
-  <li><strong>Certificat Professionnel Technicien Son & Lumière — IRPA Lyon (2013)</strong> : Maîtrise de la chaîne électroacoustique, traitement du signal, diffusion et calibration studio/scène.</li>
-  <li><strong>Réalisation Radio — Sud Formadia Toulouse (2010)</strong> : Prise de son, montage audio chirurgical, habillage sonore et travail de la voix.</li>
-</ul>
 </div>
 </details>
 

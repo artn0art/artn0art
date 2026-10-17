@@ -46,6 +46,8 @@
     </header>
     {{ end }}
 
+    {{ partial "thematique-nav.html" . }}
+
     {{ if and $meta.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">
         <img src="{{ $meta.image }}" alt="Illustration représentative de l'univers {{ $meta.heroTitle }}" loading="eager" width="1280" height="720" />
@@ -55,6 +57,8 @@
     <div class="projet-body prose">
       {{ .Content }}
     </div>
+
+    {{ partial "thematique-bottom.html" . }}
 
     {{ if not .Params.hideCTA }}
       {{ partial "projet-cta.html" (dict "meta" $meta "cta" .Params.cta) }}
