@@ -1,22 +1,21 @@
-{{/* Bas de page unifié : Fiches & Ressources (B+A) et Bio dédiée (D1507 Didier) */}}
+{{/* Bas de page unifié : Encarts repliés secondaires (Transmission, Ressources B+A, Bio) */}}
+{{ if or .Params.transmission .Params.ressources .Params.bio }}
+<div class="projet-accordion-group projet-accordion-group--secondary secondary-group">
 
-{{/* 1. Fiche Transmission si définie dans le frontmatter */}}
-{{ with .Params.transmission }}
-<section class="projet-accordion-group projet-accordion-group--secondary" id="transmission" style="margin-top: var(--space-5);">
-  <details class="projet-accordion projet-accordion--secondary" id="details-transmission">
-    <summary><h2>🤝 {{ .title | default "Transmission & Ateliers" }}</h2></summary>
+  {{/* 1. Fiche Transmission si définie dans le frontmatter */}}
+  {{ with .Params.transmission }}
+  <details class="projet-accordion projet-accordion--secondary" id="transmission">
+    <summary><h2>{{ .title | default "Transmission & Ateliers" }}</h2></summary>
     <div class="projet-accordion__content">
       {{ $.Page.RenderString (dict "display" "block") .body }}
     </div>
   </details>
-</section>
-{{ end }}
+  {{ end }}
 
-{{/* 2. Fiches Techniques & Ressources B+A (documents légers + lien Drive) */}}
-{{ with .Params.ressources }}
-<section class="ressources-section" id="ressources">
-  <details class="projet-accordion projet-accordion--secondary" id="details-ressources" open>
-    <summary><h2>📋 {{ .title | default "Fiches Techniques & Ressources" }}</h2></summary>
+  {{/* 2. Fiches Techniques & Ressources B+A (documents légers + lien Drive) */}}
+  {{ with .Params.ressources }}
+  <details class="projet-accordion projet-accordion--secondary" id="ressources">
+    <summary><h2>{{ .title | default "Fiches Techniques & Ressources" }}</h2></summary>
     <div class="projet-accordion__content">
       {{ with .intro }}
         <p>{{ . | markdownify }}</p>
@@ -46,14 +45,12 @@
       </div>
     </div>
   </details>
-</section>
-{{ end }}
+  {{ end }}
 
-{{/* 3. Bio dédiée par thématique — tout en bas de page */}}
-{{ with .Params.bio }}
-<section class="bio-thematique-box" id="bio">
-  <details class="projet-accordion projet-accordion--secondary" id="details-bio" open>
-    <summary><h2>👤 {{ .title | default "Bio & Parcours" }}</h2></summary>
+  {{/* 3. Bio dédiée par thématique — tout en bas de page */}}
+  {{ with .Params.bio }}
+  <details class="projet-accordion projet-accordion--secondary" id="bio">
+    <summary><h2>{{ .title | default "Bio & Parcours" }}</h2></summary>
     <div class="projet-accordion__content">
       {{ $.Page.RenderString (dict "display" "block") .body }}
       {{ with .points }}
@@ -65,5 +62,7 @@
       {{ end }}
     </div>
   </details>
-</section>
+  {{ end }}
+
+</div>
 {{ end }}

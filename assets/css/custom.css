@@ -2091,72 +2091,14 @@ main {
   transform: translateX(3px);
 }
 
-/* 2. Barre d'accès direct aux activités en haut de page secondaire */
-.page-activities-nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-  margin: var(--space-3) 0 var(--space-5) 0;
-  padding: 0.5rem 0.75rem;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 0.75rem;
-}
 
-.activities-nav-label {
-  font-family: var(--font-title);
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--muted);
-  letter-spacing: 0.5px;
-  margin-right: 0.25rem;
-}
-
-.page-activity-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: var(--bg);
-  color: var(--text);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.18s ease;
-  cursor: pointer;
-}
-
-.page-activity-btn:hover {
-  border-color: var(--text);
-  background: var(--row-hover);
-  transform: translateY(-1px);
-  text-decoration: none;
-  color: var(--text);
-}
-
-.page-activity-btn--secondary {
-  border-style: dashed;
-  color: var(--muted);
-}
-.page-activity-btn--secondary:hover {
-  color: var(--text);
-  border-style: solid;
-}
-
-.activity-btn-ico {
-  width: 18px;
-  height: 18px;
-  object-fit: contain;
-}
 
 /* 3. Section Fiches & Ressources B+A (Option B site + Option A Drive) */
-.ressources-section {
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-5);
+.projet-accordion-group--secondary + .projet-accordion-group--secondary {
+  margin-top: 0;
+}
+.projet-accordion-group--secondary + .projet-accordion-group--secondary .projet-accordion--secondary:first-child {
+  border-top: none;
 }
 
 .ressources-grid {
@@ -2256,9 +2198,5 @@ main {
   gap: 0.35rem;
 }
 
-/* 4. Section Bio dédiée en bas de page */
-.bio-thematique-box {
-  margin-top: var(--space-6);
-  margin-bottom: var(--space-6);
-}
+
 
