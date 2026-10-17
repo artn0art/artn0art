@@ -2063,32 +2063,9 @@ main {
 
 /* ——— D1507 : Charte & Gabarit Template ——— */
 
-/* 1. Bouton d'action sur les plaquettes d'accueil */
-.device-footer-action {
-  margin-top: auto;
-  padding-top: var(--space-3);
-  display: flex;
-  align-items: center;
-}
-
-.btn-voir-propositions {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  font-family: var(--font-title);
-  font-size: var(--fs-small);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: var(--text);
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
-}
-
-.device-card:hover .btn-voir-propositions {
-  border-bottom-color: var(--u-color, var(--text));
-  color: var(--u-color, var(--text));
-  transform: translateX(3px);
+/* 1. Ligne de statut / plaquette sous la description */
+.device-status-row {
+  margin-top: var(--space-2);
 }
 
 

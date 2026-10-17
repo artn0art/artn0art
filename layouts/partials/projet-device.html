@@ -5,18 +5,11 @@
     <img src="{{ $p.image }}" alt="Aperçu visuel : {{ $p.title }} — {{ $p.description }}" loading="lazy" decoding="async" width="800" height="600" />
   </div>
   <div class="device-body">
+    {{ if not $p.hideTitle }}
     <div class="device-header">
-      {{ if not $p.hideTitle }}
-        <h3 class="device-title">{{ $p.title }}</h3>
-      {{ end }}
-      {{ with $p.status }}
-        {{ if $p.statusHref }}
-          <a href="{{ $p.statusHref }}" class="tag tag-status tag-status--link" target="_blank" rel="noopener noreferrer">{{ . }}</a>
-        {{ else }}
-          <span class="tag tag-status">{{ . }}</span>
-        {{ end }}
-      {{ end }}
+      <h3 class="device-title">{{ $p.title }}</h3>
     </div>
+    {{ end }}
     {{ if or $p.linkTags $p.tags }}
     <div class="device-title-tags">
       {{ if $p.linkTags }}
@@ -35,8 +28,14 @@
     {{ with $p.description }}
       <p class="device-desc">{{ . }}</p>
     {{ end }}
-    <div class="device-footer-action">
-      <span class="btn-voir-propositions">Voir les propositions &rarr;</span>
+    {{ with $p.status }}
+    <div class="device-status-row">
+      {{ if $p.statusHref }}
+        <a href="{{ $p.statusHref }}" class="tag tag-status tag-status--link" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+      {{ else }}
+        <span class="tag tag-status">{{ . }}</span>
+      {{ end }}
     </div>
+    {{ end }}
   </div>
 </div>
