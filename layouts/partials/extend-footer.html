@@ -36,28 +36,47 @@
   (function () {
     // Mode Dev local : Cible (🎯) et Canal (💬) actifs sur serveur local (localhost / 127.0.0.1)
     if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') return;
+
+    function creerSlot() {
+      var slot = document.getElementById('village-dev-slot');
+      if (!slot) {
+        slot = document.createElement('div');
+        slot.id = 'village-dev-slot';
+        slot.style.cssText = 'position:fixed;top:12px;right:12px;z-index:99999;display:flex;align-items:center;gap:6px;';
+        document.body.appendChild(slot);
+      }
+      return slot;
+    }
+
     function chargerModeDev() {
+      creerSlot();
       if (window.ModeDev) {
         window.ModeDev.init({
           app: 'canal',
-          api: 'http://127.0.0.1:8888',
+          mount: '#village-dev-slot',
+          api: 'http://' + window.location.hostname + ':8888',
           accent: '#275528'
         });
         return;
       }
       var s = document.createElement('script');
-      s.src = 'http://127.0.0.1:8888/_shared/mode-dev/mode-dev.js?v=e22c9f1d6';
+      s.src = 'http://' + window.location.hostname + ':8888/_shared/mode-dev/mode-dev.js?v=e22c9f1d6';
       s.onload = function () {
         if (window.ModeDev) {
           window.ModeDev.init({
             app: 'canal',
-            api: 'http://127.0.0.1:8888',
+            mount: '#village-dev-slot',
+            api: 'http://' + window.location.hostname + ':8888',
             accent: '#275528'
           });
         }
       };
+      s.onerror = function (e) {
+        console.error('[ModeDev] Erreur de chargement de mode-dev.js:', e);
+      };
       document.head.appendChild(s);
     }
+
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', chargerModeDev);
     } else {
