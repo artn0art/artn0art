@@ -56,7 +56,7 @@ ressources:
 
 # --- Bio dédiée thématique Bricodage en bas de page (D1507) ---
 bio:
-  title: "Bio — Arnaud Bannais"
+  title: "Bio"
   body: |
     Pour artn0art, la technique n'est jamais un simple outil : c'est un terrain de jeu. Code, électronique DIY et détournement d'outils musicaux, pour fabriquer des objets sonores que l'on touche, que l'on tourne, que l'on partage.
   points:

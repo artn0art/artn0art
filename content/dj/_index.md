@@ -45,7 +45,7 @@ ressources:
       description: "Dossier Drive avec guides mémo (mix harmonique, cycle Camelot), enregistrements complets de sets et tracklists commentées."
 
 bio:
-  title: "Bio DJ — Arnaud Bannais"
+  title: "Bio"
   body: |
     De l'énergie brute du hip-hop boom bap aux pulsations électroniques et tropicales, Arnaud façonne des sets hybrides où le scratch rencontre la global bass. Rythmes de cumbia ou d'afrobeat croisés avec l'efficacité des beats urbains pour un voyage sonore dansant et métissé, au service de la fête et du partage.
   points:

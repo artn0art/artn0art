@@ -51,7 +51,7 @@ ressources:
       description: "Dossier Drive avec projets Ableton Live témoins, banques de sons triées, racks d'effets personnalisés et patchs Max for Live partagés."
 
 bio:
-  title: "Bio Formateur — Arnaud Bannais"
+  title: "Bio"
   body: |
     Formateur et musicien passionné par la transmission et la lutherie numérique, Arnaud accompagne les producteurs débutants et confirmés vers l'expression d'une voix musicale singulière, avec une pédagogie centrée sur le geste et l'écoute plutôt que sur la théorie abstraite.
   points:
