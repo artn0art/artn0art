@@ -1541,9 +1541,9 @@ main {
   border-bottom: none !important;
   font-family: var(--font-title);
   font-size: clamp(1.2rem, 2.5vw, 1.45rem);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
+  font-weight: var(--fw-regular, 400);
+  letter-spacing: normal;
+  line-height: 1.25;
   color: var(--text);
 }
 
@@ -1823,11 +1823,11 @@ main {
 #projet-jukbike h2 {
   font-family: 'Shrikhand', 'Nunito', system-ui, sans-serif;
 }
-/* Modules et h3 affinés en Nunito (D2125 Didier : 'écritures trop grasses à affiner') */
+/* Modules et h3 affinés en Nunito régulier (D2125/D2127 Didier : 'pas en gras') */
 #projet-jukbike h3,
 #projet-jukbike .module-summary__title {
   font-family: 'Nunito', var(--font-title), system-ui, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 /* Lien plaquette PDF — remplace les styles inline */
