@@ -1666,20 +1666,41 @@ main {
   margin-bottom: var(--space-4);
 }
 
-.projet-accordion--secondary summary {
-  padding: var(--space-2) 0;
+/* Enchaînement continu si plusieurs groupes secondaires se succèdent */
+.projet-accordion-group--secondary:has(+ .projet-accordion-group--secondary) {
+  margin-bottom: 0;
+}
+.projet-accordion-group--secondary:has(+ .projet-accordion-group--secondary) .projet-accordion--secondary:last-child {
+  margin-bottom: 0;
+}
+.projet-accordion-group--secondary + .projet-accordion-group--secondary {
+  margin-top: 0;
+}
+.projet-accordion-group--secondary + .projet-accordion-group--secondary .projet-accordion--secondary:first-child {
+  border-top: none;
 }
 
+.projet-accordion--secondary summary {
+  padding: var(--space-2) 0;
+  cursor: pointer;
+}
+
+.projet-accordion--secondary summary h2,
 .projet-body.prose .projet-accordion--secondary summary h2 {
-  font-size: var(--fs-small);
+  font-size: clamp(0.82rem, 1.3vw, 0.88rem);
   font-weight: var(--fw-medium);
   color: var(--muted);
-  letter-spacing: normal;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  transition: color 0.15s ease;
+}
+
+.projet-accordion--secondary summary:hover h2 {
+  color: var(--text);
 }
 
 .projet-accordion--secondary summary h2::after {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   opacity: 0.85;
 }
 

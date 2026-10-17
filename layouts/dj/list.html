@@ -40,9 +40,8 @@
 
     <div class="projet-body prose">
       {{ .Content }}
+      {{ partial "thematique-bottom.html" . }}
     </div>
-
-    {{ partial "thematique-bottom.html" . }}
 
     {{ if not .Params.hideCTA }}
       {{ partial "projet-cta.html" (dict "meta" (dict "id" "dj") "cta" .Params.cta) }}
