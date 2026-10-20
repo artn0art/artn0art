@@ -103,5 +103,6 @@
   • CSS : harmonisation visuelle des tags statut/plaquette et des boutons sur la home. Build Hugo 0 erreur.
 - 20/10 08:34 · 🟧 ANT — Bricodage : mise à jour du concept & ambiance de l'Audio-livre (Compagnie d'iCidence, médiathèques d'Ille-et-Vilaine, chant/danse/percussions tout-petits) et de la fiche transmission (Petits Débrouillards Nantes & Toulouse). Plaquette PDF Bricodage 2026 recompilée.
 - 20/10 08:45 · 🟧 ANT — Production : écriture agrandie (logo Minitel : « PRODUCTION » passe de 37px à 92px de hauteur pour remplir l'écran du Minitel, titre de section sur /mao/ passé à 2.25rem gras). Déployé.
+- 20/10 08:58 · 🟧 ANT — Jukbike : enrichissement de la Genèse (V1 chez Beebike, V2 conçue à l'Atelier du Pignon début octobre 2026), chiffres clés actualisés (60+ prestations, 11 clients, 5 collectivités, 6-8h autonomie) et nouvel accordéon dédié « Styles & Formats de Prestations » (festivals, guinguettes, animations de quartier, mobilité douce, mariages/privé). Déployé.
 
 
