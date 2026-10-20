@@ -29,6 +29,14 @@ modules:
         alt: "Le Jukbike de profil sur un stand de festival"
       - src: /images/galerie/jukbike/public-guinguette-A.webp
         alt: "Public attablé autour du Jukbike, ambiance guinguette"
+    sets:
+      - title: "Dub Hip Hop Funk"
+        url: "https://soundcloud.com/juk-bike/dub-hip-hop-funk"
+      - title: "Afro Mix"
+        url: "https://soundcloud.com/juk-bike/afro-mix"
+      - title: "Des Mots (Hip Hop 1)"
+        url: "https://soundcloud.com/juk-bike/des-mots"
+    profileUrl: "https://soundcloud.com/juk-bike"
   - id: crieur
     icon: /images/modules/crieur.webp
     title: Crieur de Rue
@@ -55,8 +63,18 @@ sections:
       Le Jukbike est né d'une synergie naturelle : la rencontre entre la passion du vélo et la culture sound system au sein de l'équipe de l'atelier de réparation **Beebike** à Nantes. À force de réparer des bicyclettes et d'écouter de la musique toute la journée, l'idée du triporteur-sono autonome et tout-terrain a vu le jour.
 
       * **Mars 2023** : Émergence du concept, études de faisabilité et création de l'identité visuelle.
-      * **Avril – Mai 2023 (Version 1)** : Construction du premier triporteur, intégration de la batterie lithium haute capacité et sonorisation autonome. Lancement officiel et premières sorties en festival.
-      * **Début octobre 2026 (Version 2 — L'Atelier du Pignon)** : Conception et assemblage de la V2 du Jukbike à **l'Atelier du Pignon** à Nantes. Optimisation mécanique complète : châssis renforcé, maniabilité accrue, système de freinage fiabilisé et refonte de l'intégration acoustique pour un son plus chaud et précis en déambulation.
+      * **Avril – Octobre 2023 (Version 1 & Premiers festivals)** : Construction du premier triporteur, intégration de la batterie lithium haute capacité et sonorisation autonome. Premières sorties sur le terrain : Fête du Vélo, Green Course, Véli-Vélo, Ville de Rezé et Ville Comestible.
+      * **2024 (Structuration & Tournées estivales)** : Formalisation officielle de l'activité, raccordement Chorus Pro pour les collectivités territoriales, travaux d'atelier sur le câblage de la caisse acoustique et déambulations estivales (Ville de Rezé, Ville de Couëron, Green Course).
+      * **2025 (Déploiement métropolitain — 12 dates clés)** : Saison d'accélération sur Nantes Métropole :
+        * *Mai* : Prestation L1 pour Nantes Métropole, temps fort Vill'âgées Santé.
+        * *Juin* : Soirée d'ouverture estivale de l'Association du Grand Bain, inauguration du Parc des Mahaudières (Rezé), inauguration officielle du grand Parc Vélo Gare Sud (Nantes Métropole).
+        * *Juillet* : Festivété Malakoff (Ville de Nantes), festival Curiozété (Rezé).
+        * *Août* : Fête de quartier La Manu (Accoord / ALE Alice Guy), festival Curiozété (Rezé).
+        * *Septembre* : Forum associatif de Malakoff (CSC Hauban), étape nantaise du Vélotour 2025 (organisée avec Les Boîtes à Vélo & Event Etcetera).
+      * **2026 (Événements majeurs & V2 à l'Atelier du Pignon)** :
+        * *Juin – Juillet* : Fête « Grandir Ensemble » (Ville de Vertou — Services Jeunesse & Responsabilité Environnementale), CSC Grand B (Saint-Herblain), quartier Clos Fleuris, ASEC Sillon de Bretagne, École des Agenets (Malakoff).
+        * *Août – Septembre* : Résidence et création sonore livre audio avec la Compagnie d'iCidence, Vélotour 2026 (Boîtes à Vélo & Velevent), 10 ans du Projet Global Nantes Nord (Nantes Métropole EPCI).
+        * *Début octobre 2026 (Version 2 — L'Atelier du Pignon)* : Conception et assemblage de la V2 du Jukbike à **l'Atelier du Pignon** à Nantes. Optimisation mécanique complète : nouveau châssis renforcé, maniabilité accrue, freinage fiabilisé et refonte de l'intégration acoustique pour un son plus chaud et précis en déambulation.
       * **Chiffres clés** : Plus de **60 prestations** réalisées, **11 clients réguliers**, **5 collectivités territoriales** partenaires, et **6 à 8 heures d'autonomie continue** sans groupe électrogène ni prise 230V.
 
   - title: "Styles & Formats de Prestations"
@@ -66,15 +84,16 @@ sections:
       * **Festivals & Événements culturels** : warm-up en plein air, transitions entre scènes, catalyseur d'ambiance mobile au contact direct des festivaliers.
       * **Guinguettes, Marchés & Terrasses** : ambiances musicales solaires et métissées (cumbia, afro-latino, downtempo, hip-hop funk) qui montent progressivement en énergie.
       * **Animations urbaines & Fêtes de quartier** : kermesses, déambulations festives, participation citoyenne avec la boîte à criées, open mic et karaoké de rue intergénérationnel.
-      * **Collectivités & Mobilité douce** : inaugurations de pistes cyclables, balades à vélo sonorisées, journées sans voiture et événements sportifs/santé (Raid en famille, Vill'âges Santé).
+      * **Collectivités & Mobilité douce** : inaugurations de pistes cyclables, balades à vélo sonorisées, journées sans voiture et événements sportifs/santé (Raid en famille, Vill'âges Santé, Fête du Vélo).
       * **Mariages & Soirées privées** : vin d'honneur insolite dans un parc ou en pleine nature, apéritif champêtre et mini dancefloor autonome là où l'électricité n'arrive pas.
 
   - title: "Références & Collaboration"
     body: |
       Depuis 2023, le Jukbike anime régulièrement la vie locale sur Nantes Métropole et ses alentours :
 
-      * **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
-      * **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, L'Atelier du Pignon, Véli-Vélo.
+      * **Collectivités territoriales & Institutions** : Nantes Métropole (Inauguration Parc Vélo Gare Sud, 10 ans Projet Global Nantes Nord, L1), Ville de Nantes (Festivété Malakoff, Écoles Agenets, Vill'âgées Santé), Ville de Rezé (Inauguration Parc des Mahaudières, Festival Curiozété), Ville de Saint-Herblain (CSC Grand B, Clos Fleuris), Ville de Vertou (Fête « Grandir Ensemble » — Direction Jeunesse & Responsabilité Environnementale), Ville de Couëron.
+      * **Structures socioculturelles & Tiers-lieux** : CSC Hauban, Accoord (ALE Alice Guy, La Manu), Association du Grand Bain, ASEC Sillon de Bretagne, Compagnie d'iCidence, Véli-Vélo, Ville Comestible.
+      * **Réseaux vélo & Événements nationaux** : Vélotour (éditions 2025 et 2026 avec Les Boîtes à Vélo & Event Etcetera), Green Course, Atelier Beebike, L'Atelier du Pignon.
 
 # --- Fiche Technique & Logistique ---
 ressources:
@@ -82,13 +101,7 @@ ressources:
   body: |
     * **Autonomie complète** : Système son Hi-Fi intégré au châssis du triporteur et alimenté par batterie Lithium haute capacité (6 à 8 heures d'autonomie continue à fort volume). Aucun raccordement électrique 230V ni groupe électrogène nécessaire.
     * **Déploiement instantané** : Arrivée à vélo, mise en place en moins de 5 minutes sur tout type de sol (herbe, pavés, bitume, sous-bois, intérieur).
-    * **Météo & Intempéries** : Le Jukbike est 100 % autonome en extérieur par temps sec. En cas de pluie, prévoir simplement un lieu de repli couvert ou abrité (préau, halle, salle polyvalente, chapiteau) pour accueillir le triporteur et le public.
-  items:
-    - title: "Plaquette officielle Jukbike 2026 (A4)"
-      type: "pdf"
-      badge: "PDF"
-      href: "/documents/jukbike-plaquette-2026.pdf"
-      description: "Dossier de présentation complet : formules (Djing, Crieur, Open Mic, Karaoké), photos HD et fiches techniques."
+    * **Météo & Intempéries** : Le Jukbike est 100 % autonome en extérieur par temps sec. En cas de pluie, prévoir simplement un lieu de repli couvert ou abrité (préau, halle couverte, salle polyvalente, chapiteau) pour accueillir le triporteur et le public.
 
 # --- Bio dédiée thématique Jukbike en bas de page (D1507 / D1814) ---
 bio:
