@@ -27,7 +27,7 @@ featured:
     image: /images/logo_production.webp
     status: "Plaquette"
     statusHref: "/documents/production-plaquette-2026.pdf"
-    description: "Production & création sonore cinématique : Push, Move, Max for Live."
+    description: "Production & création sonore cinématique : Ableton Live, Push, Move, Max for Live."
 
   # 🧵4 — Didier 10/10 01h32 : carré bricodage
   - id: bricodage

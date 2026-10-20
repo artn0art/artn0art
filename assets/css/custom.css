@@ -1482,6 +1482,7 @@ main {
 #projet-mao .projet-accordion--techno-melodique { --u-color: #14464b; }
 #projet-mao .projet-accordion--max-for-live { --u-color: #7a3e1c; }
 #projet-mao .projet-accordion--nmp { --u-color: #7a5c14; }
+#projet-mao .projet-accordion--live { --u-color: var(--u-mao); }
 #projet-dj .projet-accordion--cours-dj { --u-color: var(--u-dj); }
 #projet-dj .projet-accordion--prestations-dj { --u-color: var(--u-dj); }
 

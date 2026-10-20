@@ -6,13 +6,16 @@ cta:
   devisHref: mailto:artn0art@proton.me?subject=Demande de cours ou formation Production
 showBreadcrumbs: false
 title: Production
-description: "Production & création sonore cinématique, coaching et prise en main de machines : Push, Move, Max for Live."
+description: "Production & création sonore cinématique, coaching et prise en main : Ableton Live, Push, Move, Max for Live."
 heroTitle: Production
 hideHero: true
 hideHeroImage: true
 aliases:
   - /production/
 activites:
+  - id: live
+    title: "Ableton Live"
+    icon: /images/modules/live.webp
   - id: push
     title: "Push 3"
     icon: /images/modules/push.webp
@@ -43,7 +46,7 @@ ressources:
       type: "pdf"
       badge: "PDF"
       href: "/documents/production-plaquette-2026.pdf"
-      description: "Document de présentation 5 pages A4 : bio, boussole pédagogique, modules Push / Move / Max for Live, tarifs des cours particuliers et environnement studio."
+      description: "Document de présentation 5 pages A4 : bio, boussole pédagogique, modules Live / Push / Move / Max for Live, tarifs des cours particuliers et environnement studio."
     - title: "Environnement Technique Studio"
       type: "doc"
       badge: "Technique"
@@ -93,11 +96,38 @@ bio:
 
 <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border, #e5e5e5);" />
 
-<!-- Modules de Formation : Push, Move, Max (ordre Didier 15/10 D580) -->
+<!-- Modules de Formation : Live, Push, Move, Max -->
 <section class="projet-modules modules-group">
 <div class="projet-accordion-group">
 
-<!-- Module 1 : Push -->
+<!-- Module 1 : Ableton Live -->
+<details class="projet-accordion projet-accordion--module projet-accordion--live" id="live">
+<summary class="projet-summary-wrapper">
+<div class="module-summary">
+<img class="module-summary__icon" src="/images/modules/live.webp" alt="Ableton Live" width="72" height="72" loading="lazy" decoding="async" />
+<h3 class="module-summary__title">Ableton Live <span class="module-summary__tag">DAW • composition, mixage &amp; flux de travail</span></h3>
+</div>
+</summary>
+<div class="projet-accordion__content">
+<p><strong>Le concept</strong> : Prendre en main ou approfondir Live 12 sans blocage technique, pour structurer ses idées, mixer avec clarté et finaliser des morceaux aboutis.</p>
+
+<div class="module-section-list">
+<div class="module-section-item">
+<h4>Initiation Live — débutants, séances de 2h</h4>
+<p>Découvrir l'interface (vue Session pour l'improvisation et la boucle, vue Arrangement pour la structure), enregistrer ses pistes audio et MIDI, éditer ses clips, routage des pistes et utilisation des instruments et effets natifs essentiels.</p>
+</div>
+
+<div class="module-section-item">
+<h4>Perfectionnement Live — intermédiaires, séances de 2h à 3h</h4>
+<p>Techniques avancées de sound design (Wavetable, Drift, Operator), séparation de stems native de Live 12, traitement dynamique et gestion du headroom, automation expressive, mixage au studio et export master.</p>
+</div>
+</div>
+
+<p><strong>Lieu</strong> : à mon studio à Nantes, chez toi dans un rayon de 20&nbsp;km, ou en ligne au même tarif.</p>
+</div>
+</details>
+
+<!-- Module 2 : Push -->
 <details class="projet-accordion projet-accordion--module projet-accordion--nmp" id="push">
 <summary class="projet-summary-wrapper">
 <div class="module-summary">
