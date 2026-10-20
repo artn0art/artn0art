@@ -69,7 +69,7 @@ bio:
 
 <!-- Productions Originales artn0art (SoundCloud) — D2144 -->
 <section class="projet-productions" style="margin-bottom: 2.5rem;">
-  <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Productions &amp; Univers Sonores</h2>
+  <h2 style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem; line-height: 1.15;">Production &amp; Univers Sonores</h2>
   <p style="margin-bottom: 1.5rem; opacity: 0.85;">Compositions originales, textures cinématiques, downtempo organique et beats façonnés au studio.</p>
 
   <div style="display: flex; flex-direction: column; gap: 1.5rem;">
