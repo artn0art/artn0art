@@ -31,27 +31,6 @@ transmission:
     * **Éveil au code et à l'électronique** : découverte des capteurs, de la programmation accessible et du détournement d'objets.
     * **Médiation par le faire** : ateliers pratiques en médiathèques, centres de loisirs et tiers-lieux.
 
-# --- Fiches Techniques & Ressources B+A (D1507) ---
-ressources:
-  title: "Fiches Techniques & Ressources Bricodage"
-  intro: "Documentation technique, plans et ressources partagées pour makers, médiathèques et curieux."
-  items:
-    - title: "Plaquette Bricodage & Objets Sonores (A4)"
-      type: "pdf"
-      badge: "PDF"
-      href: "/documents/bricodage-plaquette-2026.pdf"
-      description: "Document de présentation 5 pages A4 : bio, réalisations (Audio-Livre, Jukbike), ateliers de médiation numérique et fiches techniques."
-    - title: "Fiche Technique Audio-Livre"
-      type: "doc"
-      badge: "Technique"
-      href: "#ressources"
-      description: "Livre interactif autonome : puces RFID invisibles par page, batterie lithium rechargeable (autonomie 4 à 5h), interrupteur marche/arrêt simplifié."
-    - title: "Espace Partagé Bricodage (Plans & Schémas)"
-      type: "drive"
-      badge: "Drive"
-      href: "https://drive.google.com/drive/folders/artn0art-bricodage"
-      description: "Dossier Drive avec schémas de montage électronique, fiches pédagogiques d'ateliers et codes sources ouverts."
-
 # --- Bio dédiée thématique Bricodage en bas de page (D1507) ---
 bio:
   title: "Bio"
