@@ -62,9 +62,6 @@ bio:
 
 <!-- Sélections & Mixes DJ (SoundCloud) -->
 <section class="projet-productions" id="sets-dj" style="margin-bottom: 2.5rem;">
-  <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Sélections &amp; Mixes</h2>
-  <p style="margin-bottom: 1.5rem; opacity: 0.85;">Éclectisme, groove et technique : des sets hybrides façonnés au fil de 15 ans de mix, fusionnant hip-hop boom bap, percussions afro-tropicales et culture sound system.</p>
-
   <div style="display: flex; flex-direction: column; gap: 1.75rem;">
     <div>
       <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/juk-bike/dub-hip-hop-funk" target="_blank" rel="noopener noreferrer">Dub Hip Hop Funk ↗</a></h3>
