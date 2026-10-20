@@ -76,26 +76,19 @@ sections:
       * **Collectivités** : Mairie de Nantes (Vill'âges Santé, directions de quartiers), Ville de Rezé (Inaugurations, Curiozété), Villes de Couëron, Saint-Herblain et Vertou (Raid en famille).
       * **Partenaires & Structures** : Association du Grand Bain, CSC Hauban, Accoord, Beebike, L'Atelier du Pignon, Véli-Vélo.
 
-# --- Fiches Techniques & Ressources B+A (D1507) ---
+# --- Fiche Technique & Logistique ---
 ressources:
-  title: "Fiches Techniques & Ressources"
-  intro: "Documents pour programmateurs, régisseurs, collectivités et partenaires techniques."
+  title: "Fiche Technique & Logistique"
+  body: |
+    * **Autonomie complète** : Système son Hi-Fi intégré au châssis du triporteur et alimenté par batterie Lithium haute capacité (6 à 8 heures d'autonomie continue à fort volume). Aucun raccordement électrique 230V ni groupe électrogène nécessaire.
+    * **Déploiement instantané** : Arrivée à vélo, mise en place en moins de 5 minutes sur tout type de sol (herbe, pavés, bitume, sous-bois, intérieur).
+    * **Météo & Intempéries** : Le Jukbike est 100 % autonome en extérieur par temps sec. En cas de pluie, prévoir simplement un lieu de repli couvert ou abrité (préau, halle, salle polyvalente, chapiteau) pour accueillir le triporteur et le public.
   items:
-    - title: "Plaquette officielle Jukbike 2026"
+    - title: "Plaquette officielle Jukbike 2026 (A4)"
       type: "pdf"
-      badge: "PDF officiel"
+      badge: "PDF"
       href: "/documents/jukbike-plaquette-2026.pdf"
-      description: "Dossier de présentation complet : formules (Djing, Crieur, Open Mic, Karaoké), photos et références."
-    - title: "Fiche Technique & Logistique"
-      type: "doc"
-      badge: "Technique"
-      href: "#ressources"
-      description: "Batterie Lithium haute capacité (6 à 8h d'autonomie à fort volume). Système de sonorisation Hi-Fi intégré au châssis. Déploiement instantané sans prise 230V."
-    - title: "Espace Partagé Jukbike (Photos HD & Visuels)"
-      type: "drive"
-      badge: "Drive"
-      href: "https://drive.google.com/drive/folders/artn0art-jukbike"
-      description: "Dossier Drive avec visuels haute résolution, logos vectoriels pour affiches de festivals et programmations culturelles."
+      description: "Dossier de présentation complet : formules (Djing, Crieur, Open Mic, Karaoké), photos HD et fiches techniques."
 
 # --- Bio dédiée thématique Jukbike en bas de page (D1507 / D1814) ---
 bio:

@@ -21,8 +21,13 @@
         <p>{{ . | markdownify }}</p>
       {{ end }}
 
+      {{ with .body }}
+        {{ $.Page.RenderString (dict "display" "block") . }}
+      {{ end }}
+
+      {{ with .items }}
       <div class="ressources-grid">
-        {{ range .items }}
+        {{ range . }}
           <a href="{{ .href }}" class="ressource-card{{ if eq .type "drive" }} ressource-card--drive{{ end }}" {{ if or (eq .type "drive") (eq .type "pdf") }}target="_blank" rel="noopener noreferrer"{{ end }}>
             <div>
               <div class="ressource-card-header">
@@ -43,6 +48,7 @@
           </a>
         {{ end }}
       </div>
+      {{ end }}
     </div>
   </details>
   {{ end }}
