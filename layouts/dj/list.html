@@ -14,6 +14,7 @@
       </nav>
     {{ end }}
 
+    {{ if or .Params.heroText .Params.tags .Params.status }}
     <header class="univers-hero">
       <div class="univers-hero-title-row">
         {{/* Didier 10/10 02h00 : logo « DJ mix » retiré de la page DJ (il reste sur le carré d'accueil). */}}
@@ -22,15 +23,26 @@
       {{ with .Params.heroText }}
         <p class="hero-text-intro">{{ . | markdownify }}</p>
       {{ end }}
+      {{ if or .Params.tags .Params.status }}
       <div class="projet-meta">
         {{ with .Params.tags }}
           <div class="projet-tags">
             {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
           </div>
         {{ end }}
-        {{ with .Params.status }}<span class="tag tag-status">{{ . }}</span>{{ end }}
+        {{ with .Params.status }}
+          {{ if $.Params.statusHref }}
+            <a href="{{ $.Params.statusHref }}" class="tag tag-status tag-status--link" target="_blank" rel="noopener noreferrer">{{ . }}</a>
+          {{ else }}
+            <span class="tag tag-status">{{ . }}</span>
+          {{ end }}
+        {{ end }}
       </div>
+      {{ end }}
     </header>
+    {{ else }}
+      <h1 class="sr-only">{{ .Params.heroTitle | default "DJ" }}</h1>
+    {{ end }}
 
     {{ if and .Params.image (not .Params.hideHeroImage) }}
       <figure class="projet-hero-image">

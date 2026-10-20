@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bricodage — plaquette 2026 · artn0art</title>
+<style>
+  :root {
+    --bg:#e4e4e4; --surface:#ebebeb; --text:#141414; --muted:#5a5a5a;
+    --border:rgba(0,0,0,.1); --u-brico:#2563eb;
+    --font-title:"Space Grotesk","Inter",system-ui,-apple-system,sans-serif;
+    --font-body:"Inter",system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:#cfcfcf;font-family:var(--font-body);color:var(--text);line-height:1.5;
+       -webkit-font-smoothing:antialiased;letter-spacing:.01em}
+  .page{width:210mm;min-height:297mm;margin:10mm auto;background:var(--bg);
+        padding:18mm 18mm 14mm;position:relative;display:flex;flex-direction:column;
+        box-shadow:0 2px 14px rgba(0,0,0,.18)}
+  .pied{position:absolute;left:18mm;right:18mm;bottom:8mm;display:flex;justify-content:space-between;
+        font-size:8.5pt;color:var(--muted);border-top:1px solid var(--border);padding-top:3mm;
+        letter-spacing:.02em}
+  h1,h2,h3,h4{font-family:var(--font-title);letter-spacing:-.03em;line-height:1.15;margin:0}
+  h1{font-size:34pt;font-weight:700;letter-spacing:-.04em}
+  h2{font-size:20pt;font-weight:700;color:var(--u-brico)}
+  h3{font-size:12.5pt;font-weight:700;margin-bottom:1.5mm}
+  p{margin:0 0 3mm}
+  .chapeau{font-size:11pt;color:var(--muted);max-width:145mm}
+  .filet{width:22mm;height:3px;background:var(--u-brico);margin:5mm 0 6mm;border-radius:2px}
+
+  /* couverture */
+  .couv{justify-content:center;align-items:flex-start;background:var(--bg)}
+  .couv .logo{width:52mm;height:auto;margin-bottom:8mm}
+  .couv h1{font-size:46pt}
+  .couv .soustitre{font-family:var(--font-title);font-size:15pt;color:var(--u-brico);
+        letter-spacing:-.02em;margin-top:2mm}
+  .couv .lieu{margin-top:12mm;font-size:10pt;color:var(--muted);letter-spacing:.08em;
+        text-transform:uppercase}
+
+  .bloc{margin-bottom:6mm}
+  .carte{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--u-brico);
+         border-radius:3px;padding:5mm 6mm;margin-bottom:4mm}
+  .carte h3{color:var(--u-brico)}
+  .carte p{font-size:9.5pt;margin-bottom:0}
+  ul{margin:0 0 3mm;padding-left:5mm}
+  li{font-size:9.5pt;margin-bottom:1.5mm}
+  .etiq{display:inline-block;font-family:var(--font-title);font-size:8pt;font-weight:700;
+        text-transform:uppercase;letter-spacing:.06em;color:var(--u-brico);
+        border:1px solid rgba(37,99,235,.35);border-radius:999px;padding:1mm 3mm;margin:0 1.5mm 1.5mm 0}
+  .deux{display:grid;grid-template-columns:1fr 1fr;gap:5mm}
+  .chiffres li{font-size:10pt}
+  dl{margin:0;display:grid;grid-template-columns:28mm 1fr;row-gap:2mm;font-size:10pt}
+  dt{font-family:var(--font-title);font-weight:700;color:var(--muted)}
+  dd{margin:0}
+  .tarif{font-family:var(--font-title);font-weight:700;color:var(--u-brico)}
+  .note{font-size:8.5pt;color:var(--muted);font-style:italic}
+  @media print{
+    body{background:#fff}
+    .page{margin:0;box-shadow:none;page-break-after:always;min-height:0;height:297mm}
+    .page:last-child{page-break-after:auto}
+  }
+  @page{size:A4;margin:0}
+</style>
+</head>
+<body>
+
+<!-- 1/5 couverture -->
+<section class="page couv">
+  <img class="logo" src="data:image/webp;base64,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8+HZ/7cKz9dOx2wITcOxaeIzs0/bgeCravu2FbmV2j0VwOmjqRrokXkQwAvO9cwjxKk/2cTNnBvcKFmeYQNxddF9uN9cbYSuBFPy4qbA3HyihAaYLQnOYE9Nb8Z1gryYa0cuEGN6MmFR0NLAlkzNjQ0VPyV8qzlRCMieVUW9m3fZCyp5g+YK0gHctJ+Xf1XXS8YfwAAAAAAAAAAAAAAAAEMyUEF/FgAAAAAWf2p1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZZanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTo0N2JhMWI2Yi1mMGQ2LTRhMDMtYWE0MS0wZWZjZGMxMzNiZjEAAAADlGp1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALlqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaCqoddYj7Ko8DvymWC2fL5gAAABtY2JvcqNpZGM6Zm9ybWF0amltYWdlL3dlYnBqaW5zdGFuY2VJRHgseG1wOmlpZDo1NGFlMDUxZi0xMzM2LTQyZGQtODliZC1lNjg5MjQzNjRmYzNscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoZX/zppXIk/87ivH9osLPaAAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFgg7ufdZSDEEhhMyz8jIiAW8oPXah3MLu9ZbSNQEg0yms2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaFWgsACPJosK3Z64sxlMIIQAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIOYKmitJUryC9jheUwXBGZLB0ld9C4leRe4azTz7AmXVZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GSPIZmxlbmd0aBkWhwAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOjQ3YmExYjZiLWYwZDYtNGEwMy1hYTQxLTBlZmNkYzEzM2JmMS9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjA2Yzk0MzA5LTcxZTUtNDhiMS1iYjRhLTc4NmMxNjA2MzFkY3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCDu591lIMQSGEzLPyMiIBbyg9dqHcwu71ltI1ASDTKazaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggsmi1KSe7TItNe6vO/LasuDY0XYyaH8syxJDu0Ch4PieiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggnSGRIUU6Mhf8c6/YnRH6Oh6VPJ2Lq/Yux6b+7FSV3fd0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAvLP/J9MqfxaesL01tIS+uux2GNhyCOy7ZF0CH1sCyVYtn8QahRPxnG3UZo5N+jtiQazDcKdnAD9jWmHkP28M4A" alt="logo Bricodage artn0art">
+  <h1>Bricodage</h1>
+  <div class="soustitre">Code, électronique &amp; objets sonores</div>
+  <p class="chapeau" style="margin-top:7mm">Livre musical, interfaces DIY &amp; médiation par le faire à Nantes.</p>
+  <div class="filet"></div>
+  <div class="lieu">artn0art · Nantes</div>
+  <div class="pied"><span>Bricodage · artn0art · code &amp; objets sonores</span><span>1/5</span></div>
+</section>
+
+<!-- 2/5 bio & démarche de lutherie DIY -->
+<section class="page">
+  <h2>Bio &amp; Démarche</h2>
+  <div class="filet"></div>
+  <p class="chapeau" style="font-size:11.5pt;color:var(--text);max-width:150mm">
+    Pour artn0art, la technique n'est jamais un simple outil : c'est un terrain de jeu. Code, électronique
+    DIY et détournement d'outils musicaux, pour fabriquer des objets sonores que l'on touche, que l'on
+    tourne, que l'on partage.
+  </p>
+
+  <div class="bloc" style="margin-top:8mm">
+    <h3 style="font-size:12pt;margin-bottom:3mm">Réalisations &amp; Terrains d'expérimentation</h3>
+    <ul class="chiffres">
+      <li><strong>Bionic Orchestra</strong> : lutherie numérique augmentée, capteurs et contrôleurs gestuels sur mesure pour la scène vivante.</li>
+      <li><strong>Livres musicaux interactifs</strong> : dispositifs sonores doux et autonomes pour médiathèques, écoles et parcours d'exposition.</li>
+      <li><strong>Fabrication du Jukbike</strong> : intégration mécanique, alimentation lithium et sonorisation mobile haute fidélité sur triporteur cargo.</li>
+    </ul>
+  </div>
+  <div class="pied"><span>Bricodage · artn0art · code &amp; objets sonores</span><span>2/5</span></div>
+</section>
+
+<!-- 3/5 les créations : audio-livre & jukbike -->
+<section class="page">
+  <h2>Objets &amp; Dispositifs Sonores</h2>
+  <div class="filet"></div>
+  <p class="chapeau">Des dispositifs sensibles conçus pour être manipulés librement sans apprentissage technique.</p>
+
+  <div class="bloc" style="margin-top:6mm">
+    <div class="carte">
+      <h3>L'Audio-Livre — Livre musical interactif</h3>
+      <p><strong>Un livre que l'on feuillette, et dont la musique change avec la page ouverte.</strong><br>
+      Chaque page porte une puce RFID invisible ; le lecteur dissimulé dans la reliure reconnaît la page
+      ouverte et lance sa bande sonore dédiée. Environ 10 minutes de musique par page.<br>
+      • <em>Simplicité</em> : un seul interrupteur MARCHE / ARRÊT, aucune notice requise.<br>
+      • <em>Continuité</em> : fermer le livre ne coupe pas brutalement le son ; la lecture reprend à la réouverture.<br>
+      • <em>Autonomie</em> : batterie lithium rechargeable intégrée (4 à 5 h d'autonomie continue). Idéal pour l'accueil du public, les médiathèques et les expositions.</p>
+    </div>
+
+    <div class="carte">
+      <h3>Le Jukbike — Système son mobile sur vélo cargo</h3>
+      <p><strong>La sono disco mobile qui va vers les gens.</strong><br>
+      Un système de sonorisation autonome et robuste monté sur un triporteur sur mesure : batteries lithium
+      sécurisées, amplification puissante et enceintes intégrées au châssis.<br>
+      • <em>Usage</em> : parade urbaine, guinguettes, festivals, marchés et fêtes de quartier.<br>
+      • <em>Autonomie</em> : 6 à 8 heures de diffusion musicale sans raccordement secteur.</p>
+    </div>
+  </div>
+  <div class="pied"><span>Bricodage · artn0art · code &amp; objets sonores</span><span>3/5</span></div>
+</section>
+
+<!-- 4/5 médiation & ateliers numériques -->
+<section class="page">
+  <h2>Médiation &amp; Ateliers Numériques</h2>
+  <div class="filet"></div>
+  <p class="chapeau">Vulgarisation scientifique, découverte du code et apprentissage par le geste.</p>
+
+  <div class="bloc" style="margin-top:5mm">
+    <div class="carte">
+      <h3>Éveil au Code &amp; à l'Électronique</h3>
+      <p>Faire comprendre le monde numérique en mettant les mains dedans. Découverte des capteurs (lumière,
+      contact, mouvement), de la programmation graphique accessible (Arduino, Makey Makey, Micro:bit) et
+      du détournement d'objets du quotidien en instruments de musique interactifs.</p>
+    </div>
+
+    <div class="carte">
+      <h3>Médiation par le Faire — Ateliers Pratiques</h3>
+      <p>Interventions en médiathèques, centres socioculturels, écoles et tiers-lieux (partenaire régulier des Petits Débrouillards).<br>
+      • <em>Pédagogie active</em> : petits groupes, manipulation directe de matériel, droit à l'erreur et émulation collective.<br>
+      • <em>Valorisation</em> : chaque participant repart en ayant compris et fait fonctionner son propre montage.</p>
+    </div>
+
+    <h3 style="font-size:12pt;margin:5mm 0 2mm">Modalités d'Intervention</h3>
+    <dl>
+      <dt>Formats</dt>
+      <dd>ateliers de 2 h, demi-journées thématiques, stages vacances de 2 à 3 jours</dd>
+      <dt>Matériel</dt>
+      <dd>kits pédagogiques complets, outillage et ordinateurs nomades fournis</dd>
+      <dt>Devis</dt>
+      <dd>sur-mesure selon la durée, le nombre de participants et les objectifs de la structure</dd>
+    </dl>
+  </div>
+  <div class="pied"><span>Bricodage · artn0art · code &amp; objets sonores</span><span>4/5</span></div>
+</section>
+
+<!-- 5/5 fiche technique & contact -->
+<section class="page">
+  <h2>Fiche Technique &amp; Contact</h2>
+  <div class="filet"></div>
+
+  <div class="bloc">
+    <h3 style="font-size:13pt;margin-bottom:3mm">Fiche Technique Audio-Livre</h3>
+    <p style="font-size:9.5pt">Conception robuste pour manipulation intensive par tout public.</p>
+    <dl>
+      <dt>Capteurs</dt><dd>puces RFID passives ultra-fines intégrées dans chaque page</dd>
+      <dt>Lecteur</dt><dd>microcontrôleur basse consommation dissimulé dans la reliure</dd>
+      <dt>Audio</dt><dd>DAC intégré, haut-parleur large bande ou prise casque stéréo mini-jack</dd>
+      <dt>Énergie</dt><dd>batterie Li-ion rechargeable via port USB-C standard (4 à 5 h d'autonomie)</dd>
+      <dt>Contrôle</dt><dd>interrupteur marche / arrêt, potentiomètre de volume rotatif discret</dd>
+    </dl>
+  </div>
+
+  <div class="bloc">
+    <h3 style="font-size:13pt;margin-bottom:3mm">Projets &amp; Contact</h3>
+    <dl>
+      <dt>Mail</dt><dd>artn0art@proton.me</dd>
+      <dt>Site</dt><dd>artn0art — rubrique Bricodage</dd>
+      <dt>Ressources</dt><dd>plans ouverts, schémas de montage et fiches ateliers sur demande</dd>
+    </dl>
+  </div>
+
+  <div class="bloc">
+    <span class="etiq">code diy</span><span class="etiq">électronique</span>
+    <span class="etiq">audio-livre</span><span class="etiq">lutherie numérique</span>
+    <span class="etiq">rfid</span><span class="etiq">arduino</span>
+    <span class="etiq">médiation</span><span class="etiq">jukbike</span>
+    <span class="etiq">tiers-lieux</span>
+  </div>
+
+  <p class="note">Plaquette 2026 — contenu reprenant la page Bricodage du site artn0art.</p>
+  <div class="pied"><span>Bricodage · artn0art · code &amp; objets sonores</span><span>5/5</span></div>
+</section>
+
+</body>
+</html>

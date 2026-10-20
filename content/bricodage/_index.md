@@ -36,6 +36,11 @@ ressources:
   title: "Fiches Techniques & Ressources Bricodage"
   intro: "Documentation technique, plans et ressources partagées pour makers, médiathèques et curieux."
   items:
+    - title: "Plaquette Bricodage & Objets Sonores (A4)"
+      type: "pdf"
+      badge: "PDF"
+      href: "/documents/bricodage-plaquette-2026.pdf"
+      description: "Document de présentation 5 pages A4 : bio, réalisations (Audio-Livre, Jukbike), ateliers de médiation numérique et fiches techniques."
     - title: "Fiche Technique Audio-Livre"
       type: "doc"
       badge: "Technique"

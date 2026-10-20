@@ -1,5 +1,8 @@
 # Statut — Cursor · artn0art
 
+[CLAIM: cursor 2026-10-18 17h05 → RELÂCHÉ 17h08 — (lecture seule tokens site pour D2135)]
+
+
 [CLAIM: cursor 2026-10-15 00h22 → RELÂCHÉ 00h30 — site D580]
 Commit local + LH + webp + liens. Pas de push.
 

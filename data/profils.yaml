@@ -17,7 +17,7 @@ featured:
     hideTitle: true
     image: /images/logo_dj.webp
     status: "Plaquette"
-    statusHref: "/dj/"
+    statusHref: "/documents/dj-plaquette-2026.pdf"
     description: "Hip-hop electropical, mais pas que…"
 
   - id: mao
@@ -26,8 +26,8 @@ featured:
     hideTitle: true
     image: /images/logo_production.webp
     status: "Plaquette"
-    statusHref: "/mao/"
-    description: "Formation Ableton Live : Push, Move, Max for Live."
+    statusHref: "/documents/production-plaquette-2026.pdf"
+    description: "Production & création sonore cinématique : Push, Move, Max for Live."
 
   # 🧵4 — Didier 10/10 01h32 : carré bricodage
   - id: bricodage
@@ -36,7 +36,7 @@ featured:
     hideTitle: true
     image: /images/logo_bricodage.webp
     status: "Plaquette"
-    statusHref: "/bricodage/"
+    statusHref: "/documents/bricodage-plaquette-2026.pdf"
     description: "Code, électronique et objets sonores : livre musical, vélo disco, interfaces DIY."
 
 secondary: []

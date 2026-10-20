@@ -95,5 +95,11 @@
 - 15/10 00:35 · 🟨 ANT — D580 (lot AN + arbitrages Didier) : MAO renommé en « Production » ; 4 univers passés en brouillon réservé (`content/mao/_brouillons_univers.md`) ; 3 modules actifs réordonnés (Push ➔ Move ➔ Max for Live) ; barre de navigation visuelle par icônes en tête de page (Production & Bricodage) ; migration des styles inline vers classes CSS propres (`custom.css`) ; centralisation du script d'ancres accordéons dans `extend-footer.html` ; tutoiement appliqué ; mentions légales complétées (Arnaud Bannais, Nantes, SIRET 849 803 325 00018). Build Hugo 200 OK. Local.
 - 15/10 00:57 · 🟨 ANT — Retrait des 3 boutons icônes supérieurs sur MAO/Production et Bricodage (retour visuel Didier).
 - 15/10 01:20 · 🟨 ANT — Logo Minitel : écran mis à jour avec « PRODUCTION » au lieu de « MAO » (typographie géométrique rétro Futura Bold en vert `#275528` sur fond crème `#f8f7f3`), installé dans `logo_production.webp` et `logo_mao.webp`.
+- 20/10 07:55 · 🟧 ANT — Finalisation et intégration Production + Plaquettes 2026 :
+  • Production (/mao/) : lecteurs SoundCloud intégrés (Downtempo & Boom Bap, couleur #d97706), 3 modules ordonnés (Push 3, Move, Max for Live), tarifs & offres clarifiés, mention de pause jusqu'au 1er novembre (formation Victoria).
+  • DJ (/dj/) : 4 lecteurs SoundCloud (Hip-Hop, Tropicaux, Musique Électronique, System Culture), 2 modules (Cours DJ & Prestations).
+  • Bricodage (/bricodage/) : 2 modules (Audio-livre avec visuel épuré & Jukbike), fiche transmission et ressources.
+  • Plaquettes 2026 : 4 PDF A4 compilés et disponibles dans static/documents/, reliés aux cartes d'accueil et sections ressources.
+  • CSS : harmonisation visuelle des tags statut/plaquette et des boutons sur la home. Build Hugo 0 erreur.
 
 

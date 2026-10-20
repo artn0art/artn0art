@@ -6,7 +6,7 @@ cta:
   devisHref: mailto:artn0art@proton.me?subject=Demande de cours ou formation Production
 showBreadcrumbs: false
 title: Production
-description: "Formations Ableton Live, coaching et prise en main de machines : Push, Move, Max for Live."
+description: "Production & création sonore cinématique, coaching et prise en main de machines : Push, Move, Max for Live."
 heroTitle: Production
 hideHero: true
 hideHeroImage: true
@@ -39,6 +39,11 @@ ressources:
   title: "Fiches Techniques & Ressources Apprenants"
   intro: "Supports de cours, mémos techniques et dossier partagé pour les élèves et producteurs."
   items:
+    - title: "Plaquette Production & Coaching (A4)"
+      type: "pdf"
+      badge: "PDF"
+      href: "/documents/production-plaquette-2026.pdf"
+      description: "Document de présentation 5 pages A4 : bio, boussole pédagogique, modules Push / Move / Max for Live, tarifs des cours particuliers et environnement studio."
     - title: "Environnement Technique Studio"
       type: "doc"
       badge: "Technique"
@@ -61,6 +66,25 @@ bio:
     - "Certificat Professionnel Technicien Son & Lumière — IRPA Lyon (2013) : Chaîne électroacoustique et calibration."
     - "Réalisation Radio — Sud Formadia Toulouse (2010) : Prise de son et montage chirurgical."
 ---
+
+<!-- Productions Originales artn0art (SoundCloud) — D2144 -->
+<section class="projet-productions" style="margin-bottom: 2.5rem;">
+  <h2 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Productions &amp; Univers Sonores</h2>
+  <p style="margin-bottom: 1.5rem; opacity: 0.85;">Compositions originales, textures cinématiques, downtempo organique et beats façonnés au studio.</p>
+
+  <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+    <div>
+      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/artn0art/sets/downtempo" target="_blank" rel="noopener noreferrer">Downtempo &amp; Organic Beats ↗</a></h3>
+      {{< soundcloud url="https://soundcloud.com/artn0art/sets/downtempo" color="%23d97706" >}}
+    </div>
+    <div>
+      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/artn0art/sets/hip-hop" target="_blank" rel="noopener noreferrer">Boom Bap &amp; Lo-Fi Hip-Hop ↗</a></h3>
+      {{< soundcloud url="https://soundcloud.com/artn0art/sets/hip-hop" color="%23d97706" >}}
+    </div>
+  </div>
+</section>
+
+<hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border, #e5e5e5);" />
 
 <!-- Modules de Formation : Push, Move, Max (ordre Didier 15/10 D580) -->
 <section class="projet-modules modules-group">
@@ -228,6 +252,7 @@ bio:
 <details id="tarifs" class="projet-accordion projet-accordion--secondary">
 <summary><h2>Tarifs — grille de démarrage</h2></summary>
 <div class="projet-accordion__content">
+<p class="dispo-note" style="margin: 0.5rem 0 1rem; padding: 0.6rem 0.9rem; background: rgba(217, 119, 6, 0.08); border-left: 3px solid #d97706; border-radius: 4px; font-size: 0.95rem;"><strong>Disponibilités :</strong> Cours et coaching en pause jusqu'au 1<sup>er</sup> novembre. Prises de contact et réservations ouvertes pour les sessions de novembre et décembre.</p>
 <p>Cours individuels en priorité (studio à Nantes, chez toi dans un rayon de 20&nbsp;km, ou en ligne au même tarif). Pack 10&nbsp;h payable en 2&nbsp;fois (160&nbsp;€ + 160&nbsp;€).</p>
 <div class="table-responsive">
 <table class="table-clean">

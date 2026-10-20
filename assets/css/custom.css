@@ -15,9 +15,10 @@
 
   /* ——— 1.2 Couleurs d'univers ——— */
   --u-dj: #275528;
-  --u-mao: #335f33;
+  --u-mao: #d97706;
   --u-reactable: #6ee7b7;
   --u-jukbike: #c9a227;
+  --u-bricodage: #2563eb;
   --u-a2dd: #93c5fd;
   --u-musique: #fca5a5;
 
@@ -261,11 +262,12 @@ main {
 /* Couleur d'univers par carte (hover bordure + badge statut) */
 #device-dj { --u-color: var(--u-dj); }
 #device-jukbike { --u-color: var(--u-jukbike); }
-#device-producteur { --u-color: var(--u-musique); }
-#device-bricodeur { --u-color: var(--u-reactable); }
+#device-mao { --u-color: var(--u-mao); }
+#device-bricodage { --u-color: var(--u-bricodage); }
+#device-producteur { --u-color: var(--u-mao); }
+#device-bricodeur { --u-color: var(--u-bricodage); }
 #device-sonotherapie { --u-color: var(--u-a2dd); }
 #device-ateliers { --u-color: var(--u-musique); }
-#device-mao { --u-color: var(--u-dj); }
 
 /* ——— 1. Carte projet (device-card) ——— */
 .device-card {
@@ -405,13 +407,13 @@ main {
 .tag-status {
   font-weight: 600;
   border-style: dashed;
-  border-color: var(--text) !important;
-  background-color: rgba(0, 0, 0, 0.04) !important;
-  color: var(--text) !important;
+  border-color: var(--u-color, var(--text));
+  background-color: color-mix(in srgb, var(--u-color, var(--text)) 6%, transparent);
+  color: var(--text);
   flex-shrink: 0;
-  font-size: var(--fs-small) !important;
-  padding: 0.35rem 0.95rem !important;
-  line-height: 1.2 !important;
+  font-size: var(--fs-small);
+  padding: 0.35rem 0.95rem;
+  line-height: 1.2;
 }
 
 .tag-status--link {
@@ -419,12 +421,15 @@ main {
   z-index: 3;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color var(--transition-nav), border-color var(--transition-nav), border-style var(--transition-nav);
+  border-color: var(--u-color, var(--text));
+  transition: background-color var(--transition-nav), border-color var(--transition-nav), color var(--transition-nav), border-style var(--transition-nav);
 }
 
 .tag-status--link:hover {
-  background-color: transparent !important;
+  background-color: var(--u-color) !important;
   border-style: solid;
+  border-color: var(--u-color) !important;
+  color: #fff !important;
 }
 
 .device-desc {
@@ -1478,6 +1483,7 @@ main {
 #projet-mao .projet-accordion--max-for-live { --u-color: #7a3e1c; }
 #projet-mao .projet-accordion--nmp { --u-color: #7a5c14; }
 #projet-dj .projet-accordion--cours-dj { --u-color: var(--u-dj); }
+#projet-dj .projet-accordion--prestations-dj { --u-color: var(--u-dj); }
 
 .module-section-list {
   display: flex;
@@ -2019,7 +2025,7 @@ main {
 
 
 /* ——— Page Bricodage (🧵4, 🟦 Claude 10/10) : même structure que Jukbike, couleurs du vert artn0art ——— */
-#projet-bricodage { --u-color: var(--u-mao); }
+#projet-bricodage { --u-color: var(--u-bricodage); }
 #projet-bricodage .projet-accordion--audiolivre { --u-color: #335f33; }
 #projet-bricodage .projet-accordion--bionic { --u-color: #4a6fa5; }
 #projet-bricodage .projet-accordion--debrouillards { --u-color: #c0392b; }
@@ -2075,9 +2081,10 @@ main {
 
 /* ——— D1507 : Charte & Gabarit Template ——— */
 
-/* 1. Ligne de statut / plaquette sous la description */
+/* 1. Ligne de statut / plaquette sous la description — alignée en bas */
 .device-status-row {
-  margin-top: var(--space-2);
+  margin-top: auto;
+  padding-top: var(--space-3);
 }
 
 
