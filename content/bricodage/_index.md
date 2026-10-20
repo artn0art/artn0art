@@ -15,8 +15,8 @@ modules:
     icon: /images/modules/audiolivre.webp
     title: Audio-livre
     tag: Livre musical
-    concept: "Un livre que l'on feuillette, et dont la musique change avec la page ouverte. Chaque page porte une puce ; le lecteur caché dans le livre reconnaît la page et lance sa musique."
-    ambiance: "Douce et intuitive : un interrupteur MARCHE / ARRÊT, rien d'autre à apprendre. Environ 10 minutes de musique par page ; fermer le livre ne coupe pas le son, il reprend sur la dernière page vue. Batterie rechargeable (4 à 5 h). Pour l'accueil du public, les médiathèques, les expositions."
+    concept: "Un livre proposé aux médiathèques et bibliothèques d'Ille-et-Vilaine, réalisé par la Compagnie d'iCidence."
+    ambiance: "Douce et dynamique : du chant, de la danse, des percussions… de quoi ravir les tout-petits et leurs parents."
   - id: jukbike
     icon: /images/modules/jukbox.webp
     title: Jukbike
@@ -27,7 +27,7 @@ modules:
 transmission:
   title: "Transmission : Vulgarisation Scientifique & Ateliers Numériques"
   body: |
-    Animations et ateliers de vulgarisation scientifique et numérique (en partenariat notamment avec les Petits Débrouillards) :
+    Animations et ateliers de vulgarisation scientifique et numérique au sein des Petits Débrouillards de Nantes et de Toulouse :
     * **Éveil au code et à l'électronique** : découverte des capteurs, de la programmation accessible et du détournement d'objets.
     * **Médiation par le faire** : ateliers pratiques en médiathèques, centres de loisirs et tiers-lieux.
 
