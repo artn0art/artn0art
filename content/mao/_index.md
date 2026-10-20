@@ -67,21 +67,28 @@ bio:
     - "Réalisation Radio — Sud Formadia Toulouse (2010) : Prise de son et montage chirurgical."
 ---
 
-<!-- Productions Originales artn0art (SoundCloud) — D2144 -->
+<!-- Productions Originales hshitaka (SoundCloud) — D2144 -->
 <section class="projet-productions" style="margin-bottom: 2.5rem;">
   <h2 style="font-size: 2.25rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 0.5rem; line-height: 1.15;">Production &amp; Univers Sonores</h2>
-  <p style="margin-bottom: 1.5rem; opacity: 0.85;">Compositions originales, textures cinématiques, downtempo organique et beats façonnés au studio.</p>
+  <p style="margin-bottom: 1.5rem; opacity: 0.85;">Compositions originales, textures cinématiques, downtempo organique et beats façonnés au studio : écoutez les productions d'Arnaud (hshitaka).</p>
 
   <div style="display: flex; flex-direction: column; gap: 1.5rem;">
     <div>
-      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/artn0art/sets/downtempo" target="_blank" rel="noopener noreferrer">Downtempo &amp; Organic Beats ↗</a></h3>
-      {{< soundcloud url="https://soundcloud.com/artn0art/sets/downtempo" color="%23d97706" >}}
+      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/hshitaka/thunder-roads" target="_blank" rel="noopener noreferrer">Thunder Roads ↗</a></h3>
+      {{< soundcloud url="https://soundcloud.com/hshitaka/thunder-roads" color="%23d97706" >}}
     </div>
     <div>
-      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/artn0art/sets/hip-hop" target="_blank" rel="noopener noreferrer">Boom Bap &amp; Lo-Fi Hip-Hop ↗</a></h3>
-      {{< soundcloud url="https://soundcloud.com/artn0art/sets/hip-hop" color="%23d97706" >}}
+      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/hshitaka/cetait-mieux-avant" target="_blank" rel="noopener noreferrer">C'était mieux avant ↗</a></h3>
+      {{< soundcloud url="https://soundcloud.com/hshitaka/cetait-mieux-avant" color="%23d97706" >}}
+    </div>
+    <div>
+      <h3 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem;"><a href="https://soundcloud.com/hshitaka/la-marche" target="_blank" rel="noopener noreferrer">La Marche ↗</a></h3>
+      {{< soundcloud url="https://soundcloud.com/hshitaka/la-marche" color="%23d97706" >}}
     </div>
   </div>
+  <p style="margin-top: 1.25rem; font-size: 0.95rem;">
+    <a href="https://soundcloud.com/hshitaka" target="_blank" rel="noopener noreferrer" style="font-weight: 600; color: #d97706;">Écouter toutes les productions sur soundcloud.com/hshitaka &rarr;</a>
+  </p>
 </section>
 
 <hr style="margin: 2rem 0; border: none; border-top: 1px solid var(--border, #e5e5e5);" />
